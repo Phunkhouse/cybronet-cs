@@ -8976,7 +8976,7 @@ function contactForm({
     wrapper.insertAdjacentHTML('beforeend', `
     <div class='contact-form'>
       ${homePage ? renderButtons() : ''}
-      <form id='contact-form' class='contact-form__form'>
+      <form id='contact-form' action="https://formsubmit.co/krapka.david@icloud.com" method="POST" class='contact-form__form'>
         <div class='contact-form__inputs'>
           <div class='contact-form__input-container'>
             <input id='form-name' type='text' placeholder='Jméno' class='contact-form__input' />
