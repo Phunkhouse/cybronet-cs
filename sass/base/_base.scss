@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 18px;
+  font-feature-settings: 'kern';
+  text-rendering: optimizeLegibility !important;
+  color: var(--cl-light-gray);
+  background-color: var(--cl-background);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &,
+  * {
+    box-sizing: border-box;
+  }
+
+  &.js-isFixed {
+    position: fixed;
+  }
+}
+
+a {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  all: unset;
+  background: inherit;
+  cursor: pointer;
+
+  &::-moz-focus-inner { border: 0; }
+}
+
+input {
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+
+  &:focus { outline: none; }
+}

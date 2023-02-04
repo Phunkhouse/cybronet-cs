@@ -1,0 +1,49 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/media-queries' as *;
+
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 111px;
+  width: 100%;
+  color: var(--cl-white);
+  transition: var(--transition);
+
+  @include mq-below('750px') {
+    display: none;
+  }
+
+  &.js-notOnTop {
+    height: 80px;
+    background-color: var(--cl-background);
+  }
+
+  &.js-hidden {
+    top: -111px;
+
+    &.js-notOnTop {
+      top: -80px;
+    }
+  }
+}
+
+.header__inner {
+  @include content-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header__logo {
+  height: 41px;
+  width: 140px;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}

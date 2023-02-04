@@ -1,0 +1,41 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/media-queries' as *;
+
+.careers {
+  @include content-width;
+  color: var(--cl-white);
+  
+}
+
+.careers__positions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 50px;
+  margin: 90px 0 115px;
+
+  @include mq-below('tablet-lg') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq-below('tablet-md') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.careers__bottom {
+  display: grid;
+  justify-items: center;
+  gap: 23px;
+  margin-bottom: 45px;
+}
+
+.careers__text {
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.careers__btn {
+  display: inline-flex;
+}

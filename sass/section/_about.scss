@@ -1,0 +1,33 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/media-queries' as *;
+
+.about {
+  @include content-width;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 125px 106px;
+  overflow: hidden;
+
+  @include mq-below('750px') {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 125px 26px;
+    overflow: initial;
+  }
+}
+
+.about__heading {
+  margin-bottom: 9px;
+}
+
+.about_sub-heading {
+  margin-bottom: 37px;
+}
+
+.about__features-inner {
+  position: relative;
+  display: grid;
+  gap: 26px;
+  overflow: hidden;
+}

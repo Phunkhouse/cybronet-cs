@@ -1,0 +1,12 @@
+.pillar {
+  padding: 36px 22px 44px 22px;
+  border: 1px solid var(--cl-dark-gray);
+}
+
+.pillar__title {
+  margin-bottom: 18px;
+
+  & > span {
+    color: var(--cl-blue);
+  }
+}

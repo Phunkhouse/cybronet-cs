@@ -1,0 +1,44 @@
+.btn {
+  font-family: var(--font-primary);
+  font-weight: var(--font-semi-bold);
+  color: var(--cl-white);
+}
+
+.btn--link {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background-color: var(--cl-white);
+    transition: var(--transition);
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.btn--primary {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  padding: 0 35px;
+  border-radius: 100px;
+  background-color: var(--btn-blue);
+  transition: var(--transition);
+
+  &:hover {
+    background-color: var(--btn-blue-hover);
+  }
+
+  &:active {
+    background-color: var(--btn-blue-active);
+  }
+}

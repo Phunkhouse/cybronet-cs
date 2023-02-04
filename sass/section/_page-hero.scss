@@ -1,0 +1,31 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/media-queries' as *;
+
+.page-hero {
+  position: relative;
+  height: 271px;
+  width: 100%;
+  padding-top: 111px;
+  background-image: url('~/dist/bundles/img/hero-page-background.webp');
+  background-size: cover;
+  background-position: bottom;
+
+  @include mq-retina('1px') {
+    background-image: url('~/dist/bundles/img/hero-page-background@2x.webp');
+  }
+}
+
+.page-hero__layout {
+  @include content-width;
+  position: relative;
+  color: var(--cl-white);
+}
+
+.page-hero__title,
+.page-hero__subtitle {
+  text-align: center;
+}
+
+.page-hero__title {
+  margin: 45px 0 6px 0;
+}

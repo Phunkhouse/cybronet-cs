@@ -1,0 +1,1 @@
+require.context('../svg-sprite', true, /\.svg$/)

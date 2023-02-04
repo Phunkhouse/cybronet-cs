@@ -1,0 +1,23 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/media-queries' as *;
+
+.career-single {
+  @include content-width-single;
+  color: var(--cl-lightest-gray);
+
+  p,
+  ul {
+    line-height: 22px;
+  }
+  ul {
+    li {
+      margin-left: 12px;
+
+      &::before {
+        content: '\2022';
+        display: inline-block;
+        margin-right: 6px;
+      }
+    }
+  }
+}

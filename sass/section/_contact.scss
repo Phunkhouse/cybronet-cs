@@ -1,0 +1,12 @@
+@use '../abstracts/mixins' as *;
+
+.contact {
+  @include content-width;
+  width: 620px;
+  padding: 100px 0;
+}
+
+.contact__heading {
+  text-align: center;
+  margin-bottom: 45px;
+}

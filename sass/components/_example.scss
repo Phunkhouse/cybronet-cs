@@ -1,0 +1,130 @@
+@use '../abstracts/media-queries' as *;
+
+.example {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 626px;
+  width: 1049px;
+  padding: 80px;
+  border-radius: 39px;
+  color: var(--cl-white);
+
+  @include mq-above('desktop-md') {
+    top: 300px;
+    width: 1300px;
+    height: 750px;
+  }
+
+  @include mq-below('content-width') {
+    top: 25px;
+    display: grid;
+    gap: 36px;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 50px);
+    width: calc(100% - 50px);
+    border-radius: 17px;
+
+    &--fresh-design,
+    &--slozite-systemy,
+    &--aplikace-na-miru {
+      img.example__img {
+        right: initial;
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+
+  @include mq-below('tablet-md') {
+    padding: 47px 12px 0;
+    grid-template-columns: 1fr;
+  }
+
+  &--fresh-design {
+    background-image: linear-gradient(18deg, #034472 15%, #107ac6 87%);
+
+    .example__content {
+      flex: 0 0 365px;
+    }
+
+    .example__logo {
+      height: 40px;
+      width: 138px;
+    }
+
+    .example__img {
+      right: -24px;
+      height: 466px;
+      width: 420px;
+    }
+  }
+
+  &--slozite-systemy {
+    background: linear-gradient(213.31deg, #BD70DF 16.26%, #611D8C 85.88%);
+
+    .example__content {
+      flex: 0 0 365px;
+    }
+    
+    .example__logo {
+      height: 40px;
+      width: 138px;
+    }
+  
+    .example__img {
+      right: -8px;
+      height: 472px;
+      width: 596px;
+    }
+  }
+
+  &--aplikace-na-miru {
+    background: linear-gradient(214.97deg, #DBBF39 18.46%, #917E26 83.91%);
+
+    .example__content {
+      flex: 0 0 389px;
+    }
+
+    .example__logo {
+      height: 40px;
+      width: 138px;
+    }
+
+    .example__img {
+      right: -24px;
+      height: 466px;
+      width: 430px;
+    }
+  }
+}
+
+.example__content {
+
+}
+
+.example__title {
+  margin-bottom: 30px;
+}
+
+.example__logo {
+  margin-bottom: 24px;
+}
+
+.example__text {
+  margin-bottom: 18px;
+}
+
+.example__keywords {
+  font-style: italic;
+}
+
+.example__img {
+  position: relative;
+}

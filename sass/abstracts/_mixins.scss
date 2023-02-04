@@ -1,0 +1,43 @@
+@use './media-queries' as *;
+
+@mixin content-width() {
+  width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 106px;
+
+  @include mq-below('content-width') {
+    width: 100%;
+    margin: initial;
+  }
+
+  @include mq-below('750px') {
+    padding: 0 26px;
+  }
+}
+
+@mixin content-width-single() {
+  width: var(--content-width-single);
+  margin: 0 auto;
+  padding: 40px 106px 100px 106px;
+
+  @include mq-below('700px') {
+    width: 100%;
+    margin: initial;
+    padding: 40px 26px 100px 26px;
+  }
+}
+
+@mixin form-input-default() {
+  height: 42px;
+  width: 100%;
+  border: 1px solid var(--cl-dark-gray);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    border-color: var(--cl-white);
+  }
+}

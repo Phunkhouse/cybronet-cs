@@ -1,0 +1,20 @@
+.career-block {
+  display: flex;
+  justify-content: space-between;
+  min-height: 42px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--cl-lightest-gray);
+}
+
+.career-block__title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+.career-block__plusIcon {
+  height: 14px;
+  width: 14px;
+  margin: 0 12px;
+  fill: var(--cl-blue);
+}

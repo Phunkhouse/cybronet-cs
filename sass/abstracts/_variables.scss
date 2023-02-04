@@ -1,0 +1,32 @@
+
+:root {
+  // COLORS
+  --cl-white: #fff;
+  --cl-blue: #007DFF;
+  --cl-lightest-gray: #f0f0f0;
+  --cl-light-gray: #848484;
+  --cl-dark-gray: #5E5E5E;
+  --cl-error: #b9062a;
+
+  --cl-background: #0F0F10;
+
+  // FONTS
+  --font-primary: 'Montserrat', sans-serif;
+  --font-display: 'Chivo', sans-serif;
+
+  --font-bold: 700;
+  --font-semi-bold: 600;
+  --font-regular: 400;
+
+  // LAYOUT
+  --content-width: 1152px;
+  --content-width-single: 620px;
+
+  // BUTTONS
+  --btn-blue: #007DFF;
+  --btn-blue-hover: #0063CB;
+  --btn-blue-active: #002F61;
+
+  // TRANSITIONS
+  --transition: .2s;
+}
