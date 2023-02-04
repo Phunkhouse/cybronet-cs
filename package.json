@@ -12,7 +12,8 @@
     "watch-html": "npx browser-sync start -c bs-config.js",
     "dev": "npm run watch-webpack & npm run watch-html",
     "start": "npm run watch-webpack & npm run watch-html",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "push-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "David Krapka",
   "license": "ISC",
