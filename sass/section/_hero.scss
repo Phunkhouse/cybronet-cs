@@ -31,6 +31,10 @@
   @include mq-below('tablet-md') {
     height: calc(100vh - 225px);
     padding-top: 30px;
+
+    @supports (height: -webkit-fill-available) {
+      min-height: -webkit-fill-available;
+    }
   }
 }
 

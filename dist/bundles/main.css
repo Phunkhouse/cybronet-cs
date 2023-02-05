@@ -711,6 +711,11 @@ a.feature__action {
     height: calc(100vh - 225px);
     padding-top: 30px;
   }
+  @supports (height: -webkit-fill-available) {
+    .hero__content {
+      min-height: -webkit-fill-available;
+    }
+  }
 }
 
 .hero__title {

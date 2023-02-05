@@ -67,7 +67,9 @@ export function heroMarquee() {
 
   renderHeroMarquee()
 
-  window.addEventListener('resize', () => {
-    renderHeroMarquee()
-  })
+  if (window.innerWidth > 1100) {
+    window.addEventListener('resize', () => {
+      renderHeroMarquee()
+    })
+  }
 }
