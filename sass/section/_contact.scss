@@ -1,9 +1,64 @@
 @use '../abstracts/mixins' as *;
+@use '../abstracts/media-queries' as *;
+
+.contact__wrapper {
+  position: relative;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 571px;
+    width: 346px;
+    background-image: url('~/dist/bundles/img/background-shapes-contact-left.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mq-retina('1px') {
+      background-image: url('~/dist/bundles/img/background-shapes-contact-left@2x.webp');
+    }
+
+    @include mq-below('1000px') {
+      content: unset;
+    }
+  }
+
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: 968px;
+    width: 613px;
+    background-image: url('~/dist/bundles/img/background-shapes-contact-right.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    @include mq-retina('1px') {
+      background-image: url('~/dist/bundles/img/background-shapes-contact-right@2x.webp');
+    }
+  }
+}
 
 .contact {
   @include content-width;
   width: 620px;
   padding: 100px 0;
+
+  @include mq-below('content-width') {
+    width: 100%;
+    padding: 100px 106px;
+  }
+
+  @include mq-below('750px') {
+    padding: 100px 26px;
+  }
 }
 
 .contact__heading {

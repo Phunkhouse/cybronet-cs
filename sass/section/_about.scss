@@ -1,6 +1,32 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/media-queries' as *;
 
+.about__wrapper {
+  position: relative;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;    
+    height: 605px;
+    width: 584px;
+    background-image: url('~/dist/bundles/img/background-shapes-top-left.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mq-retina('1px') {
+      background-image: url('~/dist/bundles/img/background-shapes-top-left@2x.webp');
+    }
+
+    @include mq-below('584px') {
+      width: 100%;
+    }
+  }
+}
+
 .about {
   @include content-width;
   display: grid;

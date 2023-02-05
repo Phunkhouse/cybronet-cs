@@ -1,6 +1,28 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/media-queries' as *;
 
+.pillars__wrapper {
+  position: relative;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    bottom: -70px;
+    right: 40px;
+    display: block;
+    height: 288px;
+    width: 219px;
+    background-image: url('~/dist/bundles/img/background-shapes-features.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mq-retina('1px') {
+      background-image: url('~/dist/bundles/img/background-shapes-features@2x.webp');
+    }
+  }
+}
+
 .pillars {
   @include content-width;
   position: relative;

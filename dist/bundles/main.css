@@ -899,6 +899,33 @@ a.feature__action {
   width: 100%;
 }
 
+.about__wrapper {
+  position: relative;
+}
+.about__wrapper::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 605px;
+  width: 584px;
+  background-image: url(img/background-shapes-top-left.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1px), only screen and (min-resolution: 192dpi) and (min-width: 1px), only screen and (min-resolution: 2dppx) and (min-width: 1px) {
+  .about__wrapper::before {
+    background-image: url(img/background-shapes-top-left@2x.webp);
+  }
+}
+@media screen and (max-width: 584px) {
+  .about__wrapper::before {
+    width: 100%;
+  }
+}
+
 .about {
   width: var(--content-width);
   margin: 0 auto;
@@ -977,6 +1004,28 @@ a.feature__action {
 
 .examples__inner {
   height: 100%;
+}
+
+.pillars__wrapper {
+  position: relative;
+}
+.pillars__wrapper::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: -70px;
+  right: 40px;
+  display: block;
+  height: 288px;
+  width: 219px;
+  background-image: url(img/background-shapes-features.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1px), only screen and (min-resolution: 192dpi) and (min-width: 1px), only screen and (min-resolution: 2dppx) and (min-width: 1px) {
+  .pillars__wrapper::before {
+    background-image: url(img/background-shapes-features@2x.webp);
+  }
 }
 
 .pillars {
@@ -1174,6 +1223,52 @@ a.feature__action {
   color: var(--cl-light-gray);
 }
 
+.contact__wrapper {
+  position: relative;
+}
+.contact__wrapper::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 571px;
+  width: 346px;
+  background-image: url(img/background-shapes-contact-left.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1px), only screen and (min-resolution: 192dpi) and (min-width: 1px), only screen and (min-resolution: 2dppx) and (min-width: 1px) {
+  .contact__wrapper::before {
+    background-image: url(img/background-shapes-contact-left@2x.webp);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact__wrapper::before {
+    content: unset;
+  }
+}
+.contact__wrapper::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  height: 968px;
+  width: 613px;
+  background-image: url(img/background-shapes-contact-right.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1px), only screen and (min-resolution: 192dpi) and (min-width: 1px), only screen and (min-resolution: 2dppx) and (min-width: 1px) {
+  .contact__wrapper::after {
+    background-image: url(img/background-shapes-contact-right@2x.webp);
+  }
+}
+
 .contact {
   width: var(--content-width);
   margin: 0 auto;
@@ -1190,6 +1285,17 @@ a.feature__action {
 @media screen and (max-width: 750px) {
   .contact {
     padding: 0 26px;
+  }
+}
+@media screen and (max-width: 1152px) {
+  .contact {
+    width: 100%;
+    padding: 100px 106px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contact {
+    padding: 100px 26px;
   }
 }
 

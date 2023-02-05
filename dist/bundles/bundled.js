@@ -15,7 +15,7 @@
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./carousel-photo.png\": \"./img/carousel-photo.png\",\n\t\"./example-aplikace-na-miru.webp\": \"./img/example-aplikace-na-miru.webp\",\n\t\"./example-fresh-design.webp\": \"./img/example-fresh-design.webp\",\n\t\"./example-slozite-systemy.webp\": \"./img/example-slozite-systemy.webp\",\n\t\"./hero-graphic.webp\": \"./img/hero-graphic.webp\",\n\t\"./hero-other-background.svg\": \"./img/hero-other-background.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./img sync recursive \\\\.(png%7Cjpg%7Cjpeg%7Cgif%7Csvg%7Cwebp)$\";\n\n//# sourceURL=webpack://cybronet-cs/./img/_sync_\\.(png%257Cjpg%257Cjpeg%257Cgif%257Csvg%257Cwebp)$?");
+eval("var map = {\n\t\"./background-shapes-contact-left.webp\": \"./img/background-shapes-contact-left.webp\",\n\t\"./background-shapes-contact-left@2x.webp\": \"./img/background-shapes-contact-left@2x.webp\",\n\t\"./background-shapes-contact-right.webp\": \"./img/background-shapes-contact-right.webp\",\n\t\"./background-shapes-contact-right@2x.webp\": \"./img/background-shapes-contact-right@2x.webp\",\n\t\"./background-shapes-features.webp\": \"./img/background-shapes-features.webp\",\n\t\"./background-shapes-features@2x.webp\": \"./img/background-shapes-features@2x.webp\",\n\t\"./background-shapes-top-left.webp\": \"./img/background-shapes-top-left.webp\",\n\t\"./background-shapes-top-left@2x.webp\": \"./img/background-shapes-top-left@2x.webp\",\n\t\"./carousel-photo.png\": \"./img/carousel-photo.png\",\n\t\"./example-aplikace-na-miru.webp\": \"./img/example-aplikace-na-miru.webp\",\n\t\"./example-fresh-design.webp\": \"./img/example-fresh-design.webp\",\n\t\"./example-slozite-systemy.webp\": \"./img/example-slozite-systemy.webp\",\n\t\"./hero-graphic.webp\": \"./img/hero-graphic.webp\",\n\t\"./hero-graphic@2x.webp\": \"./img/hero-graphic@2x.webp\",\n\t\"./hero-other-background.svg\": \"./img/hero-other-background.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./img sync recursive \\\\.(png%7Cjpg%7Cjpeg%7Cgif%7Csvg%7Cwebp)$\";\n\n//# sourceURL=webpack://cybronet-cs/./img/_sync_\\.(png%257Cjpg%257Cjpeg%257Cgif%257Csvg%257Cwebp)$?");
 
 /***/ }),
 
@@ -59,7 +59,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"featuresScroll\": () => (/* binding */ featuresScroll)\n/* harmony export */ });\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap/dist/ScrollTrigger */ \"./node_modules/gsap/dist/ScrollTrigger.js\");\n/* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__);\n\n\ngsap__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__.ScrollTrigger);\nfunction featuresScroll() {\n  let getFeaturesHeight = document.querySelector('.about__features').offsetHeight;\n  let getPinHeight = getFeaturesHeight - 500;\n  let getScrollAmount = getFeaturesHeight * -1;\n  const mediaQuery = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.matchMedia();\n  mediaQuery.add('(min-width: 750px)', () => {\n    gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to('.about', {\n      scrollTrigger: {\n        trigger: '.about',\n        start: 'top',\n        end: `${getPinHeight}px`,\n        pin: true,\n        scrub: true,\n        pinSpacing: false\n      }\n    });\n    gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to('.about__features', {\n      scrollTrigger: {\n        trigger: '.about',\n        start: 'top',\n        end: 'bottom',\n        scrub: true\n      },\n      y: getScrollAmount\n    });\n  });\n}\n\n//# sourceURL=webpack://cybronet-cs/./js/components/animations/featuresScroll.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"featuresScroll\": () => (/* binding */ featuresScroll)\n/* harmony export */ });\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap/dist/ScrollTrigger */ \"./node_modules/gsap/dist/ScrollTrigger.js\");\n/* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__);\n\n\ngsap__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__.ScrollTrigger);\nfunction featuresScroll() {\n  let getFeaturesHeight = document.querySelector('.about__features').offsetHeight;\n  let getPinHeight = getFeaturesHeight - 500;\n  let getScrollAmount = getFeaturesHeight * -1;\n  const mediaQuery = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.matchMedia();\n  mediaQuery.add('(min-width: 750px)', () => {\n    gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to('.about__wrapper', {\n      scrollTrigger: {\n        trigger: '.about__wrapper',\n        start: 'top',\n        end: `${getPinHeight}px`,\n        pin: true,\n        scrub: true,\n        pinSpacing: false\n      }\n    });\n    gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to('.about__features', {\n      scrollTrigger: {\n        trigger: '.about__wrapper',\n        start: 'top',\n        end: 'bottom',\n        scrub: true\n      },\n      y: getScrollAmount\n    });\n  });\n}\n\n//# sourceURL=webpack://cybronet-cs/./js/components/animations/featuresScroll.js?");
 
 /***/ }),
 
@@ -378,6 +378,94 @@ eval("var map = {\n\t\"./arrow-heading.svg\": \"./svg-sprite/arrow-heading.svg\"
 
 /***/ }),
 
+/***/ "./img/background-shapes-contact-left.webp":
+/*!*************************************************!*\
+  !*** ./img/background-shapes-contact-left.webp ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/background-shapes-contact-left.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/background-shapes-contact-left.webp?");
+
+/***/ }),
+
+/***/ "./img/background-shapes-contact-left@2x.webp":
+/*!****************************************************!*\
+  !*** ./img/background-shapes-contact-left@2x.webp ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/background-shapes-contact-left@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/background-shapes-contact-left@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/background-shapes-contact-right.webp":
+/*!**************************************************!*\
+  !*** ./img/background-shapes-contact-right.webp ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/background-shapes-contact-right.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/background-shapes-contact-right.webp?");
+
+/***/ }),
+
+/***/ "./img/background-shapes-contact-right@2x.webp":
+/*!*****************************************************!*\
+  !*** ./img/background-shapes-contact-right@2x.webp ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/background-shapes-contact-right@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/background-shapes-contact-right@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/background-shapes-features.webp":
+/*!*********************************************!*\
+  !*** ./img/background-shapes-features.webp ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/background-shapes-features.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/background-shapes-features.webp?");
+
+/***/ }),
+
+/***/ "./img/background-shapes-features@2x.webp":
+/*!************************************************!*\
+  !*** ./img/background-shapes-features@2x.webp ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/background-shapes-features@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/background-shapes-features@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/background-shapes-top-left.webp":
+/*!*********************************************!*\
+  !*** ./img/background-shapes-top-left.webp ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/background-shapes-top-left.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/background-shapes-top-left.webp?");
+
+/***/ }),
+
+/***/ "./img/background-shapes-top-left@2x.webp":
+/*!************************************************!*\
+  !*** ./img/background-shapes-top-left@2x.webp ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/background-shapes-top-left@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/background-shapes-top-left@2x.webp?");
+
+/***/ }),
+
 /***/ "./img/carousel-photo.png":
 /*!********************************!*\
   !*** ./img/carousel-photo.png ***!
@@ -430,6 +518,17 @@ eval("module.exports = __webpack_require__.p + \"img/example-slozite-systemy.web
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"img/hero-graphic.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/hero-graphic.webp?");
+
+/***/ }),
+
+/***/ "./img/hero-graphic@2x.webp":
+/*!**********************************!*\
+  !*** ./img/hero-graphic@2x.webp ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/hero-graphic@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/hero-graphic@2x.webp?");
 
 /***/ }),
 

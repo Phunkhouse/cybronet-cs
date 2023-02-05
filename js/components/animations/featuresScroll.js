@@ -11,9 +11,9 @@ export function featuresScroll() {
   const mediaQuery = gsap.matchMedia()
 
   mediaQuery.add('(min-width: 750px)', () => {
-    gsap.to('.about', {
+    gsap.to('.about__wrapper', {
       scrollTrigger: {
-        trigger: '.about',
+        trigger: '.about__wrapper',
         start: 'top',
         end: `${getPinHeight}px`,
         pin: true,
@@ -24,7 +24,7 @@ export function featuresScroll() {
 
     gsap.to('.about__features', {
       scrollTrigger: {
-        trigger: '.about',
+        trigger: '.about__wrapper',
         start: 'top',
         end: 'bottom',
         scrub: true,
