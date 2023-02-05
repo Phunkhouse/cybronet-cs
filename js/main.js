@@ -15,6 +15,12 @@ window.addEventListener('load', function () {
   if (homePage) {
     animations()
     contactForm({ homePage })
+
+    if (location.hash === '#contact') {
+      setTimeout(() => {
+        document.getElementById(location.hash.substring(1)).scrollIntoView()
+      }, 10)
+    }
   }
   careerPage && contactForm({ homePage: false })
 })
