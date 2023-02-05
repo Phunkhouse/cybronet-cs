@@ -2,7 +2,7 @@ import webpackScripts from './webpack-scripts'
 
 import { animations } from './components/animations'
 import { navigation } from './components/navigation'
-import { contactForm } from './components/contact-from'
+import { contactForm } from './components/contact-form'
 
 const homePage = document.getElementById('home')
 const careerPage = document.getElementById('career-page')
