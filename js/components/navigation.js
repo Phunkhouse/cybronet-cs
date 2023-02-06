@@ -41,12 +41,12 @@ export function navigation() {
       <nav class='header-mobile__menu'>
         <ul id='mobile-menu' class='header-mobile__menu-inner'>
           <li>
-            <a href='/kariera.html' class='btn'>
+            <a href='/cybronet-cs/kariera.html' class='btn'>
               Otevřené pozice
             </a>
           </li>
           <li>
-            <a href='#contact' class='btn btn--primary'>
+            <a href='/cybronet-cs/#contact' class='btn btn--primary'>
               Napiš nám
             </a>
           </li>
