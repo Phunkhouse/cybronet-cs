@@ -39,14 +39,14 @@ export function navigation() {
         </button>
       </header>
       <nav class='header-mobile__menu'>
-        <ul class='header-mobile__menu-inner'>
+        <ul id='mobile-menu' class='header-mobile__menu-inner'>
           <li>
-            <a href='#' class='btn'>
+            <a href='/kariera.html' class='btn'>
               Otevřené pozice
             </a>
           </li>
           <li>
-            <a href='#' class='btn btn--primary'>
+            <a href='#contact' class='btn btn--primary'>
               Napiš nám
             </a>
           </li>
@@ -56,11 +56,22 @@ export function navigation() {
 
     const hamburgerBtn = document.getElementById('hamburger')
     const menu = document.querySelector('.header-mobile__menu')
+    const mobileMenuItems = Array.from(document.getElementById('mobile-menu').children)
 
     hamburgerBtn.addEventListener('click', () => {
       menu.classList.toggle('js-active')
       body.classList.toggle('js-isFixed')
       hamburgerBtn.classList.toggle('js-menuOpened')
+    })
+
+    mobileMenuItems.map(item => {
+      const anchor = item.children[0]
+
+      anchor.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('js-menuOpened')
+        menu.classList.toggle('js-active')
+        body.classList.toggle('js-isFixed')
+      })
     })
   }
 
@@ -83,5 +94,5 @@ export function navigation() {
       document.querySelector('.header-mobile').remove()
       document.querySelector('.header-mobile__menu').remove()
     }
-  })  
+  })
 }
