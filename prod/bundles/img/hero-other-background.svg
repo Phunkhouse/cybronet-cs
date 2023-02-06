@@ -1,0 +1,8 @@
+export default {
+      id: "hero-other-background-usage",
+      viewBox: "0 0 1152 271",
+      url: __webpack_public_path__ + "/Users/davidkrapka/Documents/my-dev/cybronet-cs/img/hero-other-background.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

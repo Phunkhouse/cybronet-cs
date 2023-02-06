@@ -13,7 +13,7 @@
     "dev": "npm run watch-webpack & npm run watch-html",
     "start": "npm run watch-webpack & npm run watch-html",
     "build": "webpack --config webpack.prod.js",
-    "push-pages": "git subtree push --prefix dist origin gh-pages"
+    "push-pages": "git subtree push --prefix prod origin gh-pages"
   },
   "author": "David Krapka",
   "license": "ISC",

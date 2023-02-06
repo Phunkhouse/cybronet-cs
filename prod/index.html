@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang='cs'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+  <title>Cybronet</title>
+
+  <!-- Favicons -->
+  <link rel='icon' href='/cybronet-cs/favicon.ico' sizes='any'>
+  <link rel='icon' href='/cybronet-cs/icon.svg' type='image/svg+xml'>
+  <link rel='apple-touch-icon' href='/cybronet-cs/apple-touch-icon.png'>
+  <link rel='manifest' href='/cybronet-cs/manifest.webmanifest'>
+
+  <!-- Google fonts -->
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Chivo&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap' rel='stylesheet'>
+
+  <link rel='stylesheet' href='bundles/main.css'>
+  <title>Document</title>
+</head>
+
+<body id='home' class='layout'>
+  <main>
+    <section id='hero' class='hero'>
+      <header class='header js-header'>
+        <div class='header__inner'>
+          <a href='/cybronet-cs/'>
+            <svg class='header__logo' alt='Cybronet logo'>
+              <use xlink:href='./bundles/img/sprite.svg#cybronet-logo'></use>
+            </svg>
+          </a>
+          <nav>
+            <ul class='header__navigation'>
+              <li>
+                <a href='/cybronet-cs/kariera.html' class='btn btn--link'>
+                  Otevřené pozice
+                </a>
+              </li>
+              <li>
+                <a href='#contact' class='btn btn--primary'>
+                  Napiš nám
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class='hero__layout'>
+        <div class='hero__content'>
+          <div class='hero__content-text'>
+            <h1 class='heading-1 hero__title'>
+              <svg class='hero__title-arrow'>
+                <use xlink:href='./bundles/img/sprite.svg#arrow-heading'></use>
+              </svg>
+              <span class='hero__title-text'></span>
+            </h1>
+            <div class='hero__subtitle'>
+              <div class='hero__subtitle-item'>Aplikace</div>
+              <div class='hero__subtitle-item'>Weby</div>
+              <div class='hero__subtitle-item'>Internet věcí</div>
+            </div>
+          </div>
+          <picture>
+            <source srcset='bundles/img/hero-graphic.webp 1x, bundles/img/hero-graphic@2x.webp 2x'>
+            <img class='hero__graphic' src='bundles/img/hero-graphic.webp'>
+          </picture>
+        </div>
+        <div class='hero__footer'>
+          <div class='hero__footer-top'>
+            <a href='#about' class='hero__footer-scroll'>
+              Scroll
+              <svg class='hero__footer-scroll-arrow'>
+                <use xlink:href='./bundles/img/sprite.svg#arrow-hero-scroll'></use>
+              </svg>
+            </a>
+            <div class='hero__footer-social'>
+              <div class='hero__footer-social-line'></div>
+              <a href='#' class='hero__footer-social-logo-wrapper'>
+                <svg class='hero__footer-social-logo'>
+                  <use xlink:href='./bundles/img/sprite.svg#instagram-logo'></use>
+                </svg>
+              </a>
+              <a href='#' class='hero__footer-social-logo-wrapper'>
+                <svg class='hero__footer-social-logo'>
+                  <use xlink:href='./bundles/img/sprite.svg#facebook-logo'></use>
+                </svg>
+              </a>
+              <a href='#' class='hero__footer-social-logo-wrapper'>
+                <svg class='hero__footer-social-logo'>
+                  <use xlink:href='./bundles/img/sprite.svg#linkedin-logo'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='heading-blue hero__marquee-title'>Pracovali jsme také pro:</div>
+      </div>
+      <div class='hero__marquee'>
+        <div class='hero__marquee-inner'>
+        </div>
+      </div>
+    </section>
+    <section class='about__wrapper'>
+      <div id='about' class='about'>
+        <div class='about__info'>
+          <h2 class='heading-blue about__heading'>Co umíme</h2>
+          <h3 class='heading-local-small about_sub-heading'>Od návrhu nejlepšího řešení, designu, samotného vývoje, až po vypuštění produktu do světa</h3>
+          <p class='paragraph'>Vždy se snažíme, abyste byli maximálně spokojeni, klademe důraz na úzkou a dlouhodobou spolupráci, abychom se mohli starat o rozvoj vašeho produktu.</p>
+        </div>
+        <div class='about__features'>
+          <div class='about__features-inner'>
+            <div class='feature'>
+              <svg class='feature__logo'>
+                <use xlink:href='./bundles/img/sprite.svg#feature-icon'></use>
+              </svg>
+              <h4 class='heading-local-small feature__heading'>Webové aplikace</h4>
+              <p class='paragraph feature__paragraph'>Chcete prezentační web, e-shop, nebo složitější systémy? Máme rádi výzvy, takže vysoké nároky našich klientů jsou pro nás zábavou.</p>
+              <a href='#' class='feature__action'>
+                <span>Domluvit schůzku</span>
+                <svg class='feature__action-icon'>
+                  <use xlink:href='./bundles/img/sprite.svg#feature-action-arrow'></use>
+                </svg>
+              </a>
+            </div>
+            <div class='feature'>
+              <svg class='feature__logo'>
+                <use xlink:href='./bundles/img/sprite.svg#feature-icon'></use>
+              </svg>
+              <h4 class='heading-local-small feature__heading'>Mobilní aplikace</h4>
+              <p class='paragraph feature__paragraph'>Sledujeme současné trendy a děláme aplikace s využitím nejmodernějších technologií. Vždy pečlivě zvážíme, co je pro vás nejvhodnější, abyste nebyli s budoucím rozvojem limitováni.</p>
+              <a href='#' class='feature__action'>
+                <span>Domluvit schůzku</span>
+                <svg class='feature__action-icon'>
+                  <use xlink:href='./bundles/img/sprite.svg#feature-action-arrow'></use>
+                </svg>
+              </a>
+            </div>
+            <div class='feature'>
+              <svg class='feature__logo'>
+                <use xlink:href='./bundles/img/sprite.svg#feature-icon'></use>
+              </svg>
+              <h4 class='heading-local-small feature__heading'>Mobilní aplikace</h4>
+              <p class='paragraph feature__paragraph'>Sledujeme současné trendy a děláme aplikace s využitím nejmodernějších technologií. Vždy pečlivě zvážíme, co je pro vás nejvhodnější, abyste nebyli s budoucím rozvojem limitováni.</p>
+              <a href='#' class='feature__action'>
+                <span>Domluvit schůzku</span>
+                <svg class='feature__action-icon'>
+                  <use xlink:href='./bundles/img/sprite.svg#feature-action-arrow'></use>
+                </svg>
+              </a>
+            </div>
+            <div class='feature'>
+              <svg class='feature__logo'>
+                <use xlink:href='./bundles/img/sprite.svg#feature-icon'></use>
+              </svg>
+              <h4 class='heading-local-small feature__heading'>Mobilní aplikace</h4>
+              <p class='paragraph feature__paragraph'>Sledujeme současné trendy a děláme aplikace s využitím nejmodernějších technologií. Vždy pečlivě zvážíme, co je pro vás nejvhodnější, abyste nebyli s budoucím rozvojem limitováni.</p>
+              <a href='#' class='feature__action'>
+                <span>Domluvit schůzku</span>
+                <svg class='feature__action-icon'>
+                  <use xlink:href='./bundles/img/sprite.svg#feature-action-arrow'></use>
+                </svg>
+              </a>
+            </div>
+            <div class='feature'>
+              <svg class='feature__logo'>
+                <use xlink:href='./bundles/img/sprite.svg#feature-icon'></use>
+              </svg>
+              <h4 class='heading-local-small feature__heading'>Mobilní aplikace</h4>
+              <p class='paragraph feature__paragraph'>Sledujeme současné trendy a děláme aplikace s využitím nejmodernějších technologií. Vždy pečlivě zvážíme, co je pro vás nejvhodnější, abyste nebyli s budoucím rozvojem limitováni.</p>
+              <a href='#' class='feature__action'>
+                <span>Domluvit schůzku</span>
+                <svg class='feature__action-icon'>
+                  <use xlink:href='./bundles/img/sprite.svg#feature-action-arrow'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='examples'>
+      <div class='examples__inner'>
+        <div class='example example--aplikace-na-miru'>
+          <div class='example__content'>
+            <h3 class='heading-local-big example__title'>Aplikace na míru</h3>
+            <svg class='example__logo'>
+              <use xlink:href='./bundles/img/sprite.svg#logo-sportongo'></use>
+            </svg>
+            <p class='example__text'>
+              Aplikace Bez Graffity je jedna z aplikací pro Technologie města Prahy, na které jsme se měli možnost podílet.
+            </p>
+            <div class='example__keywords'>redesign / ui/ux / mobilní development / android / ios</div>
+          </div>
+          <img class='example__img' src='bundles/img/example-aplikace-na-miru.webp' />
+        </div>
+        <div class='example example--slozite-systemy'>
+          <div class='example__content'>
+            <h3 class='heading-local-big example__title'>Složité systémy</h3>
+            <svg class='example__logo'>
+              <use xlink:href='./bundles/img/sprite.svg#logo-sportongo'></use>
+            </svg>
+            <p class='example__text'>
+              ESGO je mezinárodní systém pro evropské gynekologické studium.
+            </p>
+            <p class='example__text'>
+              Rozsáhlý systém pod našimi rukami prošel redesignem a celkovým přepracovaním pro zjednodušení pohybu uživatele.
+            </p>
+            <div class='example__keywords'>redesign / ui/ux / development</div>
+          </div>
+          <img class='example__img' src='bundles/img/example-slozite-systemy.webp' />
+        </div>
+        <div class='example example--fresh-design'>
+          <div class='example__content'>
+            <h3 class='heading-local-big example__title'>Fresh design</h3>
+            <svg class='example__logo'>
+              <use xlink:href='./bundles/img/sprite.svg#logo-sportongo'></use>
+            </svg>
+            <p class='example__text'>
+              Aplikace Sportongo je rodinný projekt sportovní sociální síťě, který jsme si vymazlili.
+            </p>
+            <p class='example__text'>
+              Spojení dobré vize aplikace na seznamování sportovců a fresh designu udělalo ze sociální sítě nenásilnou a příjemnou aplikaci.
+            </p>
+            <div class='example__keywords'>branding / ui/ux / wireframing / development</div>
+          </div>
+          <img class='example__img' src='bundles/img/example-fresh-design.webp' />
+        </div>
+      </div>
+    </section>
+    <section class='pillars__wrapper'>
+      <div class='pillars'>
+        <h2 class='heading-blue pillars__title'>Firemní standardy</h2>
+        <h3 class='heading-local-small pillars__subtitle'>Pilíře Cybronetu</h3>
+        <div class='pillars__container'>
+          <div class='pillar'>
+            <h4 class='heading-local-small pillar__title'>Otevřený <span>přístup</span> & Konzultace</h4>
+            <p>V digitálním světě se náš tým už nějaký pátek pohybuje. Nenecháváme si naše znalosti pro sebe a tak často ladíme s klientem už první kroky a postupy pro co nejlepší výsledek. S Vaší aplikací budeme pracovat od vývoje až do provozu jako s vlastní. Každý z týmu má svůj úkol, který můžete vždy řešit napřímo.</p>
+          </div>
+          <div class='pillar'>
+            <h4 class='heading-local-small pillar__title'><span>Know-how</span> se učíme a <span>předáváme</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In dapibus augue non sapien.</p>
+          </div>
+          <div class='pillar'>
+            <h4 class='heading-local-small pillar__title'>Sledujeme nové <span>trendy</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In dapibus augue non sapien. Mauris metus. In laoreet, magna id viverra tincidunt, sem odio bibendum justo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='recommendations'>
+      <div class='recommendations__header'>
+        <svg class='recommendations__quotes'>
+          <use xlink:href='./bundles/img/sprite.svg#quotes'></use>
+        </svg>
+        <div class='recommendations__controls'>
+          <button id='car-prev' class='recommendations__arrow-container'>
+            <svg class='recommendations__arrow'>
+              <use xlink:href='./bundles/img/sprite.svg#controls-arrow'></use>
+            </svg>
+          </button >
+          <button id='car-next' class='recommendations__arrow-container recommendations__arrow-container--right'>
+            <svg class='recommendations__arrow'>
+              <use xlink:href='./bundles/img/sprite.svg#controls-arrow'></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class='recommendations__carousel'>
+        <div class='recommendations__slide recommendations__slide--1 js-active'>
+          <h4 class='recommendations__slide-title'>"Kluci z firmy Cybronet opravdu umí. Poradili mi na začátek podníkání a vytvořili mi kopletně celý custom web. Díky Kluci! Mám z toho fakt radost."</h4>
+          <img class='recommendations__slide-photo' src='bundles/img/carousel-photo.png' />
+          <p class='recommendations__slide-name'>Jarek Nohavica</p>
+          <p class='recommendations__slide-position'>SEO of mexican design brand</p>
+        </div>
+        <div class='recommendations__slide recommendations__slide--2'>
+          <h4 class='recommendations__slide-title'>"Hashtag etsy same single-origin coffee, crucifix offal paleo. Poke kickstarter jianbing, intelligentsia same hexagon offal banh mi praxis poutine single-origin coffee hammock."</h4>
+          <img class='recommendations__slide-photo' src='bundles/img/carousel-photo.png' />
+          <p class='recommendations__slide-name'>Jarek Nohavica</p>
+          <p class='recommendations__slide-position'>SEO of mexican design brand</p>
+        </div>
+        <div class='recommendations__slide recommendations__slide--3'>
+          <h4 class='recommendations__slide-title'>"Cliche viral truffaut salvia. Woke artisan tote bag, fingerstache praxis vaporware iceland. Letterpress 90's pinterest big mood drinking vinegar locavore woke retro."</h4>
+          <img class='recommendations__slide-photo' src='bundles/img/carousel-photo.png' />
+          <p class='recommendations__slide-name'>Jarek Nohavica</p>
+          <p class='recommendations__slide-position'>SEO of mexican design brand</p>
+        </div>
+      </div>
+      <div class='recommendations__pagination-container'>
+        <div class='recommendations__pagination'>
+        </div>
+      </div>
+    </section>
+    <section id='contact' class='contact__wrapper'>
+      <div class='contact'>
+        <h2 class='heading-local-big contact__heading'>Kontaktujte nás</h2>
+        <div id='contact-form-wrapper'></div>
+      </div>
+    </section>
+  </main>
+  <footer class='footer'>
+    <div class='footer__info'>
+      <div class='footer__info-left'>
+        <svg class='footer__logo' alt='Cybronet logo'>
+          <use xlink:href='./bundles/img/sprite.svg#cybronet-logo'></use>
+        </svg>
+        <div class='footer__info-claim'>Turn your visions into a real projects</div>
+      </div>
+      <div class='footer__info-right'>
+        <div>
+          <p>Cybronet s.r.o</p>
+          <p>email@email.com</p>
+        </div>
+        <div>
+          <p><strong>Matěj Kohoutek</strong></p>
+          <p>+420 567 567 567</p>
+          <p>email@email.com</p>
+        </div>
+      </div>
+    </div>
+    <ul class='footer__menu'>
+      <li class='btn btn--link footer__menu-item'>
+        <a href='/cybronet-cs/kariera.html'>Otevřené pozice</a>
+      </li>
+      <li class='btn btn--link footer__menu-item'>
+        <a href='#contact'>Kontaktuj nás</a>
+      </li>
+    </ul>
+    <div class='footer__social'>
+      <a href='#' class='footer__social-logo-wrapper'>
+        <svg class='footer__social-logo'>
+          <use xlink:href='./bundles/img/sprite.svg#facebook-logo'></use>
+        </svg>
+      </a>
+      <a href='#' class='footer__social-logo-wrapper'>
+        <svg class='footer__social-logo'>
+          <use xlink:href='./bundles/img/sprite.svg#linkedin-logo'></use>
+        </svg>
+      </a>
+      <a href='#' class='footer__social-logo-wrapper'>
+        <svg class='footer__social-logo'>
+          <use xlink:href='./bundles/img/sprite.svg#instagram-logo'></use>
+        </svg>
+      </a>
+    </div>
+    <div class='footer__copyright'>2021 © Cybronet. Všechna práva vyhrazena.</div>
+  </footer>
+  <script src='bundles/bundled.js'></script>
+</body>
+
+</html>
