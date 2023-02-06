@@ -9024,7 +9024,10 @@ function navigation() {
     }
   });
 }
+;// CONCATENATED MODULE: ./js/utilites.js
+const capitalize = ([firstLetter, ...restOfWord]) => firstLetter.toUpperCase() + restOfWord.join('');
 ;// CONCATENATED MODULE: ./js/components/contact-form.js
+
 function contactForm({
   homePage
 }) {
@@ -9100,7 +9103,7 @@ function contactForm({
       inputWrapper.innerHTML = '';
       highlightClickedButton(e.target, type);
       inputWrapper.insertAdjacentHTML('beforeend', `
-        <input type='text' name='${type}' value='${content}' />
+        <input type='text' name='${capitalize(type)}:' value='${content}' />
       `);
     }
     function buttonsListener(type) {

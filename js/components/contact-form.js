@@ -1,3 +1,5 @@
+import { capitalize } from '../utilites'
+
 export function contactForm({ homePage }) {
   function renderButtons() {
     return `
@@ -78,7 +80,7 @@ export function contactForm({ homePage }) {
       highlightClickedButton(e.target, type)
 
       inputWrapper.insertAdjacentHTML('beforeend', `
-        <input type='text' name='${type}' value='${content}' />
+        <input type='text' name='${capitalize(type)}:' value='${content}' />
       `)
     }
 
