@@ -9062,16 +9062,16 @@ function contactForm({
       <form id='contact-form' action="https://formsubmit.co/krapka.david@icloud.com" method="POST" class='contact-form__form'>
         <div class='contact-form__inputs'>
           <div class='contact-form__input-container'>
-            <input id='form-name' name='name' type='text' placeholder='Jméno' class='contact-form__input' />
+            <input id='form-name' name='Jméno:' type='text' placeholder='Jméno' class='contact-form__input' />
           </div>
           <div class='contact-form__input-container'>
-            <input id='form-email' name='email' type='email' placeholder='Váš email' class='contact-form__input' />
+            <input id='form-email' name='Email:' type='email' placeholder='Váš email' class='contact-form__input' />
           </div>
           <div class='contact-form__input-container'>
-            <input id='form-company' name='company' type='text' placeholder='Firma' class='contact-form__input' />
+            <input id='form-company' name='Firma:' type='text' placeholder='Firma' class='contact-form__input' />
           </div>
           <div class='contact-form__input-container'>
-            <textarea id='form-more' name='more' type='text' placeholder='Co vás vede k Cybronetu?' class='contact-form__textarea'></textarea>
+            <textarea id='form-more' name='Obsah:' type='text' placeholder='Co vás vede k Cybronetu?' class='contact-form__textarea'></textarea>
           </div>
         </div>
         <div id='form-type' class='contact-form__hidden-input-area'></div>
