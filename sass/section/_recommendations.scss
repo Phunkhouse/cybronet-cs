@@ -111,6 +111,11 @@
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
+
+  @include mq-below('tablet-md') {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 .recommendations__slide-photo {

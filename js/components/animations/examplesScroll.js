@@ -10,6 +10,7 @@ addEventListener('resize', () => {
 })
 
 export function examplesScroll() {
+  ScrollTrigger.normalizeScroll(true)
   const mediaQuery = gsap.matchMedia()
 
   mediaQuery.add('(min-width: 1500px)', () => {
@@ -139,13 +140,13 @@ export function examplesScroll() {
 
     tl
       .to('.example--fresh-design', {
-        y: () => `${-getHeight + 60}px`,
+        y: () => `${-getHeight + 20}px`,
         ease: "power2.inOut",
         duration: 6,
         delay: 2,
       })
       .to('.example--slozite-systemy', {
-        y: () => `${-getHeight + 100}px`,
+        y: () => `${-getHeight + 40}px`,
         ease: "power2.inOut",
         duration: 6,
         delay: 2,

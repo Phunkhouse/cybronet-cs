@@ -232,6 +232,7 @@ a.feature__action {
   padding: 80px;
   border-radius: 39px;
   color: var(--cl-white);
+  overflow: hidden;
 }
 @media screen and (min-width: 1500px) {
   .example {
@@ -1212,6 +1213,12 @@ a.feature__action {
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
+}
+@media screen and (max-width: 600px) {
+  .recommendations__slide-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 .recommendations__slide-photo {

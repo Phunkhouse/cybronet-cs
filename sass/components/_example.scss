@@ -13,6 +13,7 @@
   padding: 80px;
   border-radius: 39px;
   color: var(--cl-white);
+  overflow: hidden;
 
   @include mq-above('desktop-md') {
     top: 300px;

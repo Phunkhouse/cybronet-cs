@@ -7,18 +7,24 @@ export function navigation() {
   let previousScrollposition = window.scrollY
 
   window.onscroll = () => {
+    const header = document.querySelector('.js-header')
     let currentScrollPosition = window.scrollY
 
-    if (previousScrollposition >= currentScrollPosition || currentScrollPosition === 0) {
-      document.querySelector('.js-header').classList.remove('js-hidden')
-    } else {
-      document.querySelector('.js-header').classList.add('js-hidden')
-    }
+    if (currentScrollPosition > 1) {
+      if (previousScrollposition >= currentScrollPosition || currentScrollPosition === 0) {
+        header.classList.remove('js-hidden')
+      } else {
+        header.classList.add('js-hidden')
+      }
 
-    if (currentScrollPosition > 0) {
-      document.querySelector('.js-header').classList.add('js-notOnTop')
+      if (currentScrollPosition > 1) {
+        header.classList.add('js-notOnTop')
+      } else {
+        header.classList.remove('js-notOnTop')
+      }
     } else {
-      document.querySelector('.js-header').classList.remove('js-notOnTop')
+      header.classList.remove(...header.classList)
+      header.classList.add('header-mobile', 'js-header')
     }
 
     previousScrollposition = currentScrollPosition
