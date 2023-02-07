@@ -9,7 +9,7 @@ export function navigation() {
   window.onscroll = () => {
     let currentScrollPosition = window.scrollY
 
-    if (previousScrollposition > currentScrollPosition || currentScrollPosition === 0) {
+    if (previousScrollposition >= currentScrollPosition || currentScrollPosition === 0) {
       document.querySelector('.js-header').classList.remove('js-hidden')
     } else {
       document.querySelector('.js-header').classList.add('js-hidden')
