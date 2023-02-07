@@ -33,7 +33,7 @@ export function navigation() {
   function createMobileHeader() {
     heroContainer.insertAdjacentHTML('afterbegin', `
       <header class='header-mobile js-header'>
-        <a href='/'>
+        <a href='/cybronet-cs/'>
           <svg class='header-mobile__logo' alt='Cybronet logo'>
             <use xlink:href='./bundles/img/sprite.svg#cybronet-logo'></use>
           </svg>
