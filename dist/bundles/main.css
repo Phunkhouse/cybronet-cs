@@ -21,6 +21,10 @@
   --btn-blue-hover: #0063CB;
   --btn-blue-active: #002F61;
   --transition: .2s;
+  --examples-breakpoint-desktop-l: 2300px;
+  --examples-breakpoint-desktop-md: 1500px;
+  --examples-breakpoint-desktop-sm: 1150px;
+  --examples-breakpoint-mobile: 600px;
 }
 
 *,
@@ -221,27 +225,34 @@ a.feature__action {
 
 .example {
   position: absolute;
-  top: 0;
+  top: 300px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 626px;
-  width: 1049px;
+  height: 750px;
+  width: 1300px;
   padding: 80px;
   border-radius: 39px;
   color: var(--cl-white);
   overflow: hidden;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (max-width: 2300px) {
   .example {
-    top: 300px;
-    width: 1300px;
-    height: 750px;
+    top: 200px;
+    height: 680px;
+    width: 1200px;
   }
 }
-@media screen and (max-width: 1152px) {
+@media screen and (max-width: 1500px) {
+  .example {
+    top: 0;
+    width: 1049px;
+    height: 626px;
+  }
+}
+@media screen and (max-width: 1150px) {
   .example {
     top: 25px;
     display: grid;
@@ -1008,6 +1019,12 @@ a.feature__action {
 @media screen and (max-width: 1152px) {
   .examples {
     margin-top: -100px;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .examples {
+    margin-top: 0;
     height: 100vh;
   }
 }

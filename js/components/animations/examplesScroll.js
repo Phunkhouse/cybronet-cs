@@ -10,7 +10,12 @@ addEventListener('resize', () => {
 })
 
 export function examplesScroll() {
-  function expamplesScrollBuilder({
+  function breakpoint(breakpoint) {
+    const varValue = getComputedStyle(document.documentElement).getPropertyValue(`--examples-breakpoint-${breakpoint}`)
+    return varValue.substring(0, varValue.length - 2)
+  }
+
+  function examplesScrollBuilder({
     wrapperEnd,
     firstY,
     secondY,
@@ -56,8 +61,8 @@ export function examplesScroll() {
   ScrollTrigger.normalizeScroll(true)
   const mediaQuery = gsap.matchMedia()
 
-  mediaQuery.add('(min-width: 1500px)', () => {
-    expamplesScrollBuilder({
+  mediaQuery.add(`(min-width: ${breakpoint('desktop-l')}px)`, () => {
+    examplesScrollBuilder({
       wrapperEnd: `${getHeight - 200}px`,
       firstY: -700,
       secondY: -650,
@@ -66,8 +71,18 @@ export function examplesScroll() {
     })
   })
 
-  mediaQuery.add('(min-width: 1151px) and (max-width: 1499px)', () => {
-    expamplesScrollBuilder({
+  mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: ${breakpoint('desktop-l') - 1}px)`, () => {
+    examplesScrollBuilder({
+      wrapperEnd: `${getHeight}px`,
+      firstY: -650,
+      secondY: -610,
+      duration: 2,
+      delay: 0,
+    })
+  })
+
+  mediaQuery.add(`(min-width: ${breakpoint('desktop-sm')}px) and (max-width: ${breakpoint('desktop-md') - 1}px)`, () => {
+    examplesScrollBuilder({
       wrapperEnd: `${getHeight}px`,
       firstY: -600,
       secondY: -580,
@@ -76,8 +91,8 @@ export function examplesScroll() {
     })
   })
 
-  mediaQuery.add('(min-width: 601px) and (max-width: 1150px)', () => {
-    expamplesScrollBuilder({
+  mediaQuery.add(`(min-width: ${breakpoint('mobile')}px) and (max-width: ${breakpoint('desktop-sm') - 1}px)`, () => {
+    examplesScrollBuilder({
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
       firstY: `${-getHeight + 60}px`,
       secondY: `${-getHeight + 100}px`,
@@ -86,11 +101,11 @@ export function examplesScroll() {
     })
   })
 
-  mediaQuery.add('(max-width: 600px)', () => {
-    expamplesScrollBuilder({
+  mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {
+    examplesScrollBuilder({
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
-      firstY: `${-getHeight + 20}px`,
-      secondY: `${-getHeight + 40}px`,
+      firstY: `${-getHeight + 80}px`,
+      secondY: `${-getHeight + 120}px`,
       duration: 6,
       delay: 2,
     })

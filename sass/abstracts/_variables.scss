@@ -29,4 +29,16 @@
 
   // TRANSITIONS
   --transition: .2s;
+
+  // EXAMPLES BREAKPOINTS
+  --examples-breakpoint-desktop-l: 2300px;
+  --examples-breakpoint-desktop-md: 1500px;
+  --examples-breakpoint-desktop-sm: 1150px;
+  --examples-breakpoint-mobile: 600px;
 }
+
+// EXAMPLES BREAKPOINTS (again for media queries mixins... cannot use css variables here)
+$examples-breakpoint-desktop-l: 2300px;
+$examples-breakpoint-desktop-md: 1500px;
+$examples-breakpoint-desktop-sm: 1150px;
+$examples-breakpoint-mobile: 600px;
