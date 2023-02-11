@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export function featuresScroll() {
   let getFeaturesHeight = document.querySelector('.about__features').offsetHeight
-  let getPinHeight = getFeaturesHeight - 500
+  let getPinHeight = getFeaturesHeight - 350
   let getScrollAmount = (getFeaturesHeight * -1)
 
   const mediaQuery = gsap.matchMedia()
