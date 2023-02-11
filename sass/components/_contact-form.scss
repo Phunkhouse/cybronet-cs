@@ -29,9 +29,12 @@
   border: 1px solid var(--cl-dark-gray);
   transition: var(--transition);
 
-  &:hover,
-  &.js-active {
+  &:hover {
     border-color: var(--cl-white);
+  }
+
+  &.js-active {
+    border-color: var(--cl-blue);
   }
 }
 
@@ -116,7 +119,7 @@
 
   &:checked {
     & + .contact-form__checkbox-inner {
-      border-color: var(--cl-white);
+      border-color: var(--cl-blue);
 
       &::after {
         content: '';

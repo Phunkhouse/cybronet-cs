@@ -393,8 +393,11 @@ a.feature__action {
   border: 1px solid var(--cl-dark-gray);
   transition: var(--transition);
 }
-.contact-form__options-button:hover, .contact-form__options-button.js-active {
+.contact-form__options-button:hover {
   border-color: var(--cl-white);
+}
+.contact-form__options-button.js-active {
+  border-color: var(--cl-blue);
 }
 
 .contact-form__error {
@@ -486,7 +489,7 @@ a.feature__action {
   opacity: 0;
 }
 .contact-form__checkbox-hidden:checked + .contact-form__checkbox-inner {
-  border-color: var(--cl-white);
+  border-color: var(--cl-blue);
 }
 .contact-form__checkbox-hidden:checked + .contact-form__checkbox-inner::after {
   content: "";
