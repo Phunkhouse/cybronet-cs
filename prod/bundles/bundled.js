@@ -8597,124 +8597,91 @@ addEventListener('resize', () => {
   getHeight = window.innerHeight;
 });
 function examplesScroll() {
+  function breakpoint(breakpoint) {
+    const varValue = getComputedStyle(document.documentElement).getPropertyValue(`--examples-breakpoint-${breakpoint}`);
+    return varValue.substring(0, varValue.length - 2);
+  }
+  function examplesScrollBuilder({
+    wrapperEnd,
+    firstY,
+    secondY,
+    duration,
+    delay
+  }) {
+    gsapWithCSS.to('.examples', {
+      scrollTrigger: {
+        trigger: '.examples',
+        start: 'top',
+        end: () => wrapperEnd,
+        pin: true,
+        scrub: true
+      }
+    });
+    const tl = gsapWithCSS.timeline({
+      scrollTrigger: {
+        trigger: '.examples',
+        start: 'top',
+        end: 'bottom',
+        scrub: true
+      }
+    });
+    tl.to('.example--fresh-design', {
+      y: firstY,
+      stagger: 0.3,
+      ease: "power2.inOut",
+      duration: duration,
+      delay: delay
+    }).to('.example--slozite-systemy', {
+      y: secondY,
+      stagger: 0.3,
+      ease: "power2.inOut",
+      duration: duration,
+      delay: delay
+    });
+  }
   ScrollTrigger.ScrollTrigger.normalizeScroll(true);
   const mediaQuery = gsapWithCSS.matchMedia();
-  mediaQuery.add('(min-width: 1500px)', () => {
-    gsapWithCSS.to('.examples', {
-      scrollTrigger: {
-        trigger: '.examples',
-        start: 'top',
-        end: () => `${getHeight - 200}px`,
-        pin: true,
-        scrub: true
-      }
-    });
-    const tl = gsapWithCSS.timeline({
-      scrollTrigger: {
-        trigger: '.examples',
-        start: 'top',
-        end: 'bottom',
-        scrub: true
-      }
-    });
-    tl.to('.example--fresh-design', {
-      y: -700,
-      stagger: 0.3,
-      ease: "power2.inOut",
-      duration: 2
-    }).to('.example--slozite-systemy', {
-      y: -650,
-      stagger: 0.3,
-      ease: "power2.inOut",
-      duration: 2
+  mediaQuery.add(`(min-width: ${breakpoint('desktop-l')}px)`, () => {
+    examplesScrollBuilder({
+      wrapperEnd: `${getHeight - 200}px`,
+      firstY: -700,
+      secondY: -650,
+      duration: 2,
+      delay: 0
     });
   });
-  mediaQuery.add('(min-width: 1151px) and (max-width: 1499px)', () => {
-    gsapWithCSS.to('.examples', {
-      scrollTrigger: {
-        trigger: '.examples',
-        start: 'top',
-        end: () => `${getHeight}px`,
-        pin: true,
-        scrub: true
-      }
-    });
-    const tl = gsapWithCSS.timeline({
-      scrollTrigger: {
-        trigger: '.examples',
-        start: 'top',
-        end: 'bottom',
-        scrub: true
-      }
-    });
-    tl.to('.example--fresh-design', {
-      y: -600,
-      stagger: 0.3,
-      ease: "power2.inOut",
-      duration: 1
-    }).to('.example--slozite-systemy', {
-      y: -580,
-      stagger: 0.3,
-      ease: "power2.inOut",
-      duration: 1
+  mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: ${breakpoint('desktop-l') - 1}px)`, () => {
+    examplesScrollBuilder({
+      wrapperEnd: `${getHeight}px`,
+      firstY: -650,
+      secondY: -610,
+      duration: 2,
+      delay: 0
     });
   });
-  mediaQuery.add('(min-width: 601px) and (max-width: 1150px)', () => {
-    gsapWithCSS.to('.examples', {
-      scrollTrigger: {
-        trigger: '.examples',
-        start: 'top',
-        end: () => `${getHeight + getHeight / 3}px`,
-        pin: true,
-        scrub: true
-      }
+  mediaQuery.add(`(min-width: ${breakpoint('desktop-sm')}px) and (max-width: ${breakpoint('desktop-md') - 1}px)`, () => {
+    examplesScrollBuilder({
+      wrapperEnd: `${getHeight}px`,
+      firstY: -600,
+      secondY: -580,
+      duration: 1,
+      delay: 0
     });
-    const tl = gsapWithCSS.timeline({
-      scrollTrigger: {
-        trigger: '.examples',
-        start: 'top',
-        end: 'bottom',
-        scrub: true
-      }
-    });
-    tl.to('.example--fresh-design', {
-      y: () => `${-getHeight + 60}px`,
-      ease: "power2.inOut",
-      duration: 6,
-      delay: 2
-    }).to('.example--slozite-systemy', {
-      y: () => `${-getHeight + 100}px`,
-      ease: "power2.inOut",
+  });
+  mediaQuery.add(`(min-width: ${breakpoint('mobile')}px) and (max-width: ${breakpoint('desktop-sm') - 1}px)`, () => {
+    examplesScrollBuilder({
+      wrapperEnd: `${getHeight + getHeight / 3}px`,
+      firstY: `${-getHeight + 60}px`,
+      secondY: `${-getHeight + 100}px`,
       duration: 6,
       delay: 2
     });
   });
-  mediaQuery.add('(max-width: 600px)', () => {
-    gsapWithCSS.to('.examples', {
-      scrollTrigger: {
-        trigger: '.examples',
-        start: 'top',
-        end: () => `${getHeight + getHeight / 3}px`,
-        pin: true,
-        scrub: true
-      }
-    });
-    const tl = gsapWithCSS.timeline({
-      scrollTrigger: {
-        trigger: '.examples',
-        start: 'top',
-        end: 'bottom',
-        scrub: true
-      }
-    });
-    tl.to('.example--fresh-design', {
-      y: () => `${-getHeight + 20}px`,
-      ease: "power2.inOut",
-      duration: 6,
-      delay: 2
-    }).to('.example--slozite-systemy', {
-      y: () => `${-getHeight + 40}px`,
-      ease: "power2.inOut",
+  mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {
+    examplesScrollBuilder({
+      wrapperEnd: `${getHeight + getHeight / 3}px`,
+      firstY: `${-getHeight + 80}px`,
+      secondY: `${-getHeight + 120}px`,
       duration: 6,
       delay: 2
     });
@@ -8726,7 +8693,7 @@ function examplesScroll() {
 gsapWithCSS.registerPlugin(ScrollTrigger.ScrollTrigger);
 function featuresScroll() {
   let getFeaturesHeight = document.querySelector('.about__features').offsetHeight;
-  let getPinHeight = getFeaturesHeight - 500;
+  let getPinHeight = getFeaturesHeight - 350;
   let getScrollAmount = getFeaturesHeight * -1;
   const mediaQuery = gsapWithCSS.matchMedia();
   mediaQuery.add('(min-width: 750px)', () => {
