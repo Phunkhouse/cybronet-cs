@@ -193,10 +193,12 @@ export function contactForm({ homePage }) {
       `)
     }
 
-    setInterval(() => {
-      const sentMessage = document.querySelector('.contact-form__sent')
-      sentMessage.remove()
-    }, 4000)
+    if (document.querySelector('.contact-form__sent')) {
+      setInterval(() => {
+        const sentMessage = document.querySelector('.contact-form__sent')
+        sentMessage.remove()
+      }, 3000)
+    }
   }
 
   detectSentForm()

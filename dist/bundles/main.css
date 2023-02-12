@@ -21,6 +21,8 @@
   --btn-blue-hover: #0063CB;
   --btn-blue-active: #002F61;
   --transition: .2s;
+  --hero-height: 100%
+  // EXAMPLES BREAKPOINTS
   --examples-breakpoint-desktop-l: 2300px;
   --examples-breakpoint-desktop-md: 1500px;
   --examples-breakpoint-desktop-sm: 1150px;
@@ -548,7 +550,13 @@ a.feature__action {
 }
 @media screen and (max-width: 600px) {
   .contact-form__sent {
-    top: 90px;
+    z-index: 20;
+    top: 34px;
+    left: 0;
+    transform: unset;
+    width: calc(100% - 24px);
+    margin: 0 12px;
+    padding: 14px 20px;
   }
 }
 
@@ -618,6 +626,7 @@ a.feature__action {
   position: fixed;
   top: 0;
   left: 0;
+  flex: 0 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -712,6 +721,13 @@ a.feature__action {
   background-image: radial-gradient(circle at 73% -11%, #0f1c60, #194c99 97%);
   overflow: hidden;
 }
+@media screen and (max-width: 600px) {
+  .hero:not(.hero--other) {
+    display: flex;
+    flex-direction: column;
+    height: var(--hero-height);
+  }
+}
 .hero--other {
   height: 271px;
   background-image: radial-gradient(circle at 39% 72%, #0f1c61 14%, #431e92 44%, #3143ae 61%, #2794f9 87%);
@@ -735,6 +751,11 @@ a.feature__action {
     padding: 0 26px;
   }
 }
+@media screen and (max-width: 600px) {
+  .hero__layout {
+    flex: 1;
+  }
+}
 
 .hero__content {
   position: relative;
@@ -748,13 +769,8 @@ a.feature__action {
 }
 @media screen and (max-width: 600px) {
   .hero__content {
-    height: calc(100vh - 225px);
-    padding-top: 30px;
-  }
-  @supports (height: -webkit-fill-available) {
-    .hero__content {
-      min-height: -webkit-fill-available;
-    }
+    height: auto;
+    padding-top: 0;
   }
 }
 
@@ -827,7 +843,7 @@ a.feature__action {
 }
 @media screen and (max-width: 450px) {
   .hero__graphic {
-    top: 260px;
+    top: 190px;
     width: calc(100% - 20px);
   }
 }
@@ -903,6 +919,13 @@ a.feature__action {
   color: var(--color-white);
   font-weight: 700;
 }
+@media screen and (max-width: 600px) {
+  .hero__marquee-title {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 12px;
+  }
+}
 
 .hero__marquee {
   --marquee-width: 0;
@@ -919,6 +942,12 @@ a.feature__action {
   position: absolute;
   height: var(--marquee-height);
   width: var(--marquee-width);
+}
+@media screen and (max-width: 600px) {
+  .hero__marquee {
+    flex: 0 0 auto;
+    margin-bottom: 12px;
+  }
 }
 
 .hero__marquee-inner {

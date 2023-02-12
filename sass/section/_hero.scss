@@ -7,6 +7,14 @@
   background-image: radial-gradient(circle at 73% -11%, #0f1c60, #194c99 97%);
   overflow: hidden;
 
+  &:not(.hero--other) {
+    @include mq-below('tablet-md') {
+      display: flex;
+      flex-direction: column;
+      height: var(--hero-height);
+    }
+  }
+
   &--other {
     height: 271px;
     background-image: radial-gradient(circle at 39% 72%, #0f1c61 14%, #431e92 44%, #3143ae 61%, #2794f9 87%);
@@ -17,6 +25,10 @@
   @include content-width;
   position: relative;
   color: var(--cl-white);
+
+  @include mq-below('tablet-md') {
+    flex: 1;
+  }
 }
 
 .hero__content {
@@ -29,12 +41,8 @@
   }
 
   @include mq-below('tablet-md') {
-    height: calc(100vh - 225px);
-    padding-top: 30px;
-
-    @supports (height: -webkit-fill-available) {
-      min-height: -webkit-fill-available;
-    }
+    height: auto;
+    padding-top: 0;
   }
 }
 
@@ -103,7 +111,7 @@
   }
 
   @include mq-below('mobile-lg') {
-    top: 260px;
+    top: 190px;
     width: calc(100% - 20px);
   }
 }
@@ -180,6 +188,12 @@
   margin-bottom: 16px;
   color: var(--color-white);
   font-weight: 700;
+
+  @include mq-below('tablet-md') {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 12px;
+  }
 }
 
 .hero__marquee {
@@ -197,6 +211,11 @@
     position: absolute;
     height: var(--marquee-height);
     width: var(--marquee-width);
+  }
+
+  @include mq-below('tablet-md') {
+    flex: 0 0 auto;
+    margin-bottom: 12px;
   }
 }
 

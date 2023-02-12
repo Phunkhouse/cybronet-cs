@@ -175,6 +175,12 @@
   }
 
   @include mq-below('tablet-md') {
-    top: 90px;
+    z-index: 20;
+    top: 34px;
+    left: 0;
+    transform: unset;
+    width: calc(100% - 24px);
+    margin: 0 12px;
+    padding: 14px 20px;
   }
 }

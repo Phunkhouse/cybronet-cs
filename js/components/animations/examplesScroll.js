@@ -104,8 +104,8 @@ export function examplesScroll() {
   mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
-      firstY: `${-getHeight + 80}px`,
-      secondY: `${-getHeight + 120}px`,
+      firstY: `${-getHeight + 20}px`,
+      secondY: `${-getHeight + 40}px`,
       duration: 6,
       delay: 2,
     })
