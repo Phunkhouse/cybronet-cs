@@ -6,6 +6,7 @@ import { contactForm } from './components/contact-form'
 
 const homePage = document.getElementById('home')
 const careerPage = document.getElementById('career-page')
+const careersPage = document.getElementById('careers')
 
 webpackScripts()
 
@@ -23,4 +24,5 @@ window.addEventListener('load', function () {
     }
   }
   careerPage && contactForm({ homePage: false })
+  careersPage && contactForm({ homePage: false })
 })
