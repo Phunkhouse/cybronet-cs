@@ -31,8 +31,9 @@ export function contactForm({ homePage }) {
   function buildForm() {
     const wrapper = document.getElementById('contact-form-wrapper')
     const domain = 'https://phunkhouse.github.io'
-    const urlPathRaw = window.location.pathname
-    const urlPath = urlPathRaw.substring(0, urlPathRaw.length - 5)
+    const pathRaw = window.location.pathname
+    const path = pathRaw.substring(0, pathRaw.length - 5)
+    const url = domain + path
 
     wrapper.insertAdjacentHTML('beforeend', `
     <div class='contact-form'>
@@ -51,7 +52,7 @@ export function contactForm({ homePage }) {
           <div class='contact-form__input-container'>
             <textarea id='form-more' name='Obsah' type='text' placeholder='Co vás vede k Cybronetu?' class='contact-form__textarea'></textarea>
           </div>
-          <input type='hidden' name='_next' value='${domain}${urlPath}#thanks'>
+          <input type='hidden' name='_next' value='${url}#thanks'>
         </div>
         <div id='form-type' class='contact-form__hidden-input-area'></div>
         <div id='form-budget' class='contact-form__hidden-input-area'></div>
@@ -183,6 +184,22 @@ export function contactForm({ homePage }) {
     })
   }
 
+  function detectSentForm() {
+    if (window.location.hash === '#thanks') {
+      const wrapper = document.querySelector('main')
+
+      wrapper.insertAdjacentHTML('beforeend', `
+        <div class='contact-form__sent'>Děkujeme za zaslání. Brzy se ozveme!</div>
+      `)
+    }
+
+    setInterval(() => {
+      const sentMessage = document.querySelector('.contact-form__sent')
+      sentMessage.remove()
+    }, 4000)
+  }
+
+  detectSentForm()
   buildForm()
   homePage && formOptions();
   submitControl()

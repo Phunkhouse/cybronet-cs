@@ -528,6 +528,18 @@ a.feature__action {
   margin: 0 auto;
 }
 
+.contact-form__sent {
+  position: fixed;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--cl-white);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: var(--font-semi-bold);
+  color: rgb(25, 25, 25);
+}
+
 .header {
   z-index: 1;
   position: fixed;
