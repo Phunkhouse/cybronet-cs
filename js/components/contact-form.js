@@ -158,7 +158,6 @@ export function contactForm({ homePage }) {
     const errors = document.querySelectorAll('.contact-form__error')
 
     if (Array.from(errors).length === 0) form.submit()
-    
   }
 
   function submitControl() {
