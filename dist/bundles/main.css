@@ -537,7 +537,19 @@ a.feature__action {
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: var(--font-semi-bold);
+  text-align: center;
+  white-space: nowrap;
   color: rgb(25, 25, 25);
+}
+@media screen and (max-width: 1152px) {
+  .contact-form__sent {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-form__sent {
+    top: 90px;
+  }
 }
 
 .header {
