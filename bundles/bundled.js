@@ -9042,6 +9042,9 @@ function contactForm({
   }
   function buildForm() {
     const wrapper = document.getElementById('contact-form-wrapper');
+    const domain = 'https://phunkhouse.github.io/cybronet-cs';
+    const urlPathRaw = window.location.pathname;
+    const urlPath = urlPathRaw.substring(0, urlPathRaw.length - 5);
     wrapper.insertAdjacentHTML('beforeend', `
     <div class='contact-form'>
       ${homePage ? renderButtons() : ''}
@@ -9059,7 +9062,7 @@ function contactForm({
           <div class='contact-form__input-container'>
             <textarea id='form-more' name='Obsah' type='text' placeholder='Co vás vede k Cybronetu?' class='contact-form__textarea'></textarea>
           </div>
-          <input type='hidden' name='_next' value='https://phunkhouse.github.io/cybronet-cs/#thanks'>
+          <input type='hidden' name='_next' value='${domain}${urlPath}#thanks'>
         </div>
         <div id='form-type' class='contact-form__hidden-input-area'></div>
         <div id='form-budget' class='contact-form__hidden-input-area'></div>
@@ -9177,6 +9180,7 @@ function contactForm({
 
 const homePage = document.getElementById('home');
 const careerPage = document.getElementById('career-page');
+const careersPage = document.getElementById('careers');
 webpackScripts();
 window.addEventListener('load', function () {
   navigation();
@@ -9192,6 +9196,9 @@ window.addEventListener('load', function () {
     }
   }
   careerPage && contactForm({
+    homePage: false
+  });
+  careersPage && contactForm({
     homePage: false
   });
 });
