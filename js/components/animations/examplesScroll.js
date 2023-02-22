@@ -38,20 +38,19 @@ export function examplesScroll() {
         start: 'top',
         end: 'bottom',
         scrub: true,
+        snap: .5,
       },
     })
 
     tl
       .to('.example--fresh-design', {
         y: firstY,
-        stagger: 0.3,
         ease: "power2.inOut",
         duration: duration,
         delay: delay,
       })
       .to('.example--slozite-systemy', {
         y: secondY,
-        stagger: 0.3,
         ease: "power2.inOut",
         duration: duration,
         delay: delay,
@@ -61,7 +60,7 @@ export function examplesScroll() {
   ScrollTrigger.normalizeScroll(true)
   const mediaQuery = gsap.matchMedia()
 
-  mediaQuery.add(`(min-width: ${breakpoint('desktop-l')}px)`, () => {
+  mediaQuery.add(`(min-width: 2300px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight - 200}px`,
       firstY: -700,
@@ -71,22 +70,22 @@ export function examplesScroll() {
     })
   })
 
-  mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: ${breakpoint('desktop-l') - 1}px)`, () => {
+  mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: 2299px)`, () => {
     examplesScrollBuilder({
-      wrapperEnd: `${getHeight}px`,
+      wrapperEnd: `${getHeight + (getHeight / 3)}px`,
       firstY: -650,
       secondY: -610,
       duration: 2,
-      delay: 0,
+      delay: 2,
     })
   })
 
   mediaQuery.add(`(min-width: ${breakpoint('desktop-sm')}px) and (max-width: ${breakpoint('desktop-md') - 1}px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight}px`,
-      firstY: -600,
-      secondY: -580,
-      duration: 1,
+      firstY: -590,
+      secondY: -570,
+      duration: 2,
       delay: 0,
     })
   })

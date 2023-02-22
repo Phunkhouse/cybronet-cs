@@ -23,7 +23,7 @@
   }
   
   @include mq-below($examples-breakpoint-desktop-md) {
-    top: 0;
+    top: 100px;
     width: 1049px;
     height: 626px;
   }

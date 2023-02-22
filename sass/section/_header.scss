@@ -10,6 +10,7 @@
   width: 100%;
   color: var(--cl-white);
   transition: var(--transition);
+  will-change: height, top;
 
   @include mq-below('750px') {
     display: none;

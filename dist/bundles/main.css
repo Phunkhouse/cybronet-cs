@@ -249,7 +249,7 @@ a.feature__action {
 }
 @media screen and (max-width: 1500px) {
   .example {
-    top: 0;
+    top: 100px;
     width: 1049px;
     height: 626px;
   }
@@ -560,6 +560,14 @@ a.feature__action {
   }
 }
 
+.layout.disableScroll {
+  overflow: hidden;
+  height: 100%;
+}
+.layout.disableScroll * {
+  overflow: hidden !important;
+}
+
 .header {
   z-index: 1;
   position: fixed;
@@ -569,6 +577,7 @@ a.feature__action {
   width: 100%;
   color: var(--cl-white);
   transition: var(--transition);
+  will-change: height, top;
 }
 @media screen and (max-width: 750px) {
   .header {
@@ -1051,7 +1060,7 @@ a.feature__action {
   padding: 0 106px;
   position: relative;
   height: 600px;
-  margin-top: -100px;
+  margin-top: -200px;
 }
 @media screen and (max-width: 1152px) {
   .examples {
@@ -1114,6 +1123,7 @@ a.feature__action {
   padding: 0 106px;
   position: relative;
   padding: 180px 106px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 1152px) {
   .pillars {

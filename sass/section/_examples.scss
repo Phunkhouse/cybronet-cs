@@ -5,7 +5,7 @@
   @include content-width;
   position: relative;
   height: 600px;
-  margin-top: -100px;
+  margin-top: -200px;
 
   @include mq-above('desktop-md') {
     margin-top: -350px;
