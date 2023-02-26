@@ -13,7 +13,9 @@
   height: 111px;
   width: 100%;
   color: var(--cl-white);
+  opacity: 0;
   transition: var(--transition);
+  will-change: height, top, opacity;
 
   &.js-notOnTop {
     height: 80px;

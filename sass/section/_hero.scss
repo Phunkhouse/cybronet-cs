@@ -54,10 +54,12 @@
 
   @include mq-below('500px') {
     margin-bottom: -18px;
+    padding-top: 12px;
   }
 
   @include mq-below('382px') {
     margin-bottom: 18px;
+    padding-top: 0;
   }
 }
 

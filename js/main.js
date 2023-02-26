@@ -1,4 +1,5 @@
 import webpackScripts from './webpack-scripts'
+import { getHeights } from './utilites'
 
 import { animations } from './components/animations'
 import { navigation } from './components/navigation'
@@ -14,6 +15,7 @@ window.addEventListener('load', function () {
   navigation()
 
   if (homePage) {
+    getHeights()
     animations()
     contactForm({ homePage })
 
@@ -25,16 +27,4 @@ window.addEventListener('load', function () {
   }
   careerPage && contactForm({ homePage: false })
   careersPage && contactForm({ homePage: false })
-
-
-
-  const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--hero-height', `${window.innerHeight}px`)
-  }
-  window.addEventListener('resize', appHeight)
-  
-  if (window.innerWidth <= 750) {
-    appHeight()
-  }
 })

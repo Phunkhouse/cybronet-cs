@@ -51,6 +51,7 @@
   }
 
   @include mq-below($examples-breakpoint-mobile) {
+    height: var(--example-height);
     padding: 47px 12px 0;
     grid-template-columns: 1fr;
   }

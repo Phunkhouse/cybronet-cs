@@ -38,7 +38,7 @@ export function examplesScroll() {
         start: 'top',
         end: 'bottom',
         scrub: true,
-        snap: .5,
+        snap: 0.5,
       },
     })
 
@@ -57,14 +57,13 @@ export function examplesScroll() {
       })
   }
 
-  ScrollTrigger.normalizeScroll(true)
   const mediaQuery = gsap.matchMedia()
 
   mediaQuery.add(`(min-width: 2300px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight - 200}px`,
-      firstY: -700,
-      secondY: -650,
+      firstY: -getHeight,
+      secondY: -getHeight,
       duration: 2,
       delay: 0,
     })
@@ -73,8 +72,8 @@ export function examplesScroll() {
   mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: 2299px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
-      firstY: -650,
-      secondY: -610,
+      firstY: -getHeight,
+      secondY: -getHeight,
       duration: 2,
       delay: 2,
     })
@@ -83,8 +82,8 @@ export function examplesScroll() {
   mediaQuery.add(`(min-width: ${breakpoint('desktop-sm')}px) and (max-width: ${breakpoint('desktop-md') - 1}px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight}px`,
-      firstY: -590,
-      secondY: -570,
+      firstY: -getHeight,
+      secondY: -getHeight,
       duration: 2,
       delay: 0,
     })
@@ -93,8 +92,8 @@ export function examplesScroll() {
   mediaQuery.add(`(min-width: ${breakpoint('mobile')}px) and (max-width: ${breakpoint('desktop-sm') - 1}px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
-      firstY: `${-getHeight + 60}px`,
-      secondY: `${-getHeight + 100}px`,
+      firstY: -getHeight,
+      secondY: -getHeight,
       duration: 6,
       delay: 2,
     })
@@ -103,8 +102,8 @@ export function examplesScroll() {
   mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
-      firstY: `${-getHeight + 20}px`,
-      secondY: `${-getHeight + 40}px`,
+      firstY: -getHeight - 60,
+      secondY: -getHeight - 60,
       duration: 6,
       delay: 2,
     })

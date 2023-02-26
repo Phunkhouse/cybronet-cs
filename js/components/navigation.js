@@ -6,28 +6,30 @@ export function navigation() {
 
   let previousScrollposition = window.scrollY
 
-  window.onscroll = () => {
-    const header = document.querySelector('.js-header')
-    let currentScrollPosition = window.scrollY
-
-    if (currentScrollPosition > 1) {
-      if (previousScrollposition >= currentScrollPosition || currentScrollPosition === 0) {
-        header.classList.remove('js-hidden')
-      } else {
-        header.classList.add('js-hidden')
-      }
+  if (contentWidth >= 750) {
+    window.onscroll = () => {
+      const header = document.querySelector('.js-header')
+      let currentScrollPosition = window.scrollY
 
       if (currentScrollPosition > 1) {
-        header.classList.add('js-notOnTop')
-      } else {
-        header.classList.remove('js-notOnTop')
-      }
-    } else {
-      header.classList.remove(...header.classList)
-      header.classList.add('header-mobile', 'js-header')
-    }
+        if (previousScrollposition >= currentScrollPosition || currentScrollPosition === 0) {
+          header.classList.remove('js-hidden')
+        } else {
+          header.classList.add('js-hidden')
+        }
 
-    previousScrollposition = currentScrollPosition
+        if (currentScrollPosition > 1) {
+          header.classList.add('js-notOnTop')
+        } else {
+          header.classList.remove('js-notOnTop')
+        }
+      } else {
+        header.classList.remove(...header.classList)
+        header.classList.add('header', 'js-header')
+      }
+
+      previousScrollposition = currentScrollPosition
+    }
   }
 
   function createMobileHeader() {
@@ -84,6 +86,39 @@ export function navigation() {
   if (contentWidth < 750) {
     mainContainer.classList.add('js-isMobile')
     createMobileHeader()
+
+    let timer = null
+    const headerMobile = document.querySelector('.header-mobile')
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY <= 1) {
+        headerMobile.classList.remove(...headerMobile.classList)
+        headerMobile.classList.add('header-mobile', 'js-header')
+      } else {
+        if (!headerMobile.classList.contains('js-notOnTop')) {
+          headerMobile.classList.add('js-notOnTop')
+        }
+      }
+
+      if (timer !== null) {
+        clearTimeout(timer);
+      }
+      timer = setTimeout(function () {
+        if (window.scrollY > previousScrollposition) {
+          headerMobile.classList.add('js-hidden')
+        } else {
+          headerMobile.classList.remove('js-hidden')
+        }
+        previousScrollposition = window.scrollY
+      }, 150)
+    })
+
+
+    setTimeout(() => {
+      headerMobile.style.opacity = 1
+      headerMobile.classList.remove(...headerMobile.classList)
+      headerMobile.classList.add('header-mobile', 'js-header')
+    }, 300)
   }
 
   addEventListener('resize', () => {
