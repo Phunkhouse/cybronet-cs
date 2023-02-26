@@ -8640,8 +8640,7 @@ function examplesScroll() {
         trigger: '.examples',
         start: 'top',
         end: 'bottom',
-        scrub: true,
-        snap: 0.5
+        scrub: true
       }
     });
     tl.to('.example--fresh-design', {
