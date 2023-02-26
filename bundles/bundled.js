@@ -3397,6 +3397,24 @@ function webpackScripts() {
   }
   importAll(__webpack_require__(173));
 }
+;// CONCATENATED MODULE: ./js/utilites.js
+const capitalize = ([firstLetter, ...restOfWord]) => firstLetter.toUpperCase() + restOfWord.join('');
+const getHeights = () => {
+  const appHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty('--hero-height', `${window.innerHeight}px`);
+  };
+  const examplesHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty('--example-height', `${window.innerHeight - 60}px`);
+  };
+  if (window.innerWidth <= 750) {
+    appHeight();
+  }
+  if (window.innerWidth <= 600) {
+    examplesHeight();
+  }
+};
 ;// CONCATENATED MODULE: ./node_modules/gsap/gsap-core.js
 function _assertThisInitialized(self) {
   if (self === void 0) {
@@ -8623,7 +8641,7 @@ function examplesScroll() {
         start: 'top',
         end: 'bottom',
         scrub: true,
-        snap: .5
+        snap: 0.5
       }
     });
     tl.to('.example--fresh-design', {
@@ -8638,13 +8656,12 @@ function examplesScroll() {
       delay: delay
     });
   }
-  ScrollTrigger.ScrollTrigger.normalizeScroll(true);
   const mediaQuery = gsapWithCSS.matchMedia();
   mediaQuery.add(`(min-width: 2300px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight - 200}px`,
-      firstY: -700,
-      secondY: -650,
+      firstY: -getHeight,
+      secondY: -getHeight,
       duration: 2,
       delay: 0
     });
@@ -8652,8 +8669,8 @@ function examplesScroll() {
   mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: 2299px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight + getHeight / 3}px`,
-      firstY: -650,
-      secondY: -610,
+      firstY: -getHeight,
+      secondY: -getHeight,
       duration: 2,
       delay: 2
     });
@@ -8661,8 +8678,8 @@ function examplesScroll() {
   mediaQuery.add(`(min-width: ${breakpoint('desktop-sm')}px) and (max-width: ${breakpoint('desktop-md') - 1}px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight}px`,
-      firstY: -590,
-      secondY: -570,
+      firstY: -getHeight,
+      secondY: -getHeight,
       duration: 2,
       delay: 0
     });
@@ -8670,8 +8687,8 @@ function examplesScroll() {
   mediaQuery.add(`(min-width: ${breakpoint('mobile')}px) and (max-width: ${breakpoint('desktop-sm') - 1}px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight + getHeight / 3}px`,
-      firstY: `${-getHeight + 60}px`,
-      secondY: `${-getHeight + 100}px`,
+      firstY: -getHeight,
+      secondY: -getHeight,
       duration: 6,
       delay: 2
     });
@@ -8679,8 +8696,8 @@ function examplesScroll() {
   mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {
     examplesScrollBuilder({
       wrapperEnd: `${getHeight + getHeight / 3}px`,
-      firstY: `${-getHeight + 20}px`,
-      secondY: `${-getHeight + 40}px`,
+      firstY: -getHeight - 60,
+      secondY: -getHeight - 60,
       duration: 6,
       delay: 2
     });
@@ -8921,26 +8938,28 @@ function navigation() {
   const mainContainer = document.querySelector('main');
   const body = document.querySelector('body');
   let previousScrollposition = window.scrollY;
-  window.onscroll = () => {
-    const header = document.querySelector('.js-header');
-    let currentScrollPosition = window.scrollY;
-    if (currentScrollPosition > 1) {
-      if (previousScrollposition >= currentScrollPosition || currentScrollPosition === 0) {
-        header.classList.remove('js-hidden');
-      } else {
-        header.classList.add('js-hidden');
-      }
+  if (contentWidth >= 750) {
+    window.onscroll = () => {
+      const header = document.querySelector('.js-header');
+      let currentScrollPosition = window.scrollY;
       if (currentScrollPosition > 1) {
-        header.classList.add('js-notOnTop');
+        if (previousScrollposition >= currentScrollPosition || currentScrollPosition === 0) {
+          header.classList.remove('js-hidden');
+        } else {
+          header.classList.add('js-hidden');
+        }
+        if (currentScrollPosition > 1) {
+          header.classList.add('js-notOnTop');
+        } else {
+          header.classList.remove('js-notOnTop');
+        }
       } else {
-        header.classList.remove('js-notOnTop');
+        header.classList.remove(...header.classList);
+        header.classList.add('header', 'js-header');
       }
-    } else {
-      header.classList.remove(...header.classList);
-      header.classList.add('header-mobile', 'js-header');
-    }
-    previousScrollposition = currentScrollPosition;
-  };
+      previousScrollposition = currentScrollPosition;
+    };
+  }
   function createMobileHeader() {
     heroContainer.insertAdjacentHTML('afterbegin', `
       <header class='header-mobile js-header'>
@@ -8990,6 +9009,34 @@ function navigation() {
   if (contentWidth < 750) {
     mainContainer.classList.add('js-isMobile');
     createMobileHeader();
+    let timer = null;
+    const headerMobile = document.querySelector('.header-mobile');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY <= 1) {
+        headerMobile.classList.remove(...headerMobile.classList);
+        headerMobile.classList.add('header-mobile', 'js-header');
+      } else {
+        if (!headerMobile.classList.contains('js-notOnTop')) {
+          headerMobile.classList.add('js-notOnTop');
+        }
+      }
+      if (timer !== null) {
+        clearTimeout(timer);
+      }
+      timer = setTimeout(function () {
+        if (window.scrollY > previousScrollposition) {
+          headerMobile.classList.add('js-hidden');
+        } else {
+          headerMobile.classList.remove('js-hidden');
+        }
+        previousScrollposition = window.scrollY;
+      }, 150);
+    });
+    setTimeout(() => {
+      headerMobile.style.opacity = 1;
+      headerMobile.classList.remove(...headerMobile.classList);
+      headerMobile.classList.add('header-mobile', 'js-header');
+    }, 300);
   }
   addEventListener('resize', () => {
     contentWidth = window.innerWidth;
@@ -9006,8 +9053,6 @@ function navigation() {
     }
   });
 }
-;// CONCATENATED MODULE: ./js/utilites.js
-const capitalize = ([firstLetter, ...restOfWord]) => firstLetter.toUpperCase() + restOfWord.join('');
 ;// CONCATENATED MODULE: ./js/components/contact-form.js
 
 function contactForm({
@@ -9193,6 +9238,7 @@ function contactForm({
 
 
 
+
 const homePage = document.getElementById('home');
 const careerPage = document.getElementById('career-page');
 const careersPage = document.getElementById('careers');
@@ -9200,6 +9246,7 @@ webpackScripts();
 window.addEventListener('load', function () {
   navigation();
   if (homePage) {
+    getHeights();
     animations();
     contactForm({
       homePage
@@ -9216,14 +9263,6 @@ window.addEventListener('load', function () {
   careersPage && contactForm({
     homePage: false
   });
-  const appHeight = () => {
-    const doc = document.documentElement;
-    doc.style.setProperty('--hero-height', `${window.innerHeight}px`);
-  };
-  window.addEventListener('resize', appHeight);
-  if (window.innerWidth <= 750) {
-    appHeight();
-  }
 });
 })();
 
