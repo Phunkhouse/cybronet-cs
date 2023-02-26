@@ -38,7 +38,6 @@ export function examplesScroll() {
         start: 'top',
         end: 'bottom',
         scrub: true,
-        snap: 0.5,
       },
     })
 

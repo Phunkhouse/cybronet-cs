@@ -7,7 +7,7 @@
 }
 
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: none;
 }
 
@@ -21,7 +21,7 @@ body {
   text-rendering: optimizeLegibility !important;
   color: var(--cl-light-gray);
   background-color: var(--cl-background);
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
 
