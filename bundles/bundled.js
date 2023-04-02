@@ -68,10 +68,10 @@ webpackContext.id = 173;
   }
 
   /*!
-   * Observer 3.11.4
+   * Observer 3.11.5
    * https://greensock.com
    *
-   * @license Copyright 2008-2022, GreenSock. All rights reserved.
+   * @license Copyright 2008-2023, GreenSock. All rights reserved.
    * Subject to the terms at https://greensock.com/standard-license or for
    * Club GreenSock members, the agreement issued with that membership.
    * @author: Jack Doyle, jack@greensock.com
@@ -442,7 +442,7 @@ webpackContext.id = 173;
           }
         },
         _onPress = self.onPress = function (e) {
-          if (_ignoreCheck(e, 1)) {
+          if (_ignoreCheck(e, 1) || e && e.button) {
             return;
           }
           self.axis = axis = null;
@@ -458,7 +458,7 @@ webpackContext.id = 173;
           self.deltaX = self.deltaY = 0;
           onPress && onPress(self);
         },
-        _onRelease = function _onRelease(e) {
+        _onRelease = self.onRelease = function (e) {
           if (_ignoreCheck(e, 1)) {
             return;
           }
@@ -619,7 +619,7 @@ webpackContext.id = 173;
     }]);
     return Observer;
   }();
-  Observer.version = "3.11.4";
+  Observer.version = "3.11.5";
   Observer.create = function (vars) {
     return new Observer(vars);
   };
@@ -635,10 +635,10 @@ webpackContext.id = 173;
   _getGSAP() && gsap.registerPlugin(Observer);
 
   /*!
-   * ScrollTrigger 3.11.4
+   * ScrollTrigger 3.11.5
    * https://greensock.com
    *
-   * @license Copyright 2008-2022, GreenSock. All rights reserved.
+   * @license Copyright 2008-2023, GreenSock. All rights reserved.
    * Subject to the terms at https://greensock.com/standard-license or for
    * Club GreenSock members, the agreement issued with that membership.
    * @author: Jack Doyle, jack@greensock.com
@@ -679,6 +679,9 @@ webpackContext.id = 173;
     _time1 = _getTime$1(),
     _lastScrollTime = 0,
     _enabled = 0,
+    _rafBugFix = function _rafBugFix() {
+      return _enabled && requestAnimationFrame(_rafBugFix);
+    },
     _pointerDownHandler = function _pointerDownHandler() {
       return _pointerIsDown = 1;
     },
@@ -729,7 +732,7 @@ webpackContext.id = 173;
         d2 = _ref2.d2,
         d = _ref2.d,
         a = _ref2.a;
-      return (s = "scroll" + d2) && (a = _getProxyProp(element, s)) ? a() - _getBoundsFunc(element)()[d] : _isViewport$1(element) ? (_docEl$1[s] || _body$1[s]) - (_win$1["inner" + d2] || _docEl$1["client" + d2] || _body$1["client" + d2]) : element[s] - element["offset" + d2];
+      return Math.max(0, (s = "scroll" + d2) && (a = _getProxyProp(element, s)) ? a() - _getBoundsFunc(element)()[d] : _isViewport$1(element) ? (_docEl$1[s] || _body$1[s]) - (_win$1["inner" + d2] || _docEl$1["client" + d2] || _body$1["client" + d2]) : element[s] - element["offset" + d2]);
     },
     _iterateAutoRefresh = function _iterateAutoRefresh(func, events) {
       for (var i = 0; i < _autoRefresh.length; i += 3) {
@@ -881,7 +884,11 @@ webpackContext.id = 173;
       return element.removeEventListener(type, func, !!capture);
     },
     _wheelListener = function _wheelListener(func, el, scrollFunc) {
-      return scrollFunc && scrollFunc.wheelHandler && func(el, "wheel", scrollFunc);
+      scrollFunc = scrollFunc && scrollFunc.wheelHandler;
+      if (scrollFunc) {
+        func(el, "wheel", scrollFunc);
+        func(el, "touchmove", scrollFunc);
+      }
     },
     _markerDefaults = {
       startColor: "green",
@@ -1058,7 +1065,7 @@ webpackContext.id = 173;
             original = t.pin[prop];
           t.revert(true, 1);
           t.adjustPinSpacing(t.pin[prop] - original);
-          t.revert(false, 1);
+          t.refresh();
         }
       });
       _triggers.forEach(function (t) {
@@ -1078,6 +1085,7 @@ webpackContext.id = 173;
       _clearScrollMemory(_scrollRestoration, 1);
       _resizeDelay.pause();
       _refreshID++;
+      _refreshingAll = 2;
       _updateAll(2);
       _triggers.forEach(function (t) {
         return _isFunction(t.vars.onRefresh) && t.vars.onRefresh(t);
@@ -1097,7 +1105,7 @@ webpackContext.id = 173;
           recordVelocity = time - _time1 >= 50,
           scroll = l && _triggers[0].scroll();
         _direction = _lastScroll > scroll ? -1 : 1;
-        _lastScroll = scroll;
+        _refreshingAll || (_lastScroll = scroll);
         if (recordVelocity) {
           if (_lastScrollTime && !_pointerIsDown && time - _lastScrollTime > 200) {
             _lastScrollTime = 0;
@@ -1244,8 +1252,9 @@ webpackContext.id = 173;
         value = bounds[direction.p] - scrollerBounds[direction.p] - borderWidth + localOffset + scroll - globalOffset;
         markerScroller && _positionMarker(markerScroller, globalOffset, direction, scrollerSize - globalOffset < 20 || markerScroller._isStart && globalOffset > 20);
         scrollerSize -= scrollerSize - globalOffset;
-      } else if (markerScroller) {
-        _positionMarker(markerScroller, scrollerSize, direction, true);
+      } else {
+        containerAnimation && (value = gsap$1.utils.mapRange(containerAnimation.scrollTrigger.start, containerAnimation.scrollTrigger.end, 0, scrollerMax, value));
+        markerScroller && _positionMarker(markerScroller, scrollerSize, direction, true);
       }
       if (marker) {
         var position = value + scrollerSize,
@@ -1290,32 +1299,39 @@ webpackContext.id = 173;
         parent.appendChild(element);
       }
     },
+    _interruptionTracker = function _interruptionTracker(getValueFunc, initialValue, onInterrupt) {
+      var last1 = initialValue,
+        last2 = last1;
+      return function (value) {
+        var current = Math.round(getValueFunc());
+        if (current !== last1 && current !== last2 && Math.abs(current - last1) > 3 && Math.abs(current - last2) > 3) {
+          value = current;
+          onInterrupt && onInterrupt();
+        }
+        last2 = last1;
+        last1 = value;
+        return value;
+      };
+    },
     _getTweenCreator = function _getTweenCreator(scroller, direction) {
       var getScroll = _getScrollFunc(scroller, direction),
         prop = "_scroll" + direction.p2,
-        lastScroll1,
-        lastScroll2,
         getTween = function getTween(scrollTo, vars, initialValue, change1, change2) {
           var tween = getTween.tween,
             onComplete = vars.onComplete,
             modifiers = {};
           initialValue = initialValue || getScroll();
+          var checkForInterruption = _interruptionTracker(getScroll, initialValue, function () {
+            tween.kill();
+            getTween.tween = 0;
+          });
           change2 = change1 && change2 || 0;
           change1 = change1 || scrollTo - initialValue;
           tween && tween.kill();
-          lastScroll1 = Math.round(initialValue);
           vars[prop] = scrollTo;
           vars.modifiers = modifiers;
-          modifiers[prop] = function (value) {
-            value = Math.round(getScroll());
-            if (value !== lastScroll1 && value !== lastScroll2 && Math.abs(value - lastScroll1) > 3 && Math.abs(value - lastScroll2) > 3) {
-              tween.kill();
-              getTween.tween = 0;
-            } else {
-              value = initialValue + change1 * tween.ratio + change2 * tween.ratio * tween.ratio;
-            }
-            lastScroll2 = lastScroll1;
-            return lastScroll1 = Math.round(value);
+          modifiers[prop] = function () {
+            return checkForInterruption(initialValue + change1 * tween.ratio + change2 * tween.ratio * tween.ratio);
           };
           vars.onUpdate = function () {
             _scrollers.cache++;
@@ -1333,6 +1349,7 @@ webpackContext.id = 173;
         return getTween.tween && getTween.tween.kill() && (getTween.tween = 0);
       };
       _addListener$1(scroller, "wheel", getScroll.wheelHandler);
+      ScrollTrigger$1.isTouch && _addListener$1(scroller, "touchmove", getScroll.wheelHandler);
       return getTween;
     };
   var ScrollTrigger$1 = function () {
@@ -1470,6 +1487,7 @@ webpackContext.id = 173;
         self.animation = animation.pause();
         animation.scrollTrigger = self;
         self.scrubDuration(scrub);
+        scrubTween && scrubTween.resetTo && scrubTween.resetTo("totalProgress", 0);
         snap1 = 0;
         id || (id = animation.vars.id);
       }
@@ -1600,7 +1618,7 @@ webpackContext.id = 173;
           oldParams = containerAnimation.vars.onUpdateParams;
         containerAnimation.eventCallback("onUpdate", function () {
           self.update(0, 0, 1);
-          oldOnUpdate && oldOnUpdate.apply(oldParams || []);
+          oldOnUpdate && oldOnUpdate.apply(containerAnimation, oldParams || []);
         });
       }
       self.previous = function () {
@@ -1625,7 +1643,7 @@ webpackContext.id = 173;
             return m.style.display = r ? "none" : "block";
           });
           if (r) {
-            _refreshing = 1;
+            _refreshing = self;
             self.update(r);
           }
           if (pin && (!pinReparent || !self.isActive)) {
@@ -1649,7 +1667,7 @@ webpackContext.id = 173;
           return;
         }
         !_refreshingAll && onRefreshInit && onRefreshInit(self);
-        _refreshing = 1;
+        _refreshing = self;
         lastRefresh = _getTime$1();
         if (tweenTo.tween) {
           tweenTo.tween.kill();
@@ -1664,6 +1682,7 @@ webpackContext.id = 173;
         var size = getScrollerSize(),
           scrollerBounds = getScrollerOffsets(),
           max = containerAnimation ? containerAnimation.duration() : _maxScroll(scroller, direction),
+          isFirstRefresh = change <= 0.01,
           offset = 0,
           otherPinOffset = 0,
           parsedEnd = vars.end,
@@ -1685,9 +1704,9 @@ webpackContext.id = 173;
           forcedOverflow;
         while (i--) {
           curTrigger = _triggers[i];
-          curTrigger.end || curTrigger.refresh(0, 1) || (_refreshing = 1);
+          curTrigger.end || curTrigger.refresh(0, 1) || (_refreshing = self);
           curPin = curTrigger.pin;
-          if (curPin && (curPin === trigger || curPin === pin) && !curTrigger.isReverted) {
+          if (curPin && (curPin === trigger || curPin === pin || curPin === pinnedContainer) && !curTrigger.isReverted) {
             revertedPins || (revertedPins = []);
             revertedPins.unshift(curTrigger);
             curTrigger.revert(true, true);
@@ -1705,7 +1724,7 @@ webpackContext.id = 173;
             parsedEnd = (_isString(parsedStart) ? parsedStart.split(" ")[0] : "") + parsedEnd;
           } else {
             offset = _offsetToPx(parsedEnd.substr(2), size);
-            parsedEnd = _isString(parsedStart) ? parsedStart : start + offset;
+            parsedEnd = _isString(parsedStart) ? parsedStart : (containerAnimation ? gsap$1.utils.mapRange(0, containerAnimation.duration(), containerAnimation.scrollTrigger.start, containerAnimation.scrollTrigger.end, start) : start) + offset;
             parsedEndTrigger = trigger;
           }
         }
@@ -1726,6 +1745,9 @@ webpackContext.id = 173;
         }
         start += offset;
         end += offset;
+        if (isFirstRefresh) {
+          prevProgress = gsap$1.utils.clamp(0, 1, gsap$1.utils.normalize(start, end, prevScroll));
+        }
         self._pinPush = otherPinOffset;
         if (markerStart && offset) {
           cs = {};
@@ -1744,7 +1766,7 @@ webpackContext.id = 173;
               style: forcedOverflow,
               value: forcedOverflow["overflow" + direction.a.toUpperCase()]
             };
-            forcedOverflow["overflow" + direction.a.toUpperCase()] = "scroll";
+            forcedOverflow.style["overflow" + direction.a.toUpperCase()] = "scroll";
           }
           _swapPinIn(pin, spacer, cs);
           pinState = _getState(pin);
@@ -1826,11 +1848,12 @@ webpackContext.id = 173;
         }
         _refreshing = 0;
         animation && isToggle && (animation._initted || prevAnimProgress) && animation.progress() !== prevAnimProgress && animation.progress(prevAnimProgress, true).render(animation.time(), true, true);
-        if (prevProgress !== self.progress || containerAnimation) {
-          animation && !isToggle && animation.totalProgress(prevProgress, true);
+        if (isFirstRefresh || prevProgress !== self.progress || containerAnimation) {
+          animation && !isToggle && animation.totalProgress(containerAnimation && start < -0.001 && !prevProgress ? gsap$1.utils.normalize(start, end, 0) : prevProgress, true);
           self.progress = (scroll1 - start) / change === prevProgress ? 0 : prevProgress;
         }
         pin && pinSpacing && (spacer._pinOffset = Math.round(self.progress * pinChange));
+        scrubTween && scrubTween.invalidate();
         onRefresh && !_refreshingAll && onRefresh(self);
       };
       self.getVelocity = function () {
@@ -1858,7 +1881,7 @@ webpackContext.id = 173;
         if (containerAnimation && !forceFake && !reset) {
           return;
         }
-        var scroll = _refreshingAll ? prevScroll : self.scroll(),
+        var scroll = _refreshingAll === true ? prevScroll : self.scroll(),
           p = reset ? 0 : (scroll - start) / change,
           clipped = p < 0 ? 0 : p > 1 ? 1 : p || 0,
           prevProgress = self.progress,
@@ -2000,7 +2023,7 @@ webpackContext.id = 173;
         self.update();
       };
       self.adjustPinSpacing = function (amount) {
-        if (spacerState) {
+        if (spacerState && amount) {
           var i = spacerState.indexOf(direction.d) + 1;
           spacerState[i] = parseFloat(spacerState[i]) + amount + _px;
           spacerState[1] = parseFloat(spacerState[1]) + amount + _px;
@@ -2117,9 +2140,11 @@ webpackContext.id = 173;
         _context$1 = gsap$1.core.context || _passThrough;
         _suppressOverwrites = gsap$1.core.suppressOverwrites || _passThrough;
         _scrollRestoration = _win$1.history.scrollRestoration || "auto";
+        _lastScroll = _win$1.pageYOffset;
         gsap$1.core.globals("ScrollTrigger", ScrollTrigger);
         if (_body$1) {
           _enabled = 1;
+          _rafBugFix();
           Observer.register(gsap$1);
           ScrollTrigger.isTouch = Observer.isTouch;
           _fixIOSBug = Observer.isTouch && /(iPad|iPhone|iPod|Mac)/g.test(navigator.userAgent);
@@ -2253,7 +2278,7 @@ webpackContext.id = 173;
     };
     return ScrollTrigger;
   }();
-  ScrollTrigger$1.version = "3.11.4";
+  ScrollTrigger$1.version = "3.11.5";
   ScrollTrigger$1.saveStyles = function (targets) {
     return targets ? _toArray(targets).forEach(function (target) {
       if (target && target.style) {
@@ -2417,6 +2442,7 @@ webpackContext.id = 173;
         normalizeScrollX = _vars2.normalizeScrollX,
         momentum = _vars2.momentum,
         allowNestedScroll = _vars2.allowNestedScroll,
+        onRelease = _vars2.onRelease,
         self,
         maxY,
         target = _getTarget(vars.target) || _docEl$1,
@@ -2487,6 +2513,7 @@ webpackContext.id = 173;
         return _fixIOSBug && e.type === "touchmove" && ignoreDrag() || scale > 1.05 && e.type !== "touchstart" || self.isGesturing || e.touches && e.touches.length > 1;
       };
       vars.onPress = function () {
+        skipTouchMove = false;
         var prevScale = scale;
         scale = _round((_win$1.visualViewport && _win$1.visualViewport.scale || 1) / initialScale);
         tween.pause();
@@ -2523,6 +2550,7 @@ webpackContext.id = 173;
             });
           }
         }
+        onRelease && onRelease(self);
       };
       vars.onWheel = function () {
         tween._ts && tween.pause();
@@ -2571,6 +2599,12 @@ webpackContext.id = 173;
         paused: true,
         scrollX: normalizeScrollX ? "+=0.1" : "+=0",
         scrollY: "+=0.1",
+        modifiers: {
+          scrollY: _interruptionTracker(scrollFuncY, scrollFuncY(), function () {
+            return tween.pause();
+          })
+        },
+        onUpdate: _updateAll,
         onComplete: onStopDelayedCall.vars.onComplete
       });
       return self;
@@ -2702,10 +2736,10 @@ webpackContext.id = 173;
   }
 
   /*!
-   * TextPlugin 3.11.4
+   * TextPlugin 3.11.5
    * https://greensock.com
    *
-   * @license Copyright 2008-2022, GreenSock. All rights reserved.
+   * @license Copyright 2008-2023, GreenSock. All rights reserved.
    * Subject to the terms at https://greensock.com/standard-license or for
    * Club GreenSock members, the agreement issued with that membership.
    * @author: Jack Doyle, jack@greensock.com
@@ -2717,7 +2751,7 @@ webpackContext.id = 173;
       return gsap || typeof window !== "undefined" && (gsap = window.gsap) && gsap.registerPlugin && gsap;
     };
   var TextPlugin = {
-    version: "3.11.4",
+    version: "3.11.5",
     name: "text",
     init: function init(target, value, tween) {
       typeof value !== "object" && (value = {
@@ -3370,7 +3404,7 @@ module.exports = __webpack_require__.p + "img/hero-other-background.svg";
 /******/ 		var document = __webpack_require__.g.document;
 /******/ 		if (!scriptUrl && document) {
 /******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
+/******/ 				scriptUrl = document.currentScript.src;
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
 /******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
@@ -3429,10 +3463,10 @@ function _inheritsLoose(subClass, superClass) {
 }
 
 /*!
- * GSAP 3.11.4
+ * GSAP 3.11.5
  * https://greensock.com
  *
- * @license Copyright 2008-2022, GreenSock. All rights reserved.
+ * @license Copyright 2008-2023, GreenSock. All rights reserved.
  * Subject to the terms at https://greensock.com/standard-license or for
  * Club GreenSock members, the agreement issued with that membership.
  * @author: Jack Doyle, jack@greensock.com
@@ -4312,7 +4346,12 @@ var _config = {
     return animation;
   },
   _quickTween,
+  _registerPluginQueue = [],
   _createPlugin = function _createPlugin(config) {
+    if (!_windowExists()) {
+      _registerPluginQueue.push(config);
+      return;
+    }
     config = !config.name && config["default"] || config; //UMD packaging wraps things oddly, so for example MotionPathHelper becomes {MotionPathHelper:MotionPathHelper, default:MotionPathHelper}.
 
     var name = config.name,
@@ -4606,6 +4645,7 @@ var _config = {
             (_win.gsapVersions || (_win.gsapVersions = [])).push(gsap.version);
             _install(_installScope || _win.GreenSockGlobals || !_win.gsap && _win || {});
             _raf = _win.requestAnimationFrame;
+            _registerPluginQueue.forEach(_createPlugin);
           }
           _id && _self.sleep();
           _req = _raf || function (f) {
@@ -4980,7 +5020,7 @@ var Animation = /*#__PURE__*/function () {
     this._rts = +value || 0;
     this._ts = this._ps || value === -_tinyNum ? 0 : this._rts; // _ts is the functional timeScale which would be 0 if the animation is paused.
 
-    this.totalTime(_clamp(-this._delay, this._tDur, tTime), true);
+    this.totalTime(_clamp(-Math.abs(this._delay), this._tDur, tTime), true);
     _setEnd(this); // if parent.smoothChildTiming was false, the end time didn't get updated in the _alignPlayhead() method, so do it here.
 
     return _recacheAncestors(this);
@@ -5293,7 +5333,7 @@ var Timeline = /*#__PURE__*/function (_Animation) {
           time > dur && (time = dur);
         }
         prevIteration = _animationCycle(this._tTime, cycleDuration);
-        !prevTime && this._tTime && prevIteration !== iteration && (prevIteration = iteration); // edge case - if someone does addPause() at the very beginning of a repeating timeline, that pause is technically at the same spot as the end which causes this._time to get set to 0 when the totalTime would normally place the playhead at the end. See https://greensock.com/forums/topic/23823-closing-nav-animation-not-working-on-ie-and-iphone-6-maybe-other-older-browser/?tab=comments#comment-113005
+        !prevTime && this._tTime && prevIteration !== iteration && this._tTime - prevIteration * cycleDuration - this._dur <= 0 && (prevIteration = iteration); // edge case - if someone does addPause() at the very beginning of a repeating timeline, that pause is technically at the same spot as the end which causes this._time to get set to 0 when the totalTime would normally place the playhead at the end. See https://greensock.com/forums/topic/23823-closing-nav-animation-not-working-on-ie-and-iphone-6-maybe-other-older-browser/?tab=comments#comment-113005 also, this._tTime - prevIteration * cycleDuration - this._dur <= 0 just checks to make sure it wasn't previously in the "repeatDelay" portion
 
         if (yoyo && iteration & 1) {
           time = dur - time;
@@ -5357,7 +5397,7 @@ var Timeline = /*#__PURE__*/function (_Animation) {
         prevTime = 0; // upon init, the playhead should always go forward; someone could invalidate() a completed timeline and then if they restart(), that would make child tweens render in reverse order which could lock in the wrong starting values if they build on each other, like tl.to(obj, {x: 100}).to(obj, {x: 0}).
       }
 
-      if (!prevTime && time && !suppressEvents) {
+      if (!prevTime && time && !suppressEvents && !iteration) {
         _callback(this, "onStart");
         if (this._tTime !== tTime) {
           // in case the onStart triggered a render at a different spot, eject. Like if someone did animation.pause(0.5) or something inside the onStart.
@@ -6365,7 +6405,7 @@ var Tween = /*#__PURE__*/function (_Animation2) {
       if (this._from) {
         this.ratio = ratio = 1 - ratio;
       }
-      if (time && !prevTime && !suppressEvents) {
+      if (time && !prevTime && !suppressEvents && !iteration) {
         _callback(this, "onStart");
         if (this._tTime !== tTime) {
           // in case the onStart triggered a render at a different spot, eject. Like if someone did animation.pause(0.5) or something inside the onStart.
@@ -7211,7 +7251,7 @@ var gsap = _gsap.registerPlugin({
   }
 }, _buildModifierPlugin("roundProps", _roundModifier), _buildModifierPlugin("modifiers"), _buildModifierPlugin("snap", snap)) || _gsap; //to prevent the core plugins from being dropped via aggressive tree shaking, we must include them in the variable declaration in this way.
 
-Tween.version = Timeline.version = gsap.version = "3.11.4";
+Tween.version = Timeline.version = gsap.version = "3.11.5";
 _coreReady = 1;
 _windowExists() && _wake();
 var Power0 = _easeMap.Power0,
@@ -7238,10 +7278,10 @@ var Power0 = _easeMap.Power0,
 
 ;// CONCATENATED MODULE: ./node_modules/gsap/CSSPlugin.js
 /*!
- * CSSPlugin 3.11.4
+ * CSSPlugin 3.11.5
  * https://greensock.com
  *
- * Copyright 2008-2022, GreenSock. All rights reserved.
+ * Copyright 2008-2023, GreenSock. All rights reserved.
  * Subject to the terms at https://greensock.com/standard-license or for
  * Club GreenSock members, the agreement issued with that membership.
  * @author: Jack Doyle, jack@greensock.com
@@ -7328,8 +7368,11 @@ var CSSPlugin_win,
         ~property.indexOf(",") ? property.split(",").forEach(function (a) {
           return _this.tfm[a] = _get(target, a);
         }) : this.tfm[property] = target._gsap.x ? target._gsap[property] : _get(target, property); // note: scale would map to "scaleX,scaleY", thus we loop and apply them both.
+      } else {
+        return _propertyAliases.transform.split(",").forEach(function (p) {
+          return _saveStyle.call(_this, p, isNotCSS);
+        });
       }
-
       if (this.props.indexOf(_transformProp) >= 0) {
         return;
       }
@@ -7357,7 +7400,7 @@ var CSSPlugin_win,
       p;
     for (i = 0; i < props.length; i += 3) {
       // stored like this: property, isNotCSS, value
-      props[i + 1] ? target[props[i]] = props[i + 2] : props[i + 2] ? style[props[i]] = props[i + 2] : style.removeProperty(props[i].replace(_capsExp, "-$1").toLowerCase());
+      props[i + 1] ? target[props[i]] = props[i + 2] : props[i + 2] ? style[props[i]] = props[i + 2] : style.removeProperty(props[i].substr(0, 2) === "--" ? props[i] : props[i].replace(_capsExp, "-$1").toLowerCase());
     }
     if (this.tfm) {
       for (p in this.tfm) {
@@ -7368,7 +7411,7 @@ var CSSPlugin_win,
         target.setAttribute("data-svg-origin", this.svgo || "");
       }
       i = CSSPlugin_reverting();
-      if (i && !i.isStart && !style[_transformProp]) {
+      if ((!i || !i.isStart) && !style[_transformProp]) {
         _removeIndependentTransforms(style);
         cache.uncache = 1; // if it's a startAt that's being reverted in the _initTween() of the core, we don't need to uncache transforms. This is purely a performance optimization.
       }
@@ -7381,6 +7424,8 @@ var CSSPlugin_win,
       revert: _revertStyle,
       save: _saveStyle
     };
+    target._gsap || gsap.core.getCache(target); // just make sure there's a _gsap cache defined because we read from it in _saveStyle() and it's more efficient to just check it here once.
+
     properties && properties.split(",").forEach(function (p) {
       return saver.save(p);
     });
