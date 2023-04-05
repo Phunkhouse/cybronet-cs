@@ -5,21 +5,21 @@
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./background-shapes-contact-left.webp": 320,
-	"./background-shapes-contact-left@2x.webp": 271,
-	"./background-shapes-contact-right.webp": 141,
-	"./background-shapes-contact-right@2x.webp": 752,
-	"./background-shapes-features.webp": 716,
-	"./background-shapes-features@2x.webp": 701,
-	"./background-shapes-top-left.webp": 49,
-	"./background-shapes-top-left@2x.webp": 235,
-	"./carousel-photo.png": 494,
-	"./example-aplikace-na-miru.webp": 998,
-	"./example-fresh-design.webp": 317,
+	"./background-shapes-contact-left.webp": 9320,
+	"./background-shapes-contact-left@2x.webp": 4271,
+	"./background-shapes-contact-right.webp": 2141,
+	"./background-shapes-contact-right@2x.webp": 1752,
+	"./background-shapes-features.webp": 3716,
+	"./background-shapes-features@2x.webp": 9701,
+	"./background-shapes-top-left.webp": 5049,
+	"./background-shapes-top-left@2x.webp": 5235,
+	"./carousel-photo.png": 8494,
+	"./example-aplikace-na-miru.webp": 7998,
+	"./example-fresh-design.webp": 7317,
 	"./example-slozite-systemy.webp": 856,
-	"./hero-graphic.webp": 165,
-	"./hero-graphic@2x.webp": 339,
-	"./hero-other-background.svg": 385
+	"./hero-graphic.webp": 3165,
+	"./hero-graphic@2x.webp": 8339,
+	"./hero-other-background.svg": 6385
 };
 
 
@@ -44,7 +44,7 @@ webpackContext.id = 173;
 
 /***/ }),
 
-/***/ 556:
+/***/ 6752:
 /***/ (function(__unused_webpack_module, exports) {
 
 (function (global, factory) {
@@ -2661,7 +2661,7 @@ webpackContext.id = 173;
 
 /***/ }),
 
-/***/ 384:
+/***/ 4384:
 /***/ (function(__unused_webpack_module, exports) {
 
 (function (global, factory) {
@@ -2882,7 +2882,7 @@ webpackContext.id = 173;
 
 /***/ }),
 
-/***/ 759:
+/***/ 5759:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2901,7 +2901,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 227:
+/***/ 2227:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2920,7 +2920,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 409:
+/***/ 7409:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2939,7 +2939,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 341:
+/***/ 2341:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2958,7 +2958,159 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 863:
+/***/ 746:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "example-background-daros-usage",
+      viewBox: "0 0 290 290",
+      url: __webpack_require__.p + "./img/sprite.svg#example-background-daros",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 3325:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "example-background-equi-usage",
+      viewBox: "0 0 242 242",
+      url: __webpack_require__.p + "./img/sprite.svg#example-background-equi",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 7380:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "example-background-sportongo-usage",
+      viewBox: "0 0 343 499",
+      url: __webpack_require__.p + "./img/sprite.svg#example-background-sportongo",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 2159:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "example-background-vizit-usage",
+      viewBox: "0 0 320 322",
+      url: __webpack_require__.p + "./img/sprite.svg#example-background-vizit",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 801:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "example-logo-daros-usage",
+      viewBox: "0 0 186 81",
+      url: __webpack_require__.p + "./img/sprite.svg#example-logo-daros",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 1310:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "example-logo-equi-usage",
+      viewBox: "0 0 167 100",
+      url: __webpack_require__.p + "./img/sprite.svg#example-logo-equi",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 3884:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "example-logo-sportongo-usage",
+      viewBox: "0 0 138 40",
+      url: __webpack_require__.p + "./img/sprite.svg#example-logo-sportongo",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 4892:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "example-logo-vizit-usage",
+      viewBox: "0 0 118 48",
+      url: __webpack_require__.p + "./img/sprite.svg#example-logo-vizit",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 8863:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2977,7 +3129,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 601:
+/***/ 1601:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2996,7 +3148,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 593:
+/***/ 2593:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3015,7 +3167,121 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 73:
+/***/ 769:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "feature-internet-veci-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "./img/sprite.svg#feature-internet-veci",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 7083:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "feature-konzultace-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "./img/sprite.svg#feature-konzultace",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 1455:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "feature-mobilni-aplikace-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "./img/sprite.svg#feature-mobilni-aplikace",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 5530:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "feature-skoleni-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "./img/sprite.svg#feature-skoleni",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 6585:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "feature-ux-design-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "./img/sprite.svg#feature-ux-design",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 3063:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "feature-webove-aplikace-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "./img/sprite.svg#feature-webove-aplikace",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 9073:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3034,7 +3300,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 542:
+/***/ 7542:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3053,7 +3319,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 834:
+/***/ 662:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3062,9 +3328,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-      id: "logo-sportongo-usage",
-      viewBox: "0 0 138 40",
-      url: __webpack_require__.p + "./img/sprite.svg#logo-sportongo",
+      id: "marq-assk-usage",
+      viewBox: "0 0 86 27",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-assk",
       toString: function () {
         return this.url;
       }
@@ -3072,7 +3338,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 44:
+/***/ 9803:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3081,9 +3347,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-      id: "marq-google-usage",
-      viewBox: "0 0 63 20",
-      url: __webpack_require__.p + "./img/sprite.svg#marq-google",
+      id: "marq-daros-usage",
+      viewBox: "0 0 78 30",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-daros",
       toString: function () {
         return this.url;
       }
@@ -3091,7 +3357,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 483:
+/***/ 6847:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3100,9 +3366,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-      id: "marq-netflix-usage",
-      viewBox: "0 0 64 16",
-      url: __webpack_require__.p + "./img/sprite.svg#marq-netflix",
+      id: "marq-equa-bank-usage",
+      viewBox: "0 0 109 23",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-equa-bank",
       toString: function () {
         return this.url;
       }
@@ -3110,7 +3376,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 268:
+/***/ 1574:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3119,9 +3385,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-      id: "marq-slack-usage",
-      viewBox: "0 0 72 20",
-      url: __webpack_require__.p + "./img/sprite.svg#marq-slack",
+      id: "marq-esgo-usage",
+      viewBox: "0 0 66 33",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-esgo",
       toString: function () {
         return this.url;
       }
@@ -3129,7 +3395,216 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 831:
+/***/ 2146:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-hlavni-mesto-praha-usage",
+      viewBox: "0 0 188 18",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-hlavni-mesto-praha",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 715:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-q-elektrik-usage",
+      viewBox: "0 0 142 17",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-q-elektrik",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 8708:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-radio-66-usage",
+      viewBox: "0 0 81 16",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-radio-66",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 8024:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-skoda-usage",
+      viewBox: "0 0 66 27",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-skoda",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 1431:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-sportongo-usage",
+      viewBox: "0 0 113 33",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-sportongo",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 4061:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-t-mobile-usage",
+      viewBox: "0 0 101 17",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-t-mobile",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 2840:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-technologie-praha-usage",
+      viewBox: "0 0 99 31",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-technologie-praha",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 1342:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-vizit-usage",
+      viewBox: "0 0 71 29",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-vizit",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 657:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-vodafone-usage",
+      viewBox: "0 0 97 25",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-vodafone",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 4798:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-vzp-usage",
+      viewBox: "0 0 62 26",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-vzp",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 8538:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "marq-woodos-usage",
+      viewBox: "0 0 73 27",
+      url: __webpack_require__.p + "./img/sprite.svg#marq-woodos",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ 8831:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3148,7 +3623,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 627:
+/***/ 6627:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3167,25 +3642,50 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 261:
+/***/ 4261:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./arrow-heading.svg": 759,
-	"./arrow-hero-scroll.svg": 227,
-	"./controls-arrow.svg": 409,
-	"./cybronet-logo.svg": 341,
-	"./facebook-logo.svg": 863,
-	"./feature-action-arrow.svg": 601,
-	"./feature-icon.svg": 593,
-	"./instagram-logo.svg": 73,
-	"./linkedin-logo.svg": 542,
-	"./logo-sportongo.svg": 834,
-	"./marq-google.svg": 44,
-	"./marq-netflix.svg": 483,
-	"./marq-slack.svg": 268,
-	"./plus.svg": 831,
-	"./quotes.svg": 627
+	"./arrow-heading.svg": 5759,
+	"./arrow-hero-scroll.svg": 2227,
+	"./controls-arrow.svg": 7409,
+	"./cybronet-logo.svg": 2341,
+	"./example-background-daros.svg": 746,
+	"./example-background-equi.svg": 3325,
+	"./example-background-sportongo.svg": 7380,
+	"./example-background-vizit.svg": 2159,
+	"./example-logo-daros.svg": 801,
+	"./example-logo-equi.svg": 1310,
+	"./example-logo-sportongo.svg": 3884,
+	"./example-logo-vizit.svg": 4892,
+	"./facebook-logo.svg": 8863,
+	"./feature-action-arrow.svg": 1601,
+	"./feature-icon.svg": 2593,
+	"./feature-internet-veci.svg": 769,
+	"./feature-konzultace.svg": 7083,
+	"./feature-mobilni-aplikace.svg": 1455,
+	"./feature-skoleni.svg": 5530,
+	"./feature-ux-design.svg": 6585,
+	"./feature-webove-aplikace.svg": 3063,
+	"./instagram-logo.svg": 9073,
+	"./linkedin-logo.svg": 7542,
+	"./marq-assk.svg": 662,
+	"./marq-daros.svg": 9803,
+	"./marq-equa-bank.svg": 6847,
+	"./marq-esgo.svg": 1574,
+	"./marq-hlavni-mesto-praha.svg": 2146,
+	"./marq-q-elektrik.svg": 715,
+	"./marq-radio-66.svg": 8708,
+	"./marq-skoda.svg": 8024,
+	"./marq-sportongo.svg": 1431,
+	"./marq-t-mobile.svg": 4061,
+	"./marq-technologie-praha.svg": 2840,
+	"./marq-vizit.svg": 1342,
+	"./marq-vodafone.svg": 657,
+	"./marq-vzp.svg": 4798,
+	"./marq-woodos.svg": 8538,
+	"./plus.svg": 8831,
+	"./quotes.svg": 6627
 };
 
 
@@ -3206,11 +3706,11 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 261;
+webpackContext.id = 4261;
 
 /***/ }),
 
-/***/ 320:
+/***/ 9320:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3218,7 +3718,7 @@ module.exports = __webpack_require__.p + "img/background-shapes-contact-left.web
 
 /***/ }),
 
-/***/ 271:
+/***/ 4271:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3226,7 +3726,7 @@ module.exports = __webpack_require__.p + "img/background-shapes-contact-left@2x.
 
 /***/ }),
 
-/***/ 141:
+/***/ 2141:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3234,7 +3734,7 @@ module.exports = __webpack_require__.p + "img/background-shapes-contact-right.we
 
 /***/ }),
 
-/***/ 752:
+/***/ 1752:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3242,7 +3742,7 @@ module.exports = __webpack_require__.p + "img/background-shapes-contact-right@2x
 
 /***/ }),
 
-/***/ 716:
+/***/ 3716:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3250,7 +3750,7 @@ module.exports = __webpack_require__.p + "img/background-shapes-features.webp";
 
 /***/ }),
 
-/***/ 701:
+/***/ 9701:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3258,7 +3758,7 @@ module.exports = __webpack_require__.p + "img/background-shapes-features@2x.webp
 
 /***/ }),
 
-/***/ 49:
+/***/ 5049:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3266,7 +3766,7 @@ module.exports = __webpack_require__.p + "img/background-shapes-top-left.webp";
 
 /***/ }),
 
-/***/ 235:
+/***/ 5235:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3274,7 +3774,7 @@ module.exports = __webpack_require__.p + "img/background-shapes-top-left@2x.webp
 
 /***/ }),
 
-/***/ 494:
+/***/ 8494:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3282,7 +3782,7 @@ module.exports = __webpack_require__.p + "img/carousel-photo.png";
 
 /***/ }),
 
-/***/ 998:
+/***/ 7998:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3290,7 +3790,7 @@ module.exports = __webpack_require__.p + "img/example-aplikace-na-miru.webp";
 
 /***/ }),
 
-/***/ 317:
+/***/ 7317:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3306,7 +3806,7 @@ module.exports = __webpack_require__.p + "img/example-slozite-systemy.webp";
 
 /***/ }),
 
-/***/ 165:
+/***/ 3165:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3314,7 +3814,7 @@ module.exports = __webpack_require__.p + "img/hero-graphic.webp";
 
 /***/ }),
 
-/***/ 339:
+/***/ 8339:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3322,7 +3822,7 @@ module.exports = __webpack_require__.p + "img/hero-graphic@2x.webp";
 
 /***/ }),
 
-/***/ 385:
+/***/ 6385:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -8650,7 +9150,7 @@ var gsapWithCSS = gsap.registerPlugin(CSSPlugin) || gsap,
   TweenMaxWithCSS = gsapWithCSS.core.Tween;
 
 // EXTERNAL MODULE: ./node_modules/gsap/dist/ScrollTrigger.js
-var ScrollTrigger = __webpack_require__(556);
+var ScrollTrigger = __webpack_require__(6752);
 ;// CONCATENATED MODULE: ./js/components/animations/examplesScroll.js
 
 
@@ -8880,9 +9380,9 @@ function heroMarquee() {
     clean();
 
     //--- CONTROLS ---//
-    const logosArr = ['google', 'slack', 'netflix'];
+    const logosArr = ['skoda', 'sportongo', 'vizit', 'vzp', 't-mobile', 'equa-bank', 'esgo', 'assk', 'daros', 'radio-66', 'technologie-praha', 'hlavni-mesto-praha', 'q-elektrik', 'vodafone', 'woodos'];
     const marqueeItemGap = 22;
-    const marqueeItemWidth = 111;
+    const marqueeItemWidth = 130;
     const marqueeSpeed = 22;
 
     //--- LOGIC ---//
@@ -8933,7 +9433,7 @@ function heroMarquee() {
   }
 }
 // EXTERNAL MODULE: ./node_modules/gsap/dist/TextPlugin.js
-var TextPlugin = __webpack_require__(384);
+var TextPlugin = __webpack_require__(4384);
 ;// CONCATENATED MODULE: ./js/components/animations/hero-animations.js
 
 
@@ -9319,7 +9819,7 @@ window.addEventListener('load', function () {
 
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 (() => {
-__webpack_require__(261);
+__webpack_require__(4261);
 })();
 
 /******/ })()
