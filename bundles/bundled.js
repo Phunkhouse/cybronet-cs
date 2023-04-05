@@ -13,10 +13,25 @@ var map = {
 	"./background-shapes-features@2x.webp": 9701,
 	"./background-shapes-top-left.webp": 5049,
 	"./background-shapes-top-left@2x.webp": 5235,
+	"./carousel-m-cidlinova.webp": 2516,
+	"./carousel-m-cidlinova@2x.webp": 79,
 	"./carousel-photo.png": 8494,
-	"./example-aplikace-na-miru.webp": 7998,
-	"./example-fresh-design.webp": 7317,
-	"./example-slozite-systemy.webp": 856,
+	"./carousel-z-popelka.webp": 1698,
+	"./carousel-z-popelka@2x.webp": 540,
+	"./example-background-vizit.webp": 8340,
+	"./example-background-vizit@2x.webp": 2417,
+	"./example-daros.webp": 9937,
+	"./example-daros@2x.webp": 4848,
+	"./example-equi-team.webp": 5225,
+	"./example-equi-team@2x.webp": 3767,
+	"./example-logo-equi-team.webp": 1565,
+	"./example-logo-equi-team@2x.webp": 5336,
+	"./example-logo-vizit.webp": 3955,
+	"./example-logo-vizit@2x.webp": 7813,
+	"./example-sportongo.webp": 5074,
+	"./example-sportongo@2x.webp": 4984,
+	"./example-vizit.webp": 3845,
+	"./example-vizit@2x.webp": 9888,
 	"./hero-graphic.webp": 3165,
 	"./hero-graphic@2x.webp": 8339,
 	"./hero-other-background.svg": 6385
@@ -3774,6 +3789,22 @@ module.exports = __webpack_require__.p + "img/background-shapes-top-left@2x.webp
 
 /***/ }),
 
+/***/ 2516:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/carousel-m-cidlinova.webp";
+
+/***/ }),
+
+/***/ 79:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/carousel-m-cidlinova@2x.webp";
+
+/***/ }),
+
 /***/ 8494:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -3782,27 +3813,131 @@ module.exports = __webpack_require__.p + "img/carousel-photo.png";
 
 /***/ }),
 
-/***/ 7998:
+/***/ 1698:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "img/example-aplikace-na-miru.webp";
+module.exports = __webpack_require__.p + "img/carousel-z-popelka.webp";
 
 /***/ }),
 
-/***/ 7317:
+/***/ 540:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "img/example-fresh-design.webp";
+module.exports = __webpack_require__.p + "img/carousel-z-popelka@2x.webp";
 
 /***/ }),
 
-/***/ 856:
+/***/ 8340:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "img/example-slozite-systemy.webp";
+module.exports = __webpack_require__.p + "img/example-background-vizit.webp";
+
+/***/ }),
+
+/***/ 2417:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-background-vizit@2x.webp";
+
+/***/ }),
+
+/***/ 9937:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-daros.webp";
+
+/***/ }),
+
+/***/ 4848:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-daros@2x.webp";
+
+/***/ }),
+
+/***/ 5225:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-equi-team.webp";
+
+/***/ }),
+
+/***/ 3767:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-equi-team@2x.webp";
+
+/***/ }),
+
+/***/ 1565:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-logo-equi-team.webp";
+
+/***/ }),
+
+/***/ 5336:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-logo-equi-team@2x.webp";
+
+/***/ }),
+
+/***/ 3955:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-logo-vizit.webp";
+
+/***/ }),
+
+/***/ 7813:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-logo-vizit@2x.webp";
+
+/***/ }),
+
+/***/ 5074:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-sportongo.webp";
+
+/***/ }),
+
+/***/ 4984:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-sportongo@2x.webp";
+
+/***/ }),
+
+/***/ 3845:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-vizit.webp";
+
+/***/ }),
+
+/***/ 9888:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/example-vizit@2x.webp";
 
 /***/ }),
 
@@ -9168,6 +9303,7 @@ function examplesScroll() {
     wrapperEnd,
     firstY,
     secondY,
+    thirdY,
     duration,
     delay
   }) {
@@ -9188,13 +9324,18 @@ function examplesScroll() {
         scrub: true
       }
     });
-    tl.to('.example--fresh-design', {
+    tl.to('.example--sportongo', {
       y: firstY,
       ease: "power2.inOut",
       duration: duration,
       delay: delay
-    }).to('.example--slozite-systemy', {
+    }).to('.example--vizit', {
       y: secondY,
+      ease: "power2.inOut",
+      duration: duration,
+      delay: delay
+    }).to('.example--daros', {
+      y: thirdY,
       ease: "power2.inOut",
       duration: duration,
       delay: delay
@@ -9206,6 +9347,7 @@ function examplesScroll() {
       wrapperEnd: `${getHeight - 200}px`,
       firstY: -getHeight,
       secondY: -getHeight,
+      thirdY: -getHeight,
       duration: 2,
       delay: 0
     });
@@ -9215,6 +9357,7 @@ function examplesScroll() {
       wrapperEnd: `${getHeight + getHeight / 3}px`,
       firstY: -getHeight,
       secondY: -getHeight,
+      thirdY: -getHeight,
       duration: 2,
       delay: 2
     });
@@ -9224,6 +9367,7 @@ function examplesScroll() {
       wrapperEnd: `${getHeight}px`,
       firstY: -getHeight,
       secondY: -getHeight,
+      thirdY: -getHeight,
       duration: 2,
       delay: 0
     });
@@ -9233,6 +9377,7 @@ function examplesScroll() {
       wrapperEnd: `${getHeight + getHeight / 3}px`,
       firstY: -getHeight,
       secondY: -getHeight,
+      thirdY: -getHeight,
       duration: 6,
       delay: 2
     });
@@ -9242,6 +9387,7 @@ function examplesScroll() {
       wrapperEnd: `${getHeight + getHeight / 3}px`,
       firstY: -getHeight - 60,
       secondY: -getHeight - 60,
+      thirdY: -getHeight - 60,
       duration: 6,
       delay: 2
     });
