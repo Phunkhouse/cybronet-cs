@@ -19,6 +19,7 @@ export function examplesScroll() {
     wrapperEnd,
     firstY,
     secondY,
+    thirdY,
     duration,
     delay
   }) {
@@ -42,14 +43,20 @@ export function examplesScroll() {
     })
 
     tl
-      .to('.example--fresh-design', {
+      .to('.example--sportongo', {
         y: firstY,
         ease: "power2.inOut",
         duration: duration,
         delay: delay,
       })
-      .to('.example--slozite-systemy', {
+      .to('.example--vizit', {
         y: secondY,
+        ease: "power2.inOut",
+        duration: duration,
+        delay: delay,
+      })
+      .to('.example--daros', {
+        y: thirdY,
         ease: "power2.inOut",
         duration: duration,
         delay: delay,
@@ -63,6 +70,7 @@ export function examplesScroll() {
       wrapperEnd: `${getHeight - 200}px`,
       firstY: -getHeight,
       secondY: -getHeight,
+      thirdY: -getHeight,
       duration: 2,
       delay: 0,
     })
@@ -73,6 +81,7 @@ export function examplesScroll() {
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
       firstY: -getHeight,
       secondY: -getHeight,
+      thirdY: -getHeight,
       duration: 2,
       delay: 2,
     })
@@ -83,6 +92,7 @@ export function examplesScroll() {
       wrapperEnd: `${getHeight}px`,
       firstY: -getHeight,
       secondY: -getHeight,
+      thirdY: -getHeight,
       duration: 2,
       delay: 0,
     })
@@ -93,6 +103,7 @@ export function examplesScroll() {
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
       firstY: -getHeight,
       secondY: -getHeight,
+      thirdY: -getHeight,
       duration: 6,
       delay: 2,
     })
@@ -103,6 +114,7 @@ export function examplesScroll() {
       wrapperEnd: `${getHeight + (getHeight / 3)}px`,
       firstY: -getHeight - 60,
       secondY: -getHeight - 60,
+      thirdY: -getHeight - 60,
       duration: 6,
       delay: 2,
     })

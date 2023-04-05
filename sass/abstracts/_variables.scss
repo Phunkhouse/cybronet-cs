@@ -39,6 +39,9 @@
   --examples-breakpoint-desktop-md: 1500px;
   --examples-breakpoint-desktop-sm: 1150px;
   --examples-breakpoint-mobile: 600px;
+
+  // LOGO MARQUEE
+  --marquee-width-item-width: 130px;
 }
 
 // EXAMPLES BREAKPOINTS (again for media queries mixins... cannot use css variables here)

@@ -15,7 +15,7 @@
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./background-shapes-contact-left.webp\": \"./img/background-shapes-contact-left.webp\",\n\t\"./background-shapes-contact-left@2x.webp\": \"./img/background-shapes-contact-left@2x.webp\",\n\t\"./background-shapes-contact-right.webp\": \"./img/background-shapes-contact-right.webp\",\n\t\"./background-shapes-contact-right@2x.webp\": \"./img/background-shapes-contact-right@2x.webp\",\n\t\"./background-shapes-features.webp\": \"./img/background-shapes-features.webp\",\n\t\"./background-shapes-features@2x.webp\": \"./img/background-shapes-features@2x.webp\",\n\t\"./background-shapes-top-left.webp\": \"./img/background-shapes-top-left.webp\",\n\t\"./background-shapes-top-left@2x.webp\": \"./img/background-shapes-top-left@2x.webp\",\n\t\"./carousel-photo.png\": \"./img/carousel-photo.png\",\n\t\"./example-aplikace-na-miru.webp\": \"./img/example-aplikace-na-miru.webp\",\n\t\"./example-fresh-design.webp\": \"./img/example-fresh-design.webp\",\n\t\"./example-slozite-systemy.webp\": \"./img/example-slozite-systemy.webp\",\n\t\"./hero-graphic.webp\": \"./img/hero-graphic.webp\",\n\t\"./hero-graphic@2x.webp\": \"./img/hero-graphic@2x.webp\",\n\t\"./hero-other-background.svg\": \"./img/hero-other-background.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./img sync recursive \\\\.(png%7Cjpg%7Cjpeg%7Cgif%7Csvg%7Cwebp)$\";\n\n//# sourceURL=webpack://cybronet-cs/./img/_sync_\\.(png%257Cjpg%257Cjpeg%257Cgif%257Csvg%257Cwebp)$?");
+eval("var map = {\n\t\"./background-shapes-contact-left.webp\": \"./img/background-shapes-contact-left.webp\",\n\t\"./background-shapes-contact-left@2x.webp\": \"./img/background-shapes-contact-left@2x.webp\",\n\t\"./background-shapes-contact-right.webp\": \"./img/background-shapes-contact-right.webp\",\n\t\"./background-shapes-contact-right@2x.webp\": \"./img/background-shapes-contact-right@2x.webp\",\n\t\"./background-shapes-features.webp\": \"./img/background-shapes-features.webp\",\n\t\"./background-shapes-features@2x.webp\": \"./img/background-shapes-features@2x.webp\",\n\t\"./background-shapes-top-left.webp\": \"./img/background-shapes-top-left.webp\",\n\t\"./background-shapes-top-left@2x.webp\": \"./img/background-shapes-top-left@2x.webp\",\n\t\"./carousel-m-cidlinova.webp\": \"./img/carousel-m-cidlinova.webp\",\n\t\"./carousel-m-cidlinova@2x.webp\": \"./img/carousel-m-cidlinova@2x.webp\",\n\t\"./carousel-photo.png\": \"./img/carousel-photo.png\",\n\t\"./carousel-z-popelka.webp\": \"./img/carousel-z-popelka.webp\",\n\t\"./carousel-z-popelka@2x.webp\": \"./img/carousel-z-popelka@2x.webp\",\n\t\"./example-background-vizit.webp\": \"./img/example-background-vizit.webp\",\n\t\"./example-background-vizit@2x.webp\": \"./img/example-background-vizit@2x.webp\",\n\t\"./example-daros.webp\": \"./img/example-daros.webp\",\n\t\"./example-daros@2x.webp\": \"./img/example-daros@2x.webp\",\n\t\"./example-equi-team.webp\": \"./img/example-equi-team.webp\",\n\t\"./example-equi-team@2x.webp\": \"./img/example-equi-team@2x.webp\",\n\t\"./example-logo-equi-team.webp\": \"./img/example-logo-equi-team.webp\",\n\t\"./example-logo-equi-team@2x.webp\": \"./img/example-logo-equi-team@2x.webp\",\n\t\"./example-logo-vizit.webp\": \"./img/example-logo-vizit.webp\",\n\t\"./example-logo-vizit@2x.webp\": \"./img/example-logo-vizit@2x.webp\",\n\t\"./example-sportongo.webp\": \"./img/example-sportongo.webp\",\n\t\"./example-sportongo@2x.webp\": \"./img/example-sportongo@2x.webp\",\n\t\"./example-vizit.webp\": \"./img/example-vizit.webp\",\n\t\"./example-vizit@2x.webp\": \"./img/example-vizit@2x.webp\",\n\t\"./hero-graphic.webp\": \"./img/hero-graphic.webp\",\n\t\"./hero-graphic@2x.webp\": \"./img/hero-graphic@2x.webp\",\n\t\"./hero-other-background.svg\": \"./img/hero-other-background.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./img sync recursive \\\\.(png%7Cjpg%7Cjpeg%7Cgif%7Csvg%7Cwebp)$\";\n\n//# sourceURL=webpack://cybronet-cs/./img/_sync_\\.(png%257Cjpg%257Cjpeg%257Cgif%257Csvg%257Cwebp)$?");
 
 /***/ }),
 
@@ -48,7 +48,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"examplesScroll\": () => (/* binding */ examplesScroll)\n/* harmony export */ });\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap/dist/ScrollTrigger */ \"./node_modules/gsap/dist/ScrollTrigger.js\");\n/* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__);\n\n\ngsap__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__.ScrollTrigger);\nlet getHeight = window.innerHeight;\naddEventListener('resize', () => {\n  getHeight = window.innerHeight;\n});\nfunction examplesScroll() {\n  function breakpoint(breakpoint) {\n    const varValue = getComputedStyle(document.documentElement).getPropertyValue(`--examples-breakpoint-${breakpoint}`);\n    return varValue.substring(0, varValue.length - 2);\n  }\n  function examplesScrollBuilder({\n    wrapperEnd,\n    firstY,\n    secondY,\n    duration,\n    delay\n  }) {\n    gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to('.examples', {\n      scrollTrigger: {\n        trigger: '.examples',\n        start: 'top',\n        end: () => wrapperEnd,\n        pin: true,\n        scrub: true\n      }\n    });\n    const tl = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline({\n      scrollTrigger: {\n        trigger: '.examples',\n        start: 'top',\n        end: 'bottom',\n        scrub: true\n      }\n    });\n    tl.to('.example--fresh-design', {\n      y: firstY,\n      ease: \"power2.inOut\",\n      duration: duration,\n      delay: delay\n    }).to('.example--slozite-systemy', {\n      y: secondY,\n      ease: \"power2.inOut\",\n      duration: duration,\n      delay: delay\n    });\n  }\n  const mediaQuery = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.matchMedia();\n  mediaQuery.add(`(min-width: 2300px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight - 200}px`,\n      firstY: -getHeight,\n      secondY: -getHeight,\n      duration: 2,\n      delay: 0\n    });\n  });\n  mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: 2299px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight + getHeight / 3}px`,\n      firstY: -getHeight,\n      secondY: -getHeight,\n      duration: 2,\n      delay: 2\n    });\n  });\n  mediaQuery.add(`(min-width: ${breakpoint('desktop-sm')}px) and (max-width: ${breakpoint('desktop-md') - 1}px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight}px`,\n      firstY: -getHeight,\n      secondY: -getHeight,\n      duration: 2,\n      delay: 0\n    });\n  });\n  mediaQuery.add(`(min-width: ${breakpoint('mobile')}px) and (max-width: ${breakpoint('desktop-sm') - 1}px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight + getHeight / 3}px`,\n      firstY: -getHeight,\n      secondY: -getHeight,\n      duration: 6,\n      delay: 2\n    });\n  });\n  mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight + getHeight / 3}px`,\n      firstY: -getHeight - 60,\n      secondY: -getHeight - 60,\n      duration: 6,\n      delay: 2\n    });\n  });\n}\n\n//# sourceURL=webpack://cybronet-cs/./js/components/animations/examplesScroll.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"examplesScroll\": () => (/* binding */ examplesScroll)\n/* harmony export */ });\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap/dist/ScrollTrigger */ \"./node_modules/gsap/dist/ScrollTrigger.js\");\n/* harmony import */ var gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__);\n\n\ngsap__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(gsap_dist_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__.ScrollTrigger);\nlet getHeight = window.innerHeight;\naddEventListener('resize', () => {\n  getHeight = window.innerHeight;\n});\nfunction examplesScroll() {\n  function breakpoint(breakpoint) {\n    const varValue = getComputedStyle(document.documentElement).getPropertyValue(`--examples-breakpoint-${breakpoint}`);\n    return varValue.substring(0, varValue.length - 2);\n  }\n  function examplesScrollBuilder({\n    wrapperEnd,\n    firstY,\n    secondY,\n    thirdY,\n    duration,\n    delay\n  }) {\n    gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to('.examples', {\n      scrollTrigger: {\n        trigger: '.examples',\n        start: 'top',\n        end: () => wrapperEnd,\n        pin: true,\n        scrub: true\n      }\n    });\n    const tl = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline({\n      scrollTrigger: {\n        trigger: '.examples',\n        start: 'top',\n        end: 'bottom',\n        scrub: true\n      }\n    });\n    tl.to('.example--sportongo', {\n      y: firstY,\n      ease: \"power2.inOut\",\n      duration: duration,\n      delay: delay\n    }).to('.example--vizit', {\n      y: secondY,\n      ease: \"power2.inOut\",\n      duration: duration,\n      delay: delay\n    }).to('.example--daros', {\n      y: thirdY,\n      ease: \"power2.inOut\",\n      duration: duration,\n      delay: delay\n    });\n  }\n  const mediaQuery = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.matchMedia();\n  mediaQuery.add(`(min-width: 2300px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight - 200}px`,\n      firstY: -getHeight,\n      secondY: -getHeight,\n      thirdY: -getHeight,\n      duration: 2,\n      delay: 0\n    });\n  });\n  mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: 2299px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight + getHeight / 3}px`,\n      firstY: -getHeight,\n      secondY: -getHeight,\n      thirdY: -getHeight,\n      duration: 2,\n      delay: 2\n    });\n  });\n  mediaQuery.add(`(min-width: ${breakpoint('desktop-sm')}px) and (max-width: ${breakpoint('desktop-md') - 1}px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight}px`,\n      firstY: -getHeight,\n      secondY: -getHeight,\n      thirdY: -getHeight,\n      duration: 2,\n      delay: 0\n    });\n  });\n  mediaQuery.add(`(min-width: ${breakpoint('mobile')}px) and (max-width: ${breakpoint('desktop-sm') - 1}px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight + getHeight / 3}px`,\n      firstY: -getHeight,\n      secondY: -getHeight,\n      thirdY: -getHeight,\n      duration: 6,\n      delay: 2\n    });\n  });\n  mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {\n    examplesScrollBuilder({\n      wrapperEnd: `${getHeight + getHeight / 3}px`,\n      firstY: -getHeight - 60,\n      secondY: -getHeight - 60,\n      thirdY: -getHeight - 60,\n      duration: 6,\n      delay: 2\n    });\n  });\n}\n\n//# sourceURL=webpack://cybronet-cs/./js/components/animations/examplesScroll.js?");
 
 /***/ }),
 
@@ -81,7 +81,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"heroMarquee\": () => (/* binding */ heroMarquee)\n/* harmony export */ });\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n\nfunction heroMarquee() {\n  function clean() {\n    const marqueeInner = document.querySelector('.hero__marquee-inner');\n    marqueeInner.innerHTML = '';\n  }\n  function renderHeroMarquee() {\n    clean();\n\n    //--- CONTROLS ---//\n    const logosArr = ['google', 'slack', 'netflix'];\n    const marqueeItemGap = 22;\n    const marqueeItemWidth = 111;\n    const marqueeSpeed = 22;\n\n    //--- LOGIC ---//\n    const requiredMarqueeItemWidth = marqueeItemWidth + marqueeItemGap;\n    const marqeeInitialWidth = requiredMarqueeItemWidth * logosArr.length - requiredMarqueeItemWidth;\n    const requiredArrClones = Math.ceil(window.innerWidth / marqeeInitialWidth);\n    const requiredDuration = Math.floor(window.innerWidth / marqueeSpeed);\n    let newLogosArray = [];\n    for (let i = 0; i < requiredArrClones; i++) {\n      newLogosArray.push([...logosArr]);\n    }\n    const requiredLogosArray = newLogosArray.flat();\n    const marqueeRequiredWidth = requiredMarqueeItemWidth * requiredLogosArray.length - requiredMarqueeItemWidth;\n    const marqee = document.querySelector('.hero__marquee');\n    const marqueeInner = document.querySelector('.hero__marquee-inner');\n    const marqueeLogoContainer = 'hero__marquee-logo-container';\n    requiredLogosArray.map(logo => {\n      marqueeInner.insertAdjacentHTML('beforeend', `\n        <div class='${marqueeLogoContainer}'>\n          <div class='hero__marquee-logo-inner'>\n            <svg class='hero__marquee-logo'>\n              <use xlink:href='./bundles/img/sprite.svg#marq-${logo}'></use>\n            </svg>\n          </div>\n        </div>\n      `);\n    });\n    marqee.style.setProperty('--marquee-width', `${marqueeRequiredWidth}px`);\n    marqee.style.setProperty('--marquee-item-width', `${requiredMarqueeItemWidth}px`);\n    gsap__WEBPACK_IMPORTED_MODULE_0__[\"default\"].set(`.${marqueeLogoContainer}`, {\n      x: i => i * requiredMarqueeItemWidth\n    });\n    gsap__WEBPACK_IMPORTED_MODULE_0__[\"default\"].to(`.${marqueeLogoContainer}`, {\n      duration: requiredDuration,\n      ease: 'none',\n      x: `+=${marqueeRequiredWidth + requiredMarqueeItemWidth}`,\n      modifiers: {\n        x: gsap__WEBPACK_IMPORTED_MODULE_0__[\"default\"].utils.unitize(x => parseFloat(x) % (marqueeRequiredWidth + requiredMarqueeItemWidth))\n      },\n      repeat: -1\n    });\n  }\n  renderHeroMarquee();\n  if (window.innerWidth > 1100) {\n    window.addEventListener('resize', () => {\n      renderHeroMarquee();\n    });\n  }\n}\n\n//# sourceURL=webpack://cybronet-cs/./js/components/animations/hero-marquee.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"heroMarquee\": () => (/* binding */ heroMarquee)\n/* harmony export */ });\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n\nfunction heroMarquee() {\n  function clean() {\n    const marqueeInner = document.querySelector('.hero__marquee-inner');\n    marqueeInner.innerHTML = '';\n  }\n  function renderHeroMarquee() {\n    clean();\n\n    //--- CONTROLS ---//\n    const logosArr = ['skoda', 'sportongo', 'vizit', 'vzp', 't-mobile', 'equa-bank', 'esgo', 'assk', 'daros', 'radio-66', 'technologie-praha', 'hlavni-mesto-praha', 'q-elektrik', 'vodafone', 'woodos'];\n    const marqueeItemGap = 22;\n    const marqueeItemWidth = 130;\n    const marqueeSpeed = 22;\n\n    //--- LOGIC ---//\n    const requiredMarqueeItemWidth = marqueeItemWidth + marqueeItemGap;\n    const marqeeInitialWidth = requiredMarqueeItemWidth * logosArr.length - requiredMarqueeItemWidth;\n    const requiredArrClones = Math.ceil(window.innerWidth / marqeeInitialWidth);\n    const requiredDuration = Math.floor(window.innerWidth / marqueeSpeed);\n    let newLogosArray = [];\n    for (let i = 0; i < requiredArrClones; i++) {\n      newLogosArray.push([...logosArr]);\n    }\n    const requiredLogosArray = newLogosArray.flat();\n    const marqueeRequiredWidth = requiredMarqueeItemWidth * requiredLogosArray.length - requiredMarqueeItemWidth;\n    const marqee = document.querySelector('.hero__marquee');\n    const marqueeInner = document.querySelector('.hero__marquee-inner');\n    const marqueeLogoContainer = 'hero__marquee-logo-container';\n    requiredLogosArray.map(logo => {\n      marqueeInner.insertAdjacentHTML('beforeend', `\n        <div class='${marqueeLogoContainer}'>\n          <div class='hero__marquee-logo-inner'>\n            <svg class='hero__marquee-logo'>\n              <use xlink:href='./bundles/img/sprite.svg#marq-${logo}'></use>\n            </svg>\n          </div>\n        </div>\n      `);\n    });\n    marqee.style.setProperty('--marquee-width', `${marqueeRequiredWidth}px`);\n    marqee.style.setProperty('--marquee-item-width', `${requiredMarqueeItemWidth}px`);\n    gsap__WEBPACK_IMPORTED_MODULE_0__[\"default\"].set(`.${marqueeLogoContainer}`, {\n      x: i => i * requiredMarqueeItemWidth\n    });\n    gsap__WEBPACK_IMPORTED_MODULE_0__[\"default\"].to(`.${marqueeLogoContainer}`, {\n      duration: requiredDuration,\n      ease: 'none',\n      x: `+=${marqueeRequiredWidth + requiredMarqueeItemWidth}`,\n      modifiers: {\n        x: gsap__WEBPACK_IMPORTED_MODULE_0__[\"default\"].utils.unitize(x => parseFloat(x) % (marqueeRequiredWidth + requiredMarqueeItemWidth))\n      },\n      repeat: -1\n    });\n  }\n  renderHeroMarquee();\n  if (window.innerWidth > 1100) {\n    window.addEventListener('resize', () => {\n      renderHeroMarquee();\n    });\n  }\n}\n\n//# sourceURL=webpack://cybronet-cs/./js/components/animations/hero-marquee.js?");
 
 /***/ }),
 
@@ -258,6 +258,94 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./svg-sprite/example-background-daros.svg":
+/*!*************************************************!*\
+  !*** ./svg-sprite/example-background-daros.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"example-background-daros-usage\",\n      viewBox: \"0 0 290 290\",\n      url: __webpack_require__.p + \"./img/sprite.svg#example-background-daros\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/example-background-daros.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/example-background-equi.svg":
+/*!************************************************!*\
+  !*** ./svg-sprite/example-background-equi.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"example-background-equi-usage\",\n      viewBox: \"0 0 242 242\",\n      url: __webpack_require__.p + \"./img/sprite.svg#example-background-equi\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/example-background-equi.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/example-background-sportongo.svg":
+/*!*****************************************************!*\
+  !*** ./svg-sprite/example-background-sportongo.svg ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"example-background-sportongo-usage\",\n      viewBox: \"0 0 343 499\",\n      url: __webpack_require__.p + \"./img/sprite.svg#example-background-sportongo\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/example-background-sportongo.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/example-background-vizit.svg":
+/*!*************************************************!*\
+  !*** ./svg-sprite/example-background-vizit.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"example-background-vizit-usage\",\n      viewBox: \"0 0 320 322\",\n      url: __webpack_require__.p + \"./img/sprite.svg#example-background-vizit\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/example-background-vizit.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/example-logo-daros.svg":
+/*!*******************************************!*\
+  !*** ./svg-sprite/example-logo-daros.svg ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"example-logo-daros-usage\",\n      viewBox: \"0 0 186 81\",\n      url: __webpack_require__.p + \"./img/sprite.svg#example-logo-daros\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/example-logo-daros.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/example-logo-equi.svg":
+/*!******************************************!*\
+  !*** ./svg-sprite/example-logo-equi.svg ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"example-logo-equi-usage\",\n      viewBox: \"0 0 167 100\",\n      url: __webpack_require__.p + \"./img/sprite.svg#example-logo-equi\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/example-logo-equi.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/example-logo-sportongo.svg":
+/*!***********************************************!*\
+  !*** ./svg-sprite/example-logo-sportongo.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"example-logo-sportongo-usage\",\n      viewBox: \"0 0 138 40\",\n      url: __webpack_require__.p + \"./img/sprite.svg#example-logo-sportongo\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/example-logo-sportongo.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/example-logo-vizit.svg":
+/*!*******************************************!*\
+  !*** ./svg-sprite/example-logo-vizit.svg ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"example-logo-vizit-usage\",\n      viewBox: \"0 0 118 48\",\n      url: __webpack_require__.p + \"./img/sprite.svg#example-logo-vizit\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/example-logo-vizit.svg?");
+
+/***/ }),
+
 /***/ "./svg-sprite/facebook-logo.svg":
 /*!**************************************!*\
   !*** ./svg-sprite/facebook-logo.svg ***!
@@ -291,6 +379,72 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./svg-sprite/feature-internet-veci.svg":
+/*!**********************************************!*\
+  !*** ./svg-sprite/feature-internet-veci.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"feature-internet-veci-usage\",\n      viewBox: \"0 0 24 24\",\n      url: __webpack_require__.p + \"./img/sprite.svg#feature-internet-veci\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/feature-internet-veci.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/feature-konzultace.svg":
+/*!*******************************************!*\
+  !*** ./svg-sprite/feature-konzultace.svg ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"feature-konzultace-usage\",\n      viewBox: \"0 0 24 24\",\n      url: __webpack_require__.p + \"./img/sprite.svg#feature-konzultace\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/feature-konzultace.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/feature-mobilni-aplikace.svg":
+/*!*************************************************!*\
+  !*** ./svg-sprite/feature-mobilni-aplikace.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"feature-mobilni-aplikace-usage\",\n      viewBox: \"0 0 24 24\",\n      url: __webpack_require__.p + \"./img/sprite.svg#feature-mobilni-aplikace\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/feature-mobilni-aplikace.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/feature-skoleni.svg":
+/*!****************************************!*\
+  !*** ./svg-sprite/feature-skoleni.svg ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"feature-skoleni-usage\",\n      viewBox: \"0 0 24 24\",\n      url: __webpack_require__.p + \"./img/sprite.svg#feature-skoleni\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/feature-skoleni.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/feature-ux-design.svg":
+/*!******************************************!*\
+  !*** ./svg-sprite/feature-ux-design.svg ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"feature-ux-design-usage\",\n      viewBox: \"0 0 24 24\",\n      url: __webpack_require__.p + \"./img/sprite.svg#feature-ux-design\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/feature-ux-design.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/feature-webove-aplikace.svg":
+/*!************************************************!*\
+  !*** ./svg-sprite/feature-webove-aplikace.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"feature-webove-aplikace-usage\",\n      viewBox: \"0 0 24 24\",\n      url: __webpack_require__.p + \"./img/sprite.svg#feature-webove-aplikace\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/feature-webove-aplikace.svg?");
+
+/***/ }),
+
 /***/ "./svg-sprite/instagram-logo.svg":
 /*!***************************************!*\
   !*** ./svg-sprite/instagram-logo.svg ***!
@@ -313,47 +467,168 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./svg-sprite/logo-sportongo.svg":
-/*!***************************************!*\
-  !*** ./svg-sprite/logo-sportongo.svg ***!
-  \***************************************/
+/***/ "./svg-sprite/marq-assk.svg":
+/*!**********************************!*\
+  !*** ./svg-sprite/marq-assk.svg ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"logo-sportongo-usage\",\n      viewBox: \"0 0 138 40\",\n      url: __webpack_require__.p + \"./img/sprite.svg#logo-sportongo\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/logo-sportongo.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-assk-usage\",\n      viewBox: \"0 0 86 27\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-assk\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-assk.svg?");
 
 /***/ }),
 
-/***/ "./svg-sprite/marq-google.svg":
-/*!************************************!*\
-  !*** ./svg-sprite/marq-google.svg ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-google-usage\",\n      viewBox: \"0 0 63 20\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-google\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-google.svg?");
-
-/***/ }),
-
-/***/ "./svg-sprite/marq-netflix.svg":
-/*!*************************************!*\
-  !*** ./svg-sprite/marq-netflix.svg ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-netflix-usage\",\n      viewBox: \"0 0 64 16\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-netflix\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-netflix.svg?");
-
-/***/ }),
-
-/***/ "./svg-sprite/marq-slack.svg":
+/***/ "./svg-sprite/marq-daros.svg":
 /*!***********************************!*\
-  !*** ./svg-sprite/marq-slack.svg ***!
+  !*** ./svg-sprite/marq-daros.svg ***!
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-slack-usage\",\n      viewBox: \"0 0 72 20\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-slack\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-slack.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-daros-usage\",\n      viewBox: \"0 0 78 30\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-daros\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-daros.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-equa-bank.svg":
+/*!***************************************!*\
+  !*** ./svg-sprite/marq-equa-bank.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-equa-bank-usage\",\n      viewBox: \"0 0 109 23\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-equa-bank\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-equa-bank.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-esgo.svg":
+/*!**********************************!*\
+  !*** ./svg-sprite/marq-esgo.svg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-esgo-usage\",\n      viewBox: \"0 0 66 33\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-esgo\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-esgo.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-hlavni-mesto-praha.svg":
+/*!************************************************!*\
+  !*** ./svg-sprite/marq-hlavni-mesto-praha.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-hlavni-mesto-praha-usage\",\n      viewBox: \"0 0 188 18\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-hlavni-mesto-praha\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-hlavni-mesto-praha.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-q-elektrik.svg":
+/*!****************************************!*\
+  !*** ./svg-sprite/marq-q-elektrik.svg ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-q-elektrik-usage\",\n      viewBox: \"0 0 142 17\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-q-elektrik\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-q-elektrik.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-radio-66.svg":
+/*!**************************************!*\
+  !*** ./svg-sprite/marq-radio-66.svg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-radio-66-usage\",\n      viewBox: \"0 0 81 16\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-radio-66\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-radio-66.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-skoda.svg":
+/*!***********************************!*\
+  !*** ./svg-sprite/marq-skoda.svg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-skoda-usage\",\n      viewBox: \"0 0 66 27\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-skoda\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-skoda.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-sportongo.svg":
+/*!***************************************!*\
+  !*** ./svg-sprite/marq-sportongo.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-sportongo-usage\",\n      viewBox: \"0 0 113 33\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-sportongo\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-sportongo.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-t-mobile.svg":
+/*!**************************************!*\
+  !*** ./svg-sprite/marq-t-mobile.svg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-t-mobile-usage\",\n      viewBox: \"0 0 101 17\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-t-mobile\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-t-mobile.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-technologie-praha.svg":
+/*!***********************************************!*\
+  !*** ./svg-sprite/marq-technologie-praha.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-technologie-praha-usage\",\n      viewBox: \"0 0 99 31\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-technologie-praha\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-technologie-praha.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-vizit.svg":
+/*!***********************************!*\
+  !*** ./svg-sprite/marq-vizit.svg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-vizit-usage\",\n      viewBox: \"0 0 71 29\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-vizit\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-vizit.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-vodafone.svg":
+/*!**************************************!*\
+  !*** ./svg-sprite/marq-vodafone.svg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-vodafone-usage\",\n      viewBox: \"0 0 97 25\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-vodafone\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-vodafone.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-vzp.svg":
+/*!*********************************!*\
+  !*** ./svg-sprite/marq-vzp.svg ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-vzp-usage\",\n      viewBox: \"0 0 62 26\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-vzp\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-vzp.svg?");
+
+/***/ }),
+
+/***/ "./svg-sprite/marq-woodos.svg":
+/*!************************************!*\
+  !*** ./svg-sprite/marq-woodos.svg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n      id: \"marq-woodos-usage\",\n      viewBox: \"0 0 73 27\",\n      url: __webpack_require__.p + \"./img/sprite.svg#marq-woodos\",\n      toString: function () {\n        return this.url;\n      }\n    });\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/marq-woodos.svg?");
 
 /***/ }),
 
@@ -385,7 +660,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./arrow-heading.svg\": \"./svg-sprite/arrow-heading.svg\",\n\t\"./arrow-hero-scroll.svg\": \"./svg-sprite/arrow-hero-scroll.svg\",\n\t\"./controls-arrow.svg\": \"./svg-sprite/controls-arrow.svg\",\n\t\"./cybronet-logo.svg\": \"./svg-sprite/cybronet-logo.svg\",\n\t\"./facebook-logo.svg\": \"./svg-sprite/facebook-logo.svg\",\n\t\"./feature-action-arrow.svg\": \"./svg-sprite/feature-action-arrow.svg\",\n\t\"./feature-icon.svg\": \"./svg-sprite/feature-icon.svg\",\n\t\"./instagram-logo.svg\": \"./svg-sprite/instagram-logo.svg\",\n\t\"./linkedin-logo.svg\": \"./svg-sprite/linkedin-logo.svg\",\n\t\"./logo-sportongo.svg\": \"./svg-sprite/logo-sportongo.svg\",\n\t\"./marq-google.svg\": \"./svg-sprite/marq-google.svg\",\n\t\"./marq-netflix.svg\": \"./svg-sprite/marq-netflix.svg\",\n\t\"./marq-slack.svg\": \"./svg-sprite/marq-slack.svg\",\n\t\"./plus.svg\": \"./svg-sprite/plus.svg\",\n\t\"./quotes.svg\": \"./svg-sprite/quotes.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./svg-sprite sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/_sync_\\.svg$?");
+eval("var map = {\n\t\"./arrow-heading.svg\": \"./svg-sprite/arrow-heading.svg\",\n\t\"./arrow-hero-scroll.svg\": \"./svg-sprite/arrow-hero-scroll.svg\",\n\t\"./controls-arrow.svg\": \"./svg-sprite/controls-arrow.svg\",\n\t\"./cybronet-logo.svg\": \"./svg-sprite/cybronet-logo.svg\",\n\t\"./example-background-daros.svg\": \"./svg-sprite/example-background-daros.svg\",\n\t\"./example-background-equi.svg\": \"./svg-sprite/example-background-equi.svg\",\n\t\"./example-background-sportongo.svg\": \"./svg-sprite/example-background-sportongo.svg\",\n\t\"./example-background-vizit.svg\": \"./svg-sprite/example-background-vizit.svg\",\n\t\"./example-logo-daros.svg\": \"./svg-sprite/example-logo-daros.svg\",\n\t\"./example-logo-equi.svg\": \"./svg-sprite/example-logo-equi.svg\",\n\t\"./example-logo-sportongo.svg\": \"./svg-sprite/example-logo-sportongo.svg\",\n\t\"./example-logo-vizit.svg\": \"./svg-sprite/example-logo-vizit.svg\",\n\t\"./facebook-logo.svg\": \"./svg-sprite/facebook-logo.svg\",\n\t\"./feature-action-arrow.svg\": \"./svg-sprite/feature-action-arrow.svg\",\n\t\"./feature-icon.svg\": \"./svg-sprite/feature-icon.svg\",\n\t\"./feature-internet-veci.svg\": \"./svg-sprite/feature-internet-veci.svg\",\n\t\"./feature-konzultace.svg\": \"./svg-sprite/feature-konzultace.svg\",\n\t\"./feature-mobilni-aplikace.svg\": \"./svg-sprite/feature-mobilni-aplikace.svg\",\n\t\"./feature-skoleni.svg\": \"./svg-sprite/feature-skoleni.svg\",\n\t\"./feature-ux-design.svg\": \"./svg-sprite/feature-ux-design.svg\",\n\t\"./feature-webove-aplikace.svg\": \"./svg-sprite/feature-webove-aplikace.svg\",\n\t\"./instagram-logo.svg\": \"./svg-sprite/instagram-logo.svg\",\n\t\"./linkedin-logo.svg\": \"./svg-sprite/linkedin-logo.svg\",\n\t\"./marq-assk.svg\": \"./svg-sprite/marq-assk.svg\",\n\t\"./marq-daros.svg\": \"./svg-sprite/marq-daros.svg\",\n\t\"./marq-equa-bank.svg\": \"./svg-sprite/marq-equa-bank.svg\",\n\t\"./marq-esgo.svg\": \"./svg-sprite/marq-esgo.svg\",\n\t\"./marq-hlavni-mesto-praha.svg\": \"./svg-sprite/marq-hlavni-mesto-praha.svg\",\n\t\"./marq-q-elektrik.svg\": \"./svg-sprite/marq-q-elektrik.svg\",\n\t\"./marq-radio-66.svg\": \"./svg-sprite/marq-radio-66.svg\",\n\t\"./marq-skoda.svg\": \"./svg-sprite/marq-skoda.svg\",\n\t\"./marq-sportongo.svg\": \"./svg-sprite/marq-sportongo.svg\",\n\t\"./marq-t-mobile.svg\": \"./svg-sprite/marq-t-mobile.svg\",\n\t\"./marq-technologie-praha.svg\": \"./svg-sprite/marq-technologie-praha.svg\",\n\t\"./marq-vizit.svg\": \"./svg-sprite/marq-vizit.svg\",\n\t\"./marq-vodafone.svg\": \"./svg-sprite/marq-vodafone.svg\",\n\t\"./marq-vzp.svg\": \"./svg-sprite/marq-vzp.svg\",\n\t\"./marq-woodos.svg\": \"./svg-sprite/marq-woodos.svg\",\n\t\"./plus.svg\": \"./svg-sprite/plus.svg\",\n\t\"./quotes.svg\": \"./svg-sprite/quotes.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./svg-sprite sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://cybronet-cs/./svg-sprite/_sync_\\.svg$?");
 
 /***/ }),
 
@@ -477,6 +752,28 @@ eval("module.exports = __webpack_require__.p + \"img/background-shapes-top-left@
 
 /***/ }),
 
+/***/ "./img/carousel-m-cidlinova.webp":
+/*!***************************************!*\
+  !*** ./img/carousel-m-cidlinova.webp ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/carousel-m-cidlinova.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/carousel-m-cidlinova.webp?");
+
+/***/ }),
+
+/***/ "./img/carousel-m-cidlinova@2x.webp":
+/*!******************************************!*\
+  !*** ./img/carousel-m-cidlinova@2x.webp ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/carousel-m-cidlinova@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/carousel-m-cidlinova@2x.webp?");
+
+/***/ }),
+
 /***/ "./img/carousel-photo.png":
 /*!********************************!*\
   !*** ./img/carousel-photo.png ***!
@@ -488,36 +785,179 @@ eval("module.exports = __webpack_require__.p + \"img/carousel-photo.png\";\n\n//
 
 /***/ }),
 
-/***/ "./img/example-aplikace-na-miru.webp":
+/***/ "./img/carousel-z-popelka.webp":
+/*!*************************************!*\
+  !*** ./img/carousel-z-popelka.webp ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/carousel-z-popelka.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/carousel-z-popelka.webp?");
+
+/***/ }),
+
+/***/ "./img/carousel-z-popelka@2x.webp":
+/*!****************************************!*\
+  !*** ./img/carousel-z-popelka@2x.webp ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/carousel-z-popelka@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/carousel-z-popelka@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/example-background-vizit.webp":
 /*!*******************************************!*\
-  !*** ./img/example-aplikace-na-miru.webp ***!
+  !*** ./img/example-background-vizit.webp ***!
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"img/example-aplikace-na-miru.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-aplikace-na-miru.webp?");
+eval("module.exports = __webpack_require__.p + \"img/example-background-vizit.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-background-vizit.webp?");
 
 /***/ }),
 
-/***/ "./img/example-fresh-design.webp":
+/***/ "./img/example-background-vizit@2x.webp":
+/*!**********************************************!*\
+  !*** ./img/example-background-vizit@2x.webp ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-background-vizit@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-background-vizit@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/example-daros.webp":
+/*!********************************!*\
+  !*** ./img/example-daros.webp ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-daros.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-daros.webp?");
+
+/***/ }),
+
+/***/ "./img/example-daros@2x.webp":
+/*!***********************************!*\
+  !*** ./img/example-daros@2x.webp ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-daros@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-daros@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/example-equi-team.webp":
+/*!************************************!*\
+  !*** ./img/example-equi-team.webp ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-equi-team.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-equi-team.webp?");
+
+/***/ }),
+
+/***/ "./img/example-equi-team@2x.webp":
 /*!***************************************!*\
-  !*** ./img/example-fresh-design.webp ***!
+  !*** ./img/example-equi-team@2x.webp ***!
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"img/example-fresh-design.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-fresh-design.webp?");
+eval("module.exports = __webpack_require__.p + \"img/example-equi-team@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-equi-team@2x.webp?");
 
 /***/ }),
 
-/***/ "./img/example-slozite-systemy.webp":
-/*!******************************************!*\
-  !*** ./img/example-slozite-systemy.webp ***!
-  \******************************************/
+/***/ "./img/example-logo-equi-team.webp":
+/*!*****************************************!*\
+  !*** ./img/example-logo-equi-team.webp ***!
+  \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"img/example-slozite-systemy.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-slozite-systemy.webp?");
+eval("module.exports = __webpack_require__.p + \"img/example-logo-equi-team.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-logo-equi-team.webp?");
+
+/***/ }),
+
+/***/ "./img/example-logo-equi-team@2x.webp":
+/*!********************************************!*\
+  !*** ./img/example-logo-equi-team@2x.webp ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-logo-equi-team@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-logo-equi-team@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/example-logo-vizit.webp":
+/*!*************************************!*\
+  !*** ./img/example-logo-vizit.webp ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-logo-vizit.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-logo-vizit.webp?");
+
+/***/ }),
+
+/***/ "./img/example-logo-vizit@2x.webp":
+/*!****************************************!*\
+  !*** ./img/example-logo-vizit@2x.webp ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-logo-vizit@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-logo-vizit@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/example-sportongo.webp":
+/*!************************************!*\
+  !*** ./img/example-sportongo.webp ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-sportongo.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-sportongo.webp?");
+
+/***/ }),
+
+/***/ "./img/example-sportongo@2x.webp":
+/*!***************************************!*\
+  !*** ./img/example-sportongo@2x.webp ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-sportongo@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-sportongo@2x.webp?");
+
+/***/ }),
+
+/***/ "./img/example-vizit.webp":
+/*!********************************!*\
+  !*** ./img/example-vizit.webp ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-vizit.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-vizit.webp?");
+
+/***/ }),
+
+/***/ "./img/example-vizit@2x.webp":
+/*!***********************************!*\
+  !*** ./img/example-vizit@2x.webp ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/example-vizit@2x.webp\";\n\n//# sourceURL=webpack://cybronet-cs/./img/example-vizit@2x.webp?");
 
 /***/ }),
 

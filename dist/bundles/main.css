@@ -28,6 +28,7 @@
   --examples-breakpoint-desktop-md: 1500px;
   --examples-breakpoint-desktop-sm: 1150px;
   --examples-breakpoint-mobile: 600px;
+  --marquee-width-item-width: 130px;
 }
 
 *,
@@ -192,9 +193,9 @@ input:focus {
 }
 
 .feature__logo {
-  height: 16px;
-  width: 18px;
-  margin-bottom: 13px;
+  height: 24px;
+  width: 24px;
+  margin-bottom: 10px;
 }
 
 .feature__heading {
@@ -265,13 +266,6 @@ a.feature__action {
     width: calc(100% - 50px);
     border-radius: 17px;
   }
-  .example--fresh-design img.example__img, .example--slozite-systemy img.example__img, .example--aplikace-na-miru img.example__img {
-    right: initial;
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-    object-position: center;
-  }
 }
 @media screen and (max-width: 600px) {
   .example {
@@ -280,47 +274,105 @@ a.feature__action {
     grid-template-columns: 1fr;
   }
 }
-.example--fresh-design {
+@media screen and (max-width: 600px) {
+  .example--sportongo img.example__img, .example--daros img.example__img, .example--equi-team img.example__img {
+    right: 0;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .example--sportongo img.example__img, .example--daros img.example__img, .example--equi-team img.example__img {
+    top: 70px;
+    width: 90%;
+  }
+}
+.example--sportongo {
   background-image: linear-gradient(18deg, #034472 15%, #107ac6 87%);
 }
-.example--fresh-design .example__content {
+.example--sportongo .example__content {
   flex: 0 0 365px;
 }
-.example--fresh-design .example__logo {
+.example--sportongo .example__background-logo {
+  height: 100%;
+}
+.example--sportongo .example__logo {
   height: 40px;
   width: 138px;
 }
-.example--fresh-design .example__img {
+.example--sportongo .example__img {
   right: -24px;
   height: 466px;
   width: 420px;
 }
-.example--slozite-systemy {
+.example--vizit {
+  padding: 80px 0 80px 80px;
   background: linear-gradient(213.31deg, #BD70DF 16.26%, #611D8C 85.88%);
 }
-.example--slozite-systemy .example__content {
+@media screen and (max-width: 600px) {
+  .example--vizit {
+    padding: 47px 12px 0;
+  }
+}
+.example--vizit .example__content {
   flex: 0 0 365px;
 }
-.example--slozite-systemy .example__logo {
-  height: 40px;
-  width: 138px;
+.example--vizit .example__logo {
+  height: 48px;
+  width: 118px;
 }
-.example--slozite-systemy .example__img {
+.example--vizit .example__background-logo {
+  z-index: -1;
+  left: 40%;
+  height: 50%;
+}
+.example--vizit .example__img {
   right: -8px;
   height: 472px;
   width: 596px;
 }
-.example--aplikace-na-miru {
+@media screen and (max-width: 600px) {
+  .example--vizit .example__img {
+    top: 10px;
+  }
+}
+.example--daros {
   background: linear-gradient(214.97deg, #DBBF39 18.46%, #917E26 83.91%);
 }
-.example--aplikace-na-miru .example__content {
+.example--daros .example__content {
   flex: 0 0 389px;
 }
-.example--aplikace-na-miru .example__logo {
-  height: 40px;
-  width: 138px;
+.example--daros .example__logo {
+  height: 81px;
+  width: 186px;
 }
-.example--aplikace-na-miru .example__img {
+.example--daros .example__background-logo {
+  height: 50%;
+  opacity: 0.1;
+}
+.example--daros .example__img {
+  right: -24px;
+  height: 466px;
+  width: 430px;
+}
+.example--equi-team {
+  background: linear-gradient(90deg, #282A43 0, #3B4193 100%);
+}
+.example--equi-team .example__content {
+  flex: 0 0 389px;
+}
+.example--equi-team .example__logo {
+  height: 98px;
+  width: 167px;
+}
+.example--equi-team .example__background-logo {
+  height: 40%;
+  opacity: 0.05;
+}
+.example--equi-team .example__img {
   right: -24px;
   height: 466px;
   width: 430px;
@@ -330,7 +382,20 @@ a.feature__action {
   margin-bottom: 30px;
 }
 
+.example__background-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1152px) {
+  .example__background-logo {
+    display: none;
+  }
+}
+
 .example__logo {
+  display: block;
   margin-bottom: 24px;
 }
 
@@ -969,9 +1034,12 @@ a.feature__action {
 }
 
 .hero__marquee-logo-inner {
-  height: 100%;
+  display: grid;
+  place-items: center;
+  height: 47px;
+  width: var(--marquee-width-item-width);
   margin-right: 22px;
-  padding: 14px 20px;
+  padding: 8px 20px;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
@@ -1291,14 +1359,14 @@ a.feature__action {
 .recommendations__slide-title {
   max-width: 620px;
   margin-bottom: 33px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 36px;
 }
 @media screen and (max-width: 600px) {
   .recommendations__slide-title {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 

@@ -36,18 +36,6 @@
     height: calc(100vh - 50px);
     width: calc(100% - 50px);
     border-radius: 17px;
-
-    &--fresh-design,
-    &--slozite-systemy,
-    &--aplikace-na-miru {
-      img.example__img {
-        right: initial;
-        height: auto;
-        width: 100%;
-        object-fit: contain;
-        object-position: center;
-      }
-    }
   }
 
   @include mq-below($examples-breakpoint-mobile) {
@@ -56,11 +44,41 @@
     grid-template-columns: 1fr;
   }
 
-  &--fresh-design {
+  @include mq-below('tablet-md') {
+    &--sportongo,
+    &--daros,
+    &--equi-team {
+      img.example__img {
+        right: 0;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        width: 80%;
+      }
+    }
+  }
+
+  @include mq-below('mobile-lg') {
+    &--sportongo,
+    &--daros,
+    &--equi-team {
+      img.example__img {
+        top: 70px;
+        width: 90%;
+      }
+    }
+  }
+
+  &--sportongo {
     background-image: linear-gradient(18deg, #034472 15%, #107ac6 87%);
 
     .example__content {
       flex: 0 0 365px;
+    }
+
+    .example__background-logo {
+      height: 100%;
     }
 
     .example__logo {
@@ -75,26 +93,41 @@
     }
   }
 
-  &--slozite-systemy {
+  &--vizit {
+    padding: 80px 0 80px 80px;
     background: linear-gradient(213.31deg, #BD70DF 16.26%, #611D8C 85.88%);
+
+    @include mq-below('tablet-md') {
+      padding: 47px 12px 0;
+    }
 
     .example__content {
       flex: 0 0 365px;
     }
     
     .example__logo {
-      height: 40px;
-      width: 138px;
+      height: 48px;
+      width: 118px;
+    }
+
+    .example__background-logo {
+      z-index: -1;
+      left: 40%;
+      height: 50%;
     }
   
     .example__img {
       right: -8px;
       height: 472px;
       width: 596px;
+
+      @include mq-below('tablet-md') {
+        top: 10px;
+      }
     }
   }
 
-  &--aplikace-na-miru {
+  &--daros {
     background: linear-gradient(214.97deg, #DBBF39 18.46%, #917E26 83.91%);
 
     .example__content {
@@ -102,8 +135,37 @@
     }
 
     .example__logo {
-      height: 40px;
-      width: 138px;
+      height: 81px;
+      width: 186px;
+    }
+
+    .example__background-logo {
+      height: 50%;
+      opacity: .1;
+    }
+
+    .example__img {
+      right: -24px;
+      height: 466px;
+      width: 430px;
+    }
+  }
+
+  &--equi-team {
+    background: linear-gradient(90deg,#282A43 0, #3B4193 100%);
+
+    .example__content {
+      flex: 0 0 389px;
+    }
+
+    .example__logo {
+      height: 98px;
+      width: 167px;
+    }
+
+    .example__background-logo {
+      height: 40%;
+      opacity: .05;
     }
 
     .example__img {
@@ -122,7 +184,19 @@
   margin-bottom: 30px;
 }
 
+.example__background-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  @include mq-below('content-width') {
+    display: none;
+  }
+}
+
 .example__logo {
+  display: block;
   margin-bottom: 24px;
 }
 

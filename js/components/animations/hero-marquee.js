@@ -11,9 +11,25 @@ export function heroMarquee() {
     clean()
 
     //--- CONTROLS ---//
-    const logosArr = ['google', 'slack', 'netflix']
+    const logosArr = [
+      'skoda',
+      'sportongo',
+      'vizit',
+      'vzp',
+      't-mobile',
+      'equa-bank',
+      'esgo',
+      'assk',
+      'daros',
+      'radio-66',
+      'technologie-praha',
+      'hlavni-mesto-praha',
+      'q-elektrik',
+      'vodafone',
+      'woodos',
+    ]
     const marqueeItemGap = 22
-    const marqueeItemWidth = 111
+    const marqueeItemWidth = 130
     const marqueeSpeed = 22
   
     //--- LOGIC ---//

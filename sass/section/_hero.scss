@@ -233,9 +233,12 @@
 }
 
 .hero__marquee-logo-inner {
-  height: 100%;
+  display: grid;
+  place-items: center;
+  height: 47px;
+  width: var(--marquee-width-item-width);
   margin-right: 22px;
-  padding: 14px 20px;
+  padding: 8px 20px;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
