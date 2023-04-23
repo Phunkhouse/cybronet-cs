@@ -9341,6 +9341,42 @@ function examplesScroll() {
       delay: delay
     });
   }
+  function examplesScrollMobile() {
+    function mobileScrollBuilder({
+      name
+    }) {
+      gsapWithCSS.from(`.example--${name} .example__content`, {
+        scrollTrigger: {
+          trigger: `.example--${name}`,
+          start: 'top 70%'
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.8
+      });
+      gsapWithCSS.from(`.example--${name} .example__img`, {
+        scrollTrigger: {
+          trigger: `.example--${name}`,
+          start: 'top 20%'
+        },
+        scale: 1.1,
+        opacity: 0,
+        duration: 0.8
+      });
+    }
+    mobileScrollBuilder({
+      name: 'sportongo'
+    });
+    mobileScrollBuilder({
+      name: 'vizit'
+    });
+    mobileScrollBuilder({
+      name: 'daros'
+    });
+    mobileScrollBuilder({
+      name: 'equi-team'
+    });
+  }
   const mediaQuery = gsapWithCSS.matchMedia();
   mediaQuery.add(`(min-width: 2300px)`, () => {
     examplesScrollBuilder({
@@ -9383,14 +9419,7 @@ function examplesScroll() {
     });
   });
   mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {
-    examplesScrollBuilder({
-      wrapperEnd: `${getHeight + getHeight / 3}px`,
-      firstY: -getHeight - 60,
-      secondY: -getHeight - 60,
-      thirdY: -getHeight - 60,
-      duration: 6,
-      delay: 2
-    });
+    examplesScrollMobile();
   });
 }
 ;// CONCATENATED MODULE: ./js/components/animations/featuresScroll.js
@@ -9529,7 +9558,12 @@ function heroMarquee() {
     const logosArr = ['skoda', 'sportongo', 'vizit', 'vzp', 't-mobile', 'equa-bank', 'esgo', 'assk', 'daros', 'radio-66', 'technologie-praha', 'hlavni-mesto-praha', 'q-elektrik', 'vodafone', 'woodos'];
     const marqueeItemGap = 22;
     const marqueeItemWidth = 130;
-    const marqueeSpeed = 22;
+    let marqueeSpeed = 22;
+    if (window.innerWidth < 600) {
+      marqueeSpeed = 8;
+    } else {
+      marqueeSpeed = 22;
+    }
 
     //--- LOGIC ---//
     const requiredMarqueeItemWidth = marqueeItemWidth + marqueeItemGap;
