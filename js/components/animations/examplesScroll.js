@@ -63,6 +63,35 @@ export function examplesScroll() {
       })
   }
 
+  function examplesScrollMobile() {
+    function mobileScrollBuilder({ name }) {
+      gsap.from(`.example--${name} .example__content`, {
+        scrollTrigger: {
+          trigger: `.example--${name}`,
+          start: 'top 70%',
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+      })
+
+      gsap.from(`.example--${name} .example__img`, {
+        scrollTrigger: {
+          trigger: `.example--${name}`,
+          start: 'top 20%',
+        },
+        scale: 1.1,
+        opacity: 0,
+        duration: 0.8,
+      })
+    }
+
+    mobileScrollBuilder({ name: 'sportongo' })
+    mobileScrollBuilder({ name: 'vizit' })
+    mobileScrollBuilder({ name: 'daros' })
+    mobileScrollBuilder({ name: 'equi-team' })
+  }
+
   const mediaQuery = gsap.matchMedia()
 
   mediaQuery.add(`(min-width: 2300px)`, () => {
@@ -110,14 +139,7 @@ export function examplesScroll() {
   })
 
   mediaQuery.add(`(max-width: ${breakpoint('mobile')}px)`, () => {
-    examplesScrollBuilder({
-      wrapperEnd: `${getHeight + (getHeight / 3)}px`,
-      firstY: -getHeight - 60,
-      secondY: -getHeight - 60,
-      thirdY: -getHeight - 60,
-      duration: 6,
-      delay: 2,
-    })
+    examplesScrollMobile()
   })
 }
 

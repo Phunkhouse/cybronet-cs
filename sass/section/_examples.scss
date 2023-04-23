@@ -17,11 +17,17 @@
   }
 
   @include mq-below('tablet-md') {
+    height: auto;
     margin-top: 0;
-    height: 100vh;
+    padding: 0;
   }
 }
 
 .examples__inner {
   height: 100%;
+
+  @include mq-below('tablet-md') {
+    display: flex;
+    flex-direction: column;
+  }
 }

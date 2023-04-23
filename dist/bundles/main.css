@@ -269,28 +269,31 @@ a.feature__action {
 }
 @media screen and (max-width: 600px) {
   .example {
-    height: var(--example-height);
-    padding: 47px 12px 0;
+    display: block;
+    position: relative;
     grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100%;
+    padding: 45px 30px 0 30px;
+    border-radius: 0;
   }
-}
-@media screen and (max-width: 600px) {
-  .example--sportongo img.example__img, .example--daros img.example__img, .example--equi-team img.example__img {
+  .example img.example__img {
+    position: absolute;
     right: 0;
-    top: 70px;
     left: 50%;
-    transform: translateX(-50%);
+    bottom: -110px;
     height: auto;
-    width: 80%;
+    width: 110%;
+    transform: translateX(-50%) rotate(3deg);
   }
 }
-@media screen and (max-width: 450px) {
-  .example--sportongo img.example__img, .example--daros img.example__img, .example--equi-team img.example__img {
-    top: 70px;
-    width: 90%;
+@media screen and (max-width: 380px) {
+  .example img.example__img {
+    width: 70%;
   }
 }
 .example--sportongo {
+  order: 1;
   background-image: linear-gradient(18deg, #034472 15%, #107ac6 87%);
 }
 .example--sportongo .example__content {
@@ -303,18 +306,25 @@ a.feature__action {
   height: 40px;
   width: 138px;
 }
+@media screen and (max-width: 600px) {
+  .example--sportongo .example__logo {
+    height: 36px;
+    width: 124.2px;
+  }
+}
 .example--sportongo .example__img {
   right: -24px;
   height: 466px;
   width: 420px;
 }
 .example--vizit {
+  order: 2;
   padding: 80px 0 80px 80px;
   background: linear-gradient(213.31deg, #BD70DF 16.26%, #611D8C 85.88%);
 }
 @media screen and (max-width: 600px) {
   .example--vizit {
-    padding: 47px 12px 0;
+    padding: 30px 30px 0 30px;
   }
 }
 .example--vizit .example__content {
@@ -323,6 +333,12 @@ a.feature__action {
 .example--vizit .example__logo {
   height: 48px;
   width: 118px;
+}
+@media screen and (max-width: 600px) {
+  .example--vizit .example__logo {
+    height: 38.4px;
+    width: 94.4px;
+  }
 }
 .example--vizit .example__background-logo {
   z-index: -1;
@@ -335,11 +351,20 @@ a.feature__action {
   width: 596px;
 }
 @media screen and (max-width: 600px) {
-  .example--vizit .example__img {
-    top: 10px;
+  .example--vizit img.example__img {
+    width: 105%;
+    bottom: -20px;
+    transform: translateX(-40%) rotate(2deg);
+  }
+}
+@media screen and (max-width: 380px) {
+  .example--vizit img.example__img {
+    bottom: -90px;
+    width: 100%;
   }
 }
 .example--daros {
+  order: 3;
   background: linear-gradient(214.97deg, #DBBF39 18.46%, #917E26 83.91%);
 }
 .example--daros .example__content {
@@ -348,6 +373,18 @@ a.feature__action {
 .example--daros .example__logo {
   height: 81px;
   width: 186px;
+}
+@media screen and (max-width: 600px) {
+  .example--daros .example__logo {
+    height: 56.7px;
+    width: 130.2px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .example--daros .example__logo {
+    height: 40.5px;
+    width: 93px;
+  }
 }
 .example--daros .example__background-logo {
   height: 50%;
@@ -359,6 +396,7 @@ a.feature__action {
   width: 430px;
 }
 .example--equi-team {
+  order: 4;
   background: linear-gradient(90deg, #282A43 0, #3B4193 100%);
 }
 .example--equi-team .example__content {
@@ -368,6 +406,18 @@ a.feature__action {
   height: 98px;
   width: 167px;
 }
+@media screen and (max-width: 600px) {
+  .example--equi-team .example__logo {
+    height: 68.6px;
+    width: 116.9px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .example--equi-team .example__logo {
+    height: 49px;
+    width: 83.5px;
+  }
+}
 .example--equi-team .example__background-logo {
   height: 40%;
   opacity: 0.05;
@@ -376,6 +426,13 @@ a.feature__action {
   right: -24px;
   height: 466px;
   width: 430px;
+}
+
+@media screen and (max-width: 600px) {
+  .example__content {
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 .example__title {
@@ -1152,13 +1209,20 @@ a.feature__action {
 }
 @media screen and (max-width: 600px) {
   .examples {
+    height: auto;
     margin-top: 0;
-    height: 100vh;
+    padding: 0;
   }
 }
 
 .examples__inner {
   height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .examples__inner {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .pillars__wrapper {

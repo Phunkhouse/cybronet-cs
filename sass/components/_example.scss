@@ -39,38 +39,44 @@
   }
 
   @include mq-below($examples-breakpoint-mobile) {
-    height: var(--example-height);
-    padding: 47px 12px 0;
+    display: block;
+    position: relative;
     grid-template-columns: 1fr;
-  }
+    height: 100vh;
+    width: 100%;
+    padding: 45px 30px 0 30px;
+    border-radius: 0;
 
-  @include mq-below('tablet-md') {
-    &--sportongo,
-    &--daros,
-    &--equi-team {
-      img.example__img {
-        right: 0;
-        top: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        height: auto;
-        width: 80%;
-      }
+    .example__logo {
+
+    }
+
+    .example_content {
+    }
+
+    img.example__img {
+      position: absolute;
+      right: 0;
+      left: 50%;
+      bottom: -110px;
+      height: auto;
+      width: 110%;
+      transform: translateX(-50%) rotate(3deg);
     }
   }
 
-  @include mq-below('mobile-lg') {
-    &--sportongo,
-    &--daros,
-    &--equi-team {
-      img.example__img {
-        top: 70px;
-        width: 90%;
-      }
+  @include mq-below('mobile-md') {
+    img.example__img {
+      width: 70%;
     }
   }
+
 
   &--sportongo {
+    $sportongo-logo-height: 40px;
+    $sportongo-logo-width: 138px;
+
+    order: 1;
     background-image: linear-gradient(18deg, #034472 15%, #107ac6 87%);
 
     .example__content {
@@ -82,8 +88,13 @@
     }
 
     .example__logo {
-      height: 40px;
-      width: 138px;
+      height: $sportongo-logo-height;
+      width: $sportongo-logo-width;
+
+      @include mq-below('tablet-md') {
+        height: $sportongo-logo-height * .9;
+        width: $sportongo-logo-width * .9;
+      }
     }
 
     .example__img {
@@ -94,11 +105,15 @@
   }
 
   &--vizit {
+    $vizit-logo-height: 48px;
+    $vizit-logo-width: 118px;
+
+    order: 2;
     padding: 80px 0 80px 80px;
     background: linear-gradient(213.31deg, #BD70DF 16.26%, #611D8C 85.88%);
 
     @include mq-below('tablet-md') {
-      padding: 47px 12px 0;
+      padding: 30px 30px 0 30px;
     }
 
     .example__content {
@@ -106,8 +121,13 @@
     }
     
     .example__logo {
-      height: 48px;
-      width: 118px;
+      height: $vizit-logo-height;
+      width: $vizit-logo-width;
+
+      @include mq-below('tablet-md') {
+        height: $vizit-logo-height * .8;
+        width: $vizit-logo-width * .8;
+      }
     }
 
     .example__background-logo {
@@ -120,14 +140,27 @@
       right: -8px;
       height: 472px;
       width: 596px;
+    }
 
+    img.example__img {
       @include mq-below('tablet-md') {
-        top: 10px;
+        width: 105%;
+        bottom: -20px;
+        transform: translateX(-40%) rotate(2deg);
+      }
+
+      @include mq-below('mobile-md') {
+        bottom: -90px;
+        width: 100%;
       }
     }
   }
 
   &--daros {
+    $daros-logo-height: 81px;
+    $daros-logo-width: 186px;
+
+    order: 3;
     background: linear-gradient(214.97deg, #DBBF39 18.46%, #917E26 83.91%);
 
     .example__content {
@@ -135,8 +168,18 @@
     }
 
     .example__logo {
-      height: 81px;
-      width: 186px;
+      height: $daros-logo-height;
+      width: $daros-logo-width;
+
+      @include mq-below('tablet-md') {
+        height: $daros-logo-height * .7;
+        width: $daros-logo-width * .7;
+      }
+
+      @include mq-below('mobile-md') {
+        height: $daros-logo-height * .5;
+        width: $daros-logo-width * .5;
+      }
     }
 
     .example__background-logo {
@@ -152,6 +195,10 @@
   }
 
   &--equi-team {
+    $equi-team-logo-height: 98px;
+    $equi-team-logo-width: 167px;
+
+    order: 4;
     background: linear-gradient(90deg,#282A43 0, #3B4193 100%);
 
     .example__content {
@@ -159,8 +206,18 @@
     }
 
     .example__logo {
-      height: 98px;
-      width: 167px;
+      height: $equi-team-logo-height;
+      width: $equi-team-logo-width;
+
+      @include mq-below('tablet-md') {
+        height: $equi-team-logo-height * .7;
+        width: $equi-team-logo-width * .7;
+      }
+
+      @include mq-below('mobile-md') {
+        height: $equi-team-logo-height * .5;
+        width: $equi-team-logo-width * .5;
+      }
     }
 
     .example__background-logo {
@@ -177,7 +234,10 @@
 }
 
 .example__content {
-
+  @include mq-below('tablet-md') {
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 .example__title {

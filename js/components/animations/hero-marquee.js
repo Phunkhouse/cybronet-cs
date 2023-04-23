@@ -30,7 +30,13 @@ export function heroMarquee() {
     ]
     const marqueeItemGap = 22
     const marqueeItemWidth = 130
-    const marqueeSpeed = 22
+    let marqueeSpeed = 22
+
+    if (window.innerWidth < 600) {
+      marqueeSpeed = 8
+    } else {
+      marqueeSpeed = 22
+    }
   
     //--- LOGIC ---//
     const requiredMarqueeItemWidth = marqueeItemWidth + marqueeItemGap
