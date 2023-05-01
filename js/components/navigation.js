@@ -48,7 +48,7 @@ export function navigation() {
       </header>
       <nav class='header-mobile__menu'>
         <ul id='mobile-menu' class='header-mobile__menu-inner'>
-          <li>
+          <li style='display: none'>
             <a href='/cybronet-cs/kariera.html' class='btn'>
               Otevřené pozice
             </a>
