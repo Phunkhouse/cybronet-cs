@@ -14,11 +14,15 @@ webpackScripts()
 window.addEventListener('load', function () {
   navigation()
 
+  // Set the year in the footer
+  document.getElementById('getYear').innerHTML = new Date().getFullYear()
+
   if (homePage) {
     getHeights()
     animations()
     contactForm({ homePage })
 
+    // Scroll to the contact form if the url has #contact
     if (location.hash === '#contact') {
       setTimeout(() => {
         document.getElementById(location.hash.substring(1)).scrollIntoView()
