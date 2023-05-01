@@ -10,6 +10,9 @@ addEventListener('resize', () => {
 })
 
 export function examplesScroll() {
+  const wrapperEndPercentage = '+=230%'
+  const wrapperExtender = 1500
+
   function breakpoint(breakpoint) {
     const varValue = getComputedStyle(document.documentElement).getPropertyValue(`--examples-breakpoint-${breakpoint}`)
     return varValue.substring(0, varValue.length - 2)
@@ -37,7 +40,7 @@ export function examplesScroll() {
       scrollTrigger: {
         trigger: '.examples',
         start: 'top',
-        end: 'bottom',
+        end: wrapperEndPercentage,
         scrub: true,
       },
     })
@@ -96,40 +99,40 @@ export function examplesScroll() {
 
   mediaQuery.add(`(min-width: 2300px)`, () => {
     examplesScrollBuilder({
-      wrapperEnd: `${getHeight - 200}px`,
+      wrapperEnd: `${getHeight - 200 + wrapperExtender}px`,
       firstY: -getHeight,
       secondY: -getHeight,
       thirdY: -getHeight,
-      duration: 2,
-      delay: 0,
+      duration: 200,
+      delay: 20,
     })
   })
 
   mediaQuery.add(`(min-width: ${breakpoint('desktop-md')}px) and (max-width: 2299px)`, () => {
     examplesScrollBuilder({
-      wrapperEnd: `${getHeight + (getHeight / 3)}px`,
+      wrapperEnd: `${getHeight + (getHeight / 3) + wrapperExtender}px`,
       firstY: -getHeight,
       secondY: -getHeight,
       thirdY: -getHeight,
-      duration: 2,
-      delay: 2,
+      duration: 200,
+      delay: 20,
     })
   })
 
   mediaQuery.add(`(min-width: ${breakpoint('desktop-sm')}px) and (max-width: ${breakpoint('desktop-md') - 1}px)`, () => {
     examplesScrollBuilder({
-      wrapperEnd: `${getHeight}px`,
+      wrapperEnd: `${getHeight + wrapperExtender}px`,
       firstY: -getHeight,
       secondY: -getHeight,
       thirdY: -getHeight,
-      duration: 2,
-      delay: 0,
+      duration: 200,
+      delay: 20,
     })
   })
 
   mediaQuery.add(`(min-width: ${breakpoint('mobile')}px) and (max-width: ${breakpoint('desktop-sm') - 1}px)`, () => {
     examplesScrollBuilder({
-      wrapperEnd: `${getHeight + (getHeight / 3)}px`,
+      wrapperEnd: `${getHeight + (getHeight / 3) + wrapperExtender}px`,
       firstY: -getHeight,
       secondY: -getHeight,
       thirdY: -getHeight,
