@@ -35,7 +35,7 @@ export function navigation() {
   function createMobileHeader() {
     heroContainer.insertAdjacentHTML('afterbegin', `
       <header class='header-mobile js-header'>
-        <a href='/cybronet-cs/'>
+        <a href='/'>
           <svg class='header-mobile__logo' alt='Cybronet logo'>
             <use xlink:href='./bundles/img/sprite.svg#cybronet-logo'></use>
           </svg>
@@ -49,12 +49,12 @@ export function navigation() {
       <nav class='header-mobile__menu'>
         <ul id='mobile-menu' class='header-mobile__menu-inner'>
           <li style='display: none'>
-            <a href='/cybronet-cs/kariera.html' class='btn'>
+            <a href='/kariera.html' class='btn'>
               Otevřené pozice
             </a>
           </li>
           <li>
-            <a href='/cybronet-cs/#contact' class='btn btn--primary'>
+            <a href='/#contact' class='btn btn--primary'>
               Napiš nám
             </a>
           </li>

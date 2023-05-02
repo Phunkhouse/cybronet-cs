@@ -30,7 +30,7 @@ export function contactForm({ homePage }) {
 
   function buildForm() {
     const wrapper = document.getElementById('contact-form-wrapper')
-    const domain = 'https://phunkhouse.github.io'
+    const domain = 'https://cybronet.com'
     const pathRaw = window.location.pathname
     const path = pathRaw.substring(0, pathRaw.length - 5)
     const url = domain + path

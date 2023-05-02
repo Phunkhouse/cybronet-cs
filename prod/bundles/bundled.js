@@ -9689,7 +9689,7 @@ function navigation() {
   function createMobileHeader() {
     heroContainer.insertAdjacentHTML('afterbegin', `
       <header class='header-mobile js-header'>
-        <a href='/cybronet-cs/'>
+        <a href='/'>
           <svg class='header-mobile__logo' alt='Cybronet logo'>
             <use xlink:href='./bundles/img/sprite.svg#cybronet-logo'></use>
           </svg>
@@ -9703,12 +9703,12 @@ function navigation() {
       <nav class='header-mobile__menu'>
         <ul id='mobile-menu' class='header-mobile__menu-inner'>
           <li style='display: none'>
-            <a href='/cybronet-cs/kariera.html' class='btn'>
+            <a href='/kariera.html' class='btn'>
               Otevřené pozice
             </a>
           </li>
           <li>
-            <a href='/cybronet-cs/#contact' class='btn btn--primary'>
+            <a href='/#contact' class='btn btn--primary'>
               Napiš nám
             </a>
           </li>
@@ -9812,7 +9812,7 @@ function contactForm({
   }
   function buildForm() {
     const wrapper = document.getElementById('contact-form-wrapper');
-    const domain = 'https://phunkhouse.github.io';
+    const domain = 'https://cybronet.com';
     const pathRaw = window.location.pathname;
     const path = pathRaw.substring(0, pathRaw.length - 5);
     const url = domain + path;
