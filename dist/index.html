@@ -19,6 +19,25 @@
   <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
   <link href='https://fonts.googleapis.com/css2?family=Chivo&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap' rel='stylesheet'>
 
+  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "cs", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "Cybronet" });
+    });
+  </script>
+  
+  <!-- Google Analytics -->
+  <script type="text/plain" data-cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-NH26TJ8DT0"></script>
+  <script type="text/plain" data-cookie-consent="tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-NH26TJ8DT0');
+  </script>
+  <!-- end of Google Analytics-->
+
   <link rel='stylesheet' href='bundles/main.css'>
   <title>Document</title>
 </head>
@@ -399,6 +418,9 @@
       </li> -->
       <li class='btn btn--link footer__menu-item'>
         <a href='#contact'>Kontaktuj nás</a>
+      </li>
+      <li class='btn btn--link footer__menu-item'>
+        <a id="open_preferences_center" href='#'>Nastavení cookies</a>
       </li>
     </ul>
     <!-- <div class='footer__social'>
