@@ -97,3 +97,17 @@
   gap: 24px;
   text-align: center;
 }
+
+.header-mobile__menu-locales {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-mobile__navigation-locale-item {
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}

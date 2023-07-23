@@ -1,3 +1,5 @@
+import { navigationLocales } from './navigation-locales'
+
 export function navigation() {
   let contentWidth = window.innerWidth
   const heroContainer = document.getElementById('hero')
@@ -33,11 +35,13 @@ export function navigation() {
   }
 
   function createMobileHeader() {
+    const isAltLocale = document.documentElement.lang !== 'cs'
+
     heroContainer.insertAdjacentHTML('afterbegin', `
       <header class='header-mobile js-header'>
         <a href='/'>
           <svg class='header-mobile__logo' alt='Cybronet logo'>
-            <use xlink:href='./bundles/img/sprite.svg#cybronet-logo'></use>
+            <use xlink:href='.${isAltLocale ? '.' : ''}/bundles/img/sprite.svg#cybronet-logo'></use>
           </svg>
         </a>
         <button id='hamburger' class='header-mobile__hamburger'>
@@ -58,6 +62,8 @@ export function navigation() {
               Napiš nám
             </a>
           </li>
+        </ul>
+        <ul id='locales-mobile' class='header-mobile__menu-locales'>
         </ul>
       </nav>
     `)
@@ -86,6 +92,7 @@ export function navigation() {
   if (contentWidth < 750) {
     mainContainer.classList.add('js-isMobile')
     createMobileHeader()
+    navigationLocales({ type: 'mobile' })
 
     let timer = null
     const headerMobile = document.querySelector('.header-mobile')
@@ -127,6 +134,7 @@ export function navigation() {
     if (contentWidth <= 750 && !mainContainer.classList.contains('js-isMobile')) {
       mainContainer.classList.add('js-isMobile')
       createMobileHeader()
+      navigationLocales({ type: 'mobile' })
     } else if (contentWidth > 750 && mainContainer.classList.contains('js-isMobile')) {
       mainContainer.classList.remove('js-isMobile')
       document.getElementById('hamburger').removeEventListener('click', () => {

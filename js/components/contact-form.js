@@ -1,28 +1,31 @@
 import { capitalize } from '../utilites'
+import { contactFormContent } from './contact-form-locales'
 
 export function contactForm({ homePage }) {
+  const locale = document.documentElement.lang
+
   function renderButtons() {
     return `
       <div class='contact-form__options'>
-        <h5 class='contact-form__options-title'>Mám zájem o:</h5>
+        <h5 class='contact-form__options-title'>${contactFormContent[locale].interest.title}</h5>
         <div id='form-type-options' class='contact-form__options-buttons'>
-          <button class='contact-form__options-button'>Webové aplikace</button>
-          <button class='contact-form__options-button'>Konzultace</button>
-          <button class='contact-form__options-button'>Školení</button>
-          <button class='contact-form__options-button'>Internet of things</button>
-          <button class='contact-form__options-button'>Mobilní aplikace</button>
-          <button class='contact-form__options-button'>Web design</button>
-          <button class='contact-form__options-button'>UX/UI design</button>
-          <button class='contact-form__options-button'>Jiné</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].interest.options[0]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].interest.options[1]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].interest.options[2]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].interest.options[3]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].interest.options[4]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].interest.options[5]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].interest.options[6]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].interest.options[7]}</button>
         </div>
       </div>
       <div class='contact-form__options'>
-        <h5 class='contact-form__options-title'>Očekávaný budget:</h5>
+        <h5 class='contact-form__options-title'>${contactFormContent[locale].budget.title}</h5>
         <div id='form-budget-options' class='contact-form__options-buttons'>
-          <button class='contact-form__options-button'>Méně než 50K</button>
-          <button class='contact-form__options-button'>50K - 150K</button>
-          <button class='contact-form__options-button'>150K - 500K</button>
-          <button class='contact-form__options-button'>Více než 500k</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].budget.options[0]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].budget.options[1]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].budget.options[2]}</button>
+          <button class='contact-form__options-button'>${contactFormContent[locale].budget.options[3]}</button>
         </div>
       </div>
     `
@@ -41,26 +44,26 @@ export function contactForm({ homePage }) {
       <form id='contact-form' action="https://formsubmit.co/mail@cybronet.com" method="POST" class='contact-form__form'>
         <div class='contact-form__inputs'>
           <div class='contact-form__input-container'>
-            <input id='form-name' name='Jméno' type='text' placeholder='Jméno' class='contact-form__input' />
+            <input id='form-name' name='${contactFormContent[locale].name}' type='text' placeholder='${contactFormContent[locale].name}' class='contact-form__input' />
           </div>
           <div class='contact-form__input-container'>
-            <input id='form-email' name='Email' type='email' placeholder='Váš email' class='contact-form__input' />
+            <input id='form-email' name='${contactFormContent[locale].email}' type='email' placeholder='${contactFormContent[locale].email}' class='contact-form__input' />
           </div>
           <div class='contact-form__input-container'>
-            <input id='form-company' name='Firma' type='text' placeholder='Firma' class='contact-form__input' />
+            <input id='form-company' name='${contactFormContent[locale].company}' type='text' placeholder='${contactFormContent[locale].company}' class='contact-form__input' />
           </div>
           <div class='contact-form__input-container'>
-            <textarea id='form-more' name='Obsah' type='text' placeholder='Co vás vede k Cybronetu?' class='contact-form__textarea'></textarea>
+            <textarea id='form-more' name='${contactFormContent[locale].more}' type='text' placeholder='${contactFormContent[locale].more}' class='contact-form__textarea'></textarea>
           </div>
           <input type='hidden' name='_next' value='${url}#thanks'>
         </div>
         <div id='form-type' class='contact-form__hidden-input-area'></div>
         <div id='form-budget' class='contact-form__hidden-input-area'></div>
-        <label class='contact-form__checkbox'>Souhlasím s podmínkami a se zpracováním osobních údajů
+        <label class='contact-form__checkbox'>${contactFormContent[locale].checkbox}
           <input id='form-checkbox' type='checkbox' class='contact-form__checkbox-hidden'></type>
           <span class='contact-form__checkbox-inner'></span>
         </label>
-        <button type='submit' id='submit-btn' class='btn btn--primary contact-form__send-btn'>Odeslat</button>
+        <button type='submit' id='submit-btn' class='btn btn--primary contact-form__send-btn'>${contactFormContent[locale].send}</button>
       </form>
     </div>
   `)
@@ -116,7 +119,7 @@ export function contactForm({ homePage }) {
       return true
     } else {
       formOptions.insertAdjacentHTML('beforeend', `
-        <div class='contact-form__error'>Prosím, vyberte:</div>
+        <div class='contact-form__error'>${contactFormContent[locale].choose}</div>
       `)
       return false
     }
@@ -128,7 +131,7 @@ export function contactForm({ homePage }) {
 
     if (!input.value) {
       inputContainer.insertAdjacentHTML('beforeend', `
-        <div class='contact-form__error'>Prosím, vyplňte:</div>
+        <div class='contact-form__error'>${contactFormContent[locale].fill}</div>
       `)
     }
   }
@@ -139,7 +142,7 @@ export function contactForm({ homePage }) {
 
     if (!checkbox.checked) {
       checkboxWrapper.insertAdjacentHTML('beforeend', `
-        <div class='contact-form__error contact-form__error--checkbox'>Prosím, zaškrtněte:</div>
+        <div class='contact-form__error contact-form__error--checkbox'>${contactFormContent[locale].check}</div>
       `)
     }
   }
@@ -189,7 +192,7 @@ export function contactForm({ homePage }) {
       const wrapper = document.querySelector('main')
 
       wrapper.insertAdjacentHTML('beforeend', `
-        <div class='contact-form__sent'>Děkujeme za zaslání. Brzy se ozveme!</div>
+        <div class='contact-form__sent'>${contactFormContent[locale].thanks}</div>
       `)
     }
 

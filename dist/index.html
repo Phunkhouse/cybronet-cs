@@ -14,6 +14,10 @@
   <link rel='apple-touch-icon' href='/apple-touch-icon.png'>
   <link rel='manifest' href='/manifest.webmanifest'>
 
+  <!-- Hreflangs (locales) -->
+  <link rel='alternate' hreflang='en' href='https://cybronet.com/en/'>
+  <link rel='alternate' hreflang='cs' href='https://cybronet.com/'>
+
   <!-- Google fonts -->
   <link rel='preconnect' href='https://fonts.googleapis.com'>
   <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
@@ -39,7 +43,6 @@
   <!-- end of Google Analytics-->
 
   <link rel='stylesheet' href='bundles/main.css'>
-  <title>Document</title>
 </head>
 
 <body id='home' class='layout'>
@@ -52,7 +55,10 @@
               <use xlink:href='./bundles/img/sprite.svg#cybronet-logo'></use>
             </svg>
           </a>
-          <nav>
+          <nav class='header__navigation-wrapper'>
+            <ul id='locales' class='header__navigation'>
+            </ul>
+            <div class='header__divider'></div>
             <ul class='header__navigation'>
               <!-- <li>
                 <a href='/kariera.html' class='btn btn--link'>
@@ -420,7 +426,7 @@
         <a href='#contact'>Kontaktuj nás</a>
       </li>
       <li class='btn btn--link footer__menu-item'>
-        <a id="open_preferences_center" href='#'>Nastavení cookies</a>
+        <a href='#' id="open_preferences_center">Nastavení cookies</a>
       </li>
     </ul>
     <!-- <div class='footer__social'>

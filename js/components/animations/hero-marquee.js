@@ -57,12 +57,14 @@ export function heroMarquee() {
     const marqueeInner = document.querySelector('.hero__marquee-inner')
     const marqueeLogoContainer = 'hero__marquee-logo-container'
 
+    const isAltLocale = document.documentElement.lang !== 'cs'
+
     requiredLogosArray.map(logo => {
       marqueeInner.insertAdjacentHTML('beforeend', `
         <div class='${marqueeLogoContainer}'>
           <div class='hero__marquee-logo-inner'>
             <svg class='hero__marquee-logo'>
-              <use xlink:href='./bundles/img/sprite.svg#marq-${logo}'></use>
+              <use xlink:href='.${isAltLocale ? '.' : ''}/bundles/img/sprite.svg#marq-${logo}'></use>
             </svg>
           </div>
         </div>

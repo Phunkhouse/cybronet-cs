@@ -82,12 +82,12 @@
 .recommendations__carousel {
   position: relative;
   display: flex;
-  height: 450px;
+  height: 500px;
   width: 100%;
   overflow: hidden;
 
   @include mq-below('mobile-lg') {
-    height: 500px;
+    height: 550px;
   }
 }
 

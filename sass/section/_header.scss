@@ -43,8 +43,26 @@
   width: 140px;
 }
 
+.header__navigation-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__divider {
+  height: 15px;
+  width: 2px;
+  margin: 0 18px;
+  background-color: var(--cl-white);
+  opacity: .2;
+}
+
 .header__navigation {
   display: flex;
   align-items: center;
   gap: 18px;
+}
+
+.header__navigation-locale-item {
+  text-transform: uppercase;
+  font-weight: 600;
 }

@@ -4,6 +4,7 @@ import { getHeights } from './utilites'
 import { animations } from './components/animations'
 import { navigation } from './components/navigation'
 import { contactForm } from './components/contact-form'
+import { navigationLocales } from './components/navigation-locales'
 
 const homePage = document.getElementById('home')
 const careerPage = document.getElementById('career-page')
@@ -13,6 +14,7 @@ webpackScripts()
 
 window.addEventListener('load', function () {
   navigation()
+  navigationLocales({ type: 'desktop' })
 
   // Set the year in the footer
   document.getElementById('getYear').innerHTML = new Date().getFullYear()
