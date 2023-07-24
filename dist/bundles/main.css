@@ -866,9 +866,23 @@ a.feature__action {
 
 .header-mobile__menu-locales {
   position: absolute;
-  bottom: 40px;
+  top: 130px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header-mobile__menu-locales::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: var(--cl-white);
+  opacity: 0.2;
 }
 
 .header-mobile__navigation-locale-item {
