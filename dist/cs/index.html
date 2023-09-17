@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='cs'>
 
 <head>
   <meta charset='UTF-8'>
@@ -15,10 +15,11 @@
   <link rel='manifest' href='/manifest.webmanifest'>
 
   <!-- Hreflangs (locales) -->
-  <link rel='alternate' hreflang='cs' href='https://cybronet.com/'>
-  <link rel='alternate' hreflang='sk' href='https://cybronet.com/'>
-  <link rel='alternate' hreflang='en' href='https://cybronet.com/en/'>
-  <link rel="alternate" href='https://cybronet.com/en/' hreflang='x-default' />
+  <link rel='alternate' hreflang='cs' href='https://cybronet.com/cs/'>
+  <link rel='alternate' hreflang='sk' href='https://cybronet.com/cs/'>
+  <link rel='alternate' hreflang='en' href='https://cybronet.com/'>
+  <link rel='alternate' hreflang='de' href='https://cybronet.com/de/'>
+  <link rel="alternate" href='https://cybronet.com/' hreflang='x-default' />
 
   <!-- Google fonts -->
   <link rel='preconnect' href='https://fonts.googleapis.com'>
@@ -29,19 +30,19 @@
   <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
   <script type="text/javascript" charset="UTF-8">
     document.addEventListener('DOMContentLoaded', function () {
-      cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false });
+      cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "cs", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "Cybronet" });
     });
   </script>
   
   <!-- Google Analytics -->
   <script type="text/plain" data-cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-NH26TJ8DT0"></script>
   <script type="text/plain" data-cookie-consent="tracking">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-NH26TJ8DT0');
-    </script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-NH26TJ8DT0');
+  </script>
   <!-- end of Google Analytics-->
 
   <link rel='stylesheet' href='../bundles/main.css'>
@@ -52,9 +53,9 @@
     <section id='hero' class='hero'>
       <header class='header js-header'>
         <div class='header__inner'>
-          <a href='/en/'>
+          <a href='/'>
             <svg class='header__logo' alt='Cybronet logo'>
-              <use xlink:href='./../bundles/img/sprite.svg#cybronet-logo'></use>
+              <use xlink:href='../bundles/img/sprite.svg#cybronet-logo'></use>
             </svg>
           </a>
           <nav class='header__navigation-wrapper'>
@@ -63,13 +64,13 @@
             <div class='header__divider'></div>
             <ul class='header__navigation'>
               <!-- <li>
-                <a href='en/kariera.html' class='btn btn--link'>
+                <a href='/kariera.html' class='btn btn--link'>
                   Otevřené pozice
                 </a>
               </li> -->
               <li>
                 <a href='#contact' class='btn btn--primary'>
-                  Write us
+                  Napiš nám
                 </a>
               </li>
             </ul>
@@ -81,14 +82,14 @@
           <div class='hero__content-text'>
             <h1 class='heading-1 hero__title'>
               <svg class='hero__title-arrow'>
-                <use xlink:href='./../bundles/img/sprite.svg#arrow-heading'></use>
+                <use xlink:href='../bundles/img/sprite.svg#arrow-heading'></use>
               </svg>
               <span class='hero__title-text'></span>
             </h1>
             <div class='hero__subtitle'>
-              <div class='hero__subtitle-item'>Aplications</div>
-              <div class='hero__subtitle-item'>Websites</div>
-              <div class='hero__subtitle-item'>Internet of Things</div>
+              <div class='hero__subtitle-item'>Aplikace</div>
+              <div class='hero__subtitle-item'>Weby</div>
+              <div class='hero__subtitle-item'>Internet věcí</div>
             </div>
           </div>
           <picture>
@@ -101,30 +102,30 @@
             <a href='#about' class='hero__footer-scroll'>
               Scroll
               <svg class='hero__footer-scroll-arrow'>
-                <use xlink:href='./../bundles/img/sprite.svg#arrow-hero-scroll'></use>
+                <use xlink:href='../bundles/img/sprite.svg#arrow-hero-scroll'></use>
               </svg>
             </a>
             <!-- <div class='hero__footer-social'>
               <div class='hero__footer-social-line'></div>
               <a href='#' class='hero__footer-social-logo-wrapper'>
                 <svg class='hero__footer-social-logo'>
-                  <use xlink:href='./../bundles/img/sprite.svg#instagram-logo'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#instagram-logo'></use>
                 </svg>
               </a>
               <a href='#' class='hero__footer-social-logo-wrapper'>
                 <svg class='hero__footer-social-logo'>
-                  <use xlink:href='./../bundles/img/sprite.svg#facebook-logo'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#facebook-logo'></use>
                 </svg>
               </a>
               <a href='#' class='hero__footer-social-logo-wrapper'>
                 <svg class='hero__footer-social-logo'>
-                  <use xlink:href='./../bundles/img/sprite.svg#linkedin-logo'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#linkedin-logo'></use>
                 </svg>
               </a>
             </div> -->
           </div>
         </div>
-        <div class='heading-blue hero__marquee-title'>We also worked with:</div>
+        <div class='heading-blue hero__marquee-title'>Pracovali jsme také pro:</div>
       </div>
       <div class='hero__marquee'>
         <div class='hero__marquee-inner'>
@@ -134,87 +135,87 @@
     <section class='about__wrapper'>
       <div id='about' class='about'>
         <div class='about__info'>
-          <h2 class='heading-blue about__heading'>What we can do</h2>
-          <h3 class='heading-local-small about_sub-heading'>From designing the best solution, design, development, up to launching the product into the world</h3>
-          <p class='paragraph'>We always strive to make you as satisfied as possible, emphasizing close and long-term cooperation to take care of your product development.</p>
+          <h2 class='heading-blue about__heading'>Co umíme</h2>
+          <h3 class='heading-local-small about_sub-heading'>Od návrhu nejlepšího řešení, designu, samotného vývoje, až po vypuštění produktu do světa</h3>
+          <p class='paragraph'>Vždy se snažíme, abyste byli maximálně spokojeni, klademe důraz na úzkou a dlouhodobou spolupráci, abychom se mohli starat o rozvoj vašeho produktu.</p>
         </div>
         <div class='about__features'>
           <div class='about__features-inner'>
             <div class='feature'>
               <svg class='feature__logo'>
-                <use xlink:href='./../bundles/img/sprite.svg#feature-webove-aplikace'></use>
+                <use xlink:href='../bundles/img/sprite.svg#feature-webove-aplikace'></use>
               </svg>
-              <h4 class='heading-local-small feature__heading'>Web applications</h4>
-              <p class='paragraph feature__paragraph'>Do you want a presentation website, e-shop or more complex systems? We love a challenge, so the high demands of our clients are fun for us.</p>
+              <h4 class='heading-local-small feature__heading'>Webové aplikace</h4>
+              <p class='paragraph feature__paragraph'>Chcete prezentační web, e-shop, nebo složitější systémy? Máme rádi výzvy, takže vysoké nároky našich klientů jsou pro nás zábavou.</p>
               <a href='#contact' class='feature__action'>
-                <span>Arrange a meeting</span>
+                <span>Domluvit schůzku</span>
                 <svg class='feature__action-icon'>
-                  <use xlink:href='./../bundles/img/sprite.svg#feature-action-arrow'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#feature-action-arrow'></use>
                 </svg>
               </a>
             </div>
             <div class='feature'>
               <svg class='feature__logo'>
-                <use xlink:href='./../bundles/img/sprite.svg#feature-mobilni-aplikace'></use>
+                <use xlink:href='../bundles/img/sprite.svg#feature-mobilni-aplikace'></use>
               </svg>
-              <h4 class='heading-local-small feature__heading'>Mobile Applications</h4>
-              <p class='paragraph feature__paragraph'>We follow current trends and make applications using the latest technologies. We always carefully consider what is best for you so that you are not limited when it comes to future development.</p>
+              <h4 class='heading-local-small feature__heading'>Mobilní aplikace</h4>
+              <p class='paragraph feature__paragraph'>Sledujeme současné trendy a děláme aplikace s využitím nejmodernějších technologií. Vždy pečlivě zvážíme, co je pro vás nejvhodnější, abyste nebyli s budoucím rozvojem limitováni.</p>
               <a href='#contact' class='feature__action'>
-                <span>Arrange a meeting</span>
+                <span>Domluvit schůzku</span>
                 <svg class='feature__action-icon'>
-                  <use xlink:href='./../bundles/img/sprite.svg#feature-action-arrow'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#feature-action-arrow'></use>
                 </svg>
               </a>
             </div>
             <div class='feature'>
               <svg class='feature__logo'>
-                <use xlink:href='./../bundles/img/sprite.svg#feature-ux-design'></use>
+                <use xlink:href='../bundles/img/sprite.svg#feature-ux-design'></use>
               </svg>
               <h4 class='heading-local-small feature__heading'>UI/UX design</h4>
-              <p class='paragraph feature__paragraph'>Attracting attention at first sight is both increasingly important and difficult these days. We always get to know you and your target audience in detail when designing. We want the result to impress.</p>
+              <p class='paragraph feature__paragraph'>Zaujmout na první pohled je v dnešní době stále důležitější a zároveň těžší. Vždy se při návrhu detailně seznámíme s vámi a vaší cílovou skupinou. Chceme, aby výsledek zapůsobil.</p>
               <a href='#contact' class='feature__action'>
-                <span>Arrange a meeting</span>
+                <span>Domluvit schůzku</span>
                 <svg class='feature__action-icon'>
-                  <use xlink:href='./../bundles/img/sprite.svg#feature-action-arrow'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#feature-action-arrow'></use>
                 </svg>
               </a>
             </div>
             <div class='feature'>
               <svg class='feature__logo'>
-                <use xlink:href='./../bundles/img/sprite.svg#feature-internet-veci'></use>
+                <use xlink:href='../bundles/img/sprite.svg#feature-internet-veci'></use>
               </svg>
-              <h4 class='heading-local-small feature__heading'>Internet of Things</h4>
-              <p class='paragraph feature__paragraph'>Do you have a need or an idea for an IoT solution? Do you need help with an Internet of Things prototype? Do you need to connect IoT with a mobile or web application? We can help you.</p>
+              <h4 class='heading-local-small feature__heading'>Internet věcí</h4>
+              <p class='paragraph feature__paragraph'>Máte potřebu či nápad na vytvoření IoT řešení? Potřebujete pomoc s Internet of Things proto- typem? Potřebujete propojit IoT s mobilní a nebo webovou aplikací? Dokážeme vám pomoci.</p>
               <a href='#contact' class='feature__action'>
-                <span>Arrange a meeting</span>
+                <span>Domluvit schůzku</span>
                 <svg class='feature__action-icon'>
-                  <use xlink:href='./../bundles/img/sprite.svg#feature-action-arrow'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#feature-action-arrow'></use>
                 </svg>
               </a>
             </div>
             <div class='feature'>
               <svg class='feature__logo'>
-                <use xlink:href='./../bundles/img/sprite.svg#feature-konzultace'></use>
+                <use xlink:href='../bundles/img/sprite.svg#feature-konzultace'></use>
               </svg>
-              <h4 class='heading-local-small feature__heading'>Consulting</h4>
-              <p class='paragraph feature__paragraph'>Our team has been in the digital world for some time now. We don't keep our knowledge to ourselves. We want to share it and we are ready to provide you with our advice on anything.</p>
+              <h4 class='heading-local-small feature__heading'>Konzultace</h4>
+              <p class='paragraph feature__paragraph'>V digitálním světě se náš tým už nějaký pátek pohybuje. Nenecháváme si naše znalosti pro sebe. Chceme se o ně dělit a jsme připraveni vám s čímkoliv poradit.</p>
               <a href='#contact' class='feature__action'>
-                <span>Arrange a meeting</span>
+                <span>Domluvit schůzku</span>
                 <svg class='feature__action-icon'>
-                  <use xlink:href='./../bundles/img/sprite.svg#feature-action-arrow'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#feature-action-arrow'></use>
                 </svg>
               </a>
             </div>
             <div class='feature'>
               <svg class='feature__logo'>
-                <use xlink:href='./../bundles/img/sprite.svg#feature-skoleni'></use>
+                <use xlink:href='../bundles/img/sprite.svg#feature-skoleni'></use>
               </svg>
-              <h4 class='heading-local-small feature__heading'>Trainings</h4>
-              <p class='paragraph feature__paragraph'>We specialize in IT training. Agile development is in our blood and we can help you transform your company or find weak points and propose solutions.</p>
+              <h4 class='heading-local-small feature__heading'>Školení</h4>
+              <p class='paragraph feature__paragraph'>Specializujeme se na školení v oblasti IT. Agilní vývoj máme v krvi a pomůžeme vám transformovat firmu či najít slabá místa a navrhnout řešení.</p>
               <a href='#contact' class='feature__action'>
-                <span>Arrange a meeting</span>
+                <span>Domluvit schůzku</span>
                 <svg class='feature__action-icon'>
-                  <use xlink:href='./../bundles/img/sprite.svg#feature-action-arrow'></use>
+                  <use xlink:href='../bundles/img/sprite.svg#feature-action-arrow'></use>
                 </svg>
               </a>
             </div>
@@ -227,7 +228,7 @@
         <div class='example example--equi-team'>
           <div class='example__content'>
             <svg class='example__background-logo'>
-              <use xlink:href='./../bundles/img/sprite.svg#example-background-equi'></use>
+              <use xlink:href='../bundles/img/sprite.svg#example-background-equi'></use>
             </svg>
             <h3 class='heading-local-big example__title'>Startup</h3>
             <img
@@ -236,38 +237,38 @@
               alt='Equi Team Manager logo'
               class='example__logo'
             >
-            <p class='example__text'>A mobile application that facilitates daily stable management.</p>
+            <p class='example__text'>Mobilní aplikace, která usnadňuje každodenní stájový management.</p>
             <p class='example__text'>
-              We like helping start-up projects and companies. Like with Equi team manager, where besides graphic and development work we also helped with the setup of the whole product and business. We look for ways and solutions, while also keeping the clients budget in mind, so a version of the application was launched on which clients can generate their profits. We always aim for a long-term collaboration and not just a one-off development.
+              Rádi pomáháme začínajícím projektům a firmám. Tak jako u Equi team manager, kde jsme kromě grafických a vývojových prací pomáhali také s nastavením celého produktu a businessu. Hledáme cesty a řešení i s ohledem na budget klientů, tak byla spuštěna verze aplikace, na které mohou klienti generovat své zisky. Vždy nám jde o dlouhodobou spolupráci, a nejen jednorázový vývoj.
             </p>
-            <div class='example__keywords'>branding / design / ui/ux / mobile development / android / iOS</div>
+            <div class='example__keywords'>branding / design / ui/ux / mobilní development / android / iOS</div>
           </div>
           <img
             srcset='../bundles/img/example-equi-team@2x.webp 2x'
             src='../bundles/img/example-equi-team.webp'
-            alt='example of aplication Equi Team Manager'
+            alt='ukázka aplikace Equi Team Manager'
             class='example__img'
           >
         </div>
         <div class='example example--daros'>
           <div class='example__content'>
             <svg class='example__background-logo'>
-              <use xlink:href='./../bundles/img/sprite.svg#example-background-daros'></use>
+              <use xlink:href='../bundles/img/sprite.svg#example-background-daros'></use>
             </svg>
-            <h3 class='heading-local-big example__title'>Customized Applications</h3>
+            <h3 class='heading-local-big example__title'>Aplikace na míru</h3>
             <svg class='example__logo' alt='Daros logo'>
-              <use xlink:href='./../bundles/img/sprite.svg#example-logo-daros'></use>
+              <use xlink:href='../bundles/img/sprite.svg#example-logo-daros'></use>
             </svg>
-            <p class='example__text'>A mobile application used for ordering taxis, an application for taxi drivers, and a CRM environment for order management.</p>
+            <p class='example__text'>Mobilní aplikace pro objednávání taxi, aplikace pro taxikáře a CRM prostředí pro správu objednávek.</p>
             <p class='example__text'>
-              Do you understand your industry but are not familiar with the digital world? No problem. You can take advantage of our experience, just like Daros Taxi did. They wanted to become the number one company when it comes to ordering taxis in their region, so we invented and created an application that allows them to reach more customers and generate a sharp increase in orders and their profits.
+              Rozumíte svému oboru, ale nevyznáte se v digitálním světě? Nevadí. Můžete využít našich zkušeností, tak jako to udělali z Daros taxi. Chtěli se stát jedničkou v objednáváním taxi ve svém regionu a tak jsme jim vymysleli a vytvořili aplikaci, díky které dokáží oslovit větší počet zákázníků a generují prudký nárůst objednávek a svého zisku.
             </p>
-            <div class='example__keywords'>design / ui/ux / mobile development / android / iOS</div>
+            <div class='example__keywords'>design / ui/ux / mobilní development / android / iOS</div>
           </div>
           <img
             srcset='../bundles/img/example-daros@2x.webp 2x'
             src='../bundles/img/example-daros.webp'
-            alt='example of aplication Daros'
+            alt='ukázka aplikace Daros'
             class='example__img'
           >
         </div>
@@ -278,7 +279,7 @@
               src='../bundles/img/example-background-vizit.webp'
               class='example__background-logo'
             >
-            <h3 class='heading-local-big example__title'>Complex Systems</h3>
+            <h3 class='heading-local-big example__title'>Složité systémy</h3>
             <img  
               srcset='../bundles/img/example-logo-vizit@2x.webp 2x'
               src='../bundles/img/example-logo-vizit.webp'
@@ -286,41 +287,41 @@
               class='example__logo'
             >
             <p class='example__text'>
-              The VIZIT ambulatory information system is a modular online application that ensures the operation of both small practices and larger healthcare facilities. Medical records, booking system for doctors, e-prescriptions, e-sick leave, encrypted medical mail.
+              Ambulantní informační systém VIZIT je modulární online aplikace, která zabezpečí chod jak malých ordinací, tak větších zdravotnických zařízeních. Kartotéka, rezervační systém pro lékaře, e-recepty, e-neschopenka, šifrovaná lékařská pošta.
             </p>
             <p class='example__text'>
-              Under our hands, the extensive system has undergone a redesign and total rework to simplify its control.
+              Rozsáhlý systém pod našimi rukami prošel redesignem a celkovým přepracováním pro zjednodušení ovládání.
             </p>
             <div class='example__keywords'>redesign / ui/ux / development</div>
           </div>
           <img
             srcset='../bundles/img/example-vizit@2x.webp 2x'
             src='../bundles/img/example-vizit.webp'
-            alt='example of system Vizit'
+            alt='ukázka systému Vizit'
             class='example__img'
           >
         </div>
         <div class='example example--sportongo'>
           <div class='example__content'>
             <svg class='example__background-logo'>
-              <use xlink:href='./../bundles/img/sprite.svg#example-background-sportongo'></use>
+              <use xlink:href='../bundles/img/sprite.svg#example-background-sportongo'></use>
             </svg>
-            <h3 class='heading-local-big example__title'>Fresh Design</h3>
+            <h3 class='heading-local-big example__title'>Svěží design</h3>
             <svg class='example__logo' alt='Sportongo logo'>
-              <use xlink:href='./../bundles/img/sprite.svg#example-logo-sportongo'></use>
+              <use xlink:href='../bundles/img/sprite.svg#example-logo-sportongo'></use>
             </svg>
             <p class='example__text'>
-              Sportongo is a mobile sports social networking application which we have been behind since its inception and we continue to work with the client on its development.
+              Sportongo je mobilní aplikace sportovní sociální sítě, u které jsme stáli od jeho samotného začátku a stále pokračujeme ve spolupráci s klientem na rozvoji.
             </p>
             <p class='example__text'>
-              The combination of the client's good vision and the work of our team have turned the Sporotongo social network into an enjoyable environment where sports people can meet each other.
+              Spojení dobré vize zadavatele a práce našeho týmu, udělalo ze sociální sítě Sporotongo příjemné prostředí na seznamování sportovců.
             </p>
             <div class='example__keywords'>branding / ui/ux / wireframing / development / marketing</div>
           </div>
           <img
             srcset='../bundles/img/example-sportongo@2x.webp 2x'
             src='../bundles/img/example-sportongo.webp'
-            alt='example of web Sportongo'
+            alt='ukázka webu Sportongo'
             class='example__img'
           >
         </div>
@@ -328,20 +329,20 @@
     </section>
     <section class='pillars__wrapper'>
       <div class='pillars'>
-        <h2 class='heading-blue pillars__title'>Corporate standards</h2>
-        <h3 class='heading-local-small pillars__subtitle'>Pillars of Cybronet</h3>
+        <h2 class='heading-blue pillars__title'>Firemní standardy</h2>
+        <h3 class='heading-local-small pillars__subtitle'>Pilíře Cybronetu</h3>
         <div class='pillars__container'>
           <div class='pillar'>
-            <h4 class='heading-local-small pillar__title'>Open <span>Access</span> & Consultation</h4>
-            <p>Our team has been involved in the digital world for some time now. We don't keep our knowledge to ourselves, but always discuss it transparently with the client. Openness and honesty are important to us when working together, so if we have an opinion or idea, we'll discuss it with you right away. We will work with your application from its development to operation as if it was our own. Everyone on the team has a task that you can always address directly.</p>
+            <h4 class='heading-local-small pillar__title'>Otevřený <span>přístup</span> & Konzultace</h4>
+            <p>V digitálním světě se náš tým už nějaký pátek pohybuje. Nenecháváme si naše poznatky pro sebe, ale vždy je s klientem transparentně probíráme. Důležitá je pro nás při spolupráci otevřenost a upřímnost, takže pokud nějaký názor nebo nápad máme, hned to s vámi probereme. S Vaší aplikací budeme pracovat od vývoje až do provozu jako s vlastní. Každý z týmu má svůj úkol, který můžete vždy řešit napřímo.</p>
           </div>
           <div class='pillar'>
-            <h4 class='heading-local-small pillar__title'>We learn the <span>know-how</span> and <span>pass it on</span></h4>
-            <p>We learn and gain new experience on every project. We are happy to pass on the know-how that we have been acquiring for several years. Because we have experienced problems and failures ourselves on other projects and learned from them, we can prevent you from making the same mistakes on yours. We fine-tune even the first common steps and procedures with the client for the best possible result</p>
+            <h4 class='heading-local-small pillar__title'><span>Know-how</span> se učíme a <span>předáváme</span></h4>
+            <p>Na každém projektu se učíme a získáváme nové zkušenosti. Know-how, které získáváme několik let, vám s radostí předáváme. Díky tomu, že jsme si sami zažili problémy a nezdary na jiných projektech, z kterých jsme se poučili, tak dokážeme předcházet tomu, abyste vy stejné chyby na těch svých neopakovali. Ladíme s klientem už první společné kroky a postupy pro co nejlepší výsledek</p>
           </div>
           <div class='pillar'>
-            <h4 class='heading-local-small pillar__title'>We follow new <span>trends</span></h4>
-            <p>The digital space is the fastest growing industry in the world. That's why it's important not to fall asleep and monitor the trends, focusing on a few years ahead, in order to prevent the product we create for you from being outdated and uncompetitive in just one year's time. We responsibly develop state-of-the-art solutions for you.</p>
+            <h4 class='heading-local-small pillar__title'>Sledujeme nové <span>trendy</span></h4>
+            <p>Digitální prostor je nejrychleji rostoucím odvětvím na světě. Proto je důležité nezaspat a sledovat trendy s ohledem na několik let dopředu. Aby se nestalo, že produkt, který pro vás vytvoříme, byl již za rok zastaralý a nekonkurenceschopný. Zodpovědně pro vás vyvíjíme ta nejmodernější řešení.</p>
           </div>
         </div>
       </div>
@@ -349,24 +350,25 @@
     <section class='recommendations'>
       <div class='recommendations__header'>
         <svg class='recommendations__quotes'>
-          <use xlink:href='./../bundles/img/sprite.svg#quotes'></use>
+          <use xlink:href='../bundles/img/sprite.svg#quotes'></use>
         </svg>
         <div class='recommendations__controls'>
           <button id='car-prev' class='recommendations__arrow-container'>
             <svg class='recommendations__arrow'>
-              <use xlink:href='./../bundles/img/sprite.svg#controls-arrow'></use>
+              <use xlink:href='../bundles/img/sprite.svg#controls-arrow'></use>
             </svg>
           </button >
           <button id='car-next' class='recommendations__arrow-container recommendations__arrow-container--right'>
             <svg class='recommendations__arrow'>
-              <use xlink:href='./../bundles/img/sprite.svg#controls-arrow'></use>
+              <use xlink:href='../bundles/img/sprite.svg#controls-arrow'></use>
             </svg>
           </button>
         </div>
       </div>
       <div class='recommendations__carousel'>
         <div class='recommendations__slide recommendations__slide--1 js-active'>
-          <h4 class='recommendations__slide-title'>"What we appreciate most about our cooperation is the prompt communication combined with quick solutions and implementation of our requirements. For the Cybronet team, no challenge is an obstacle; they always handle everything and help our company to grow. We are glad that we chose Cybronet for our cooperation a few years ago."</h4>
+          <h4 class='recommendations__slide-title'>"Na spolupráci si nejvíce ceníme pohotové komunikace spojené s rychlým řešením a implementací našich požadavků.
+          Pro tým Cybronetu není žádná výzva překážkou, se vším si vždy poradí a pomáhají naší společnosti k růstu. Jsme rádi, že jsme si před pár lety vybrali pro spolupráci právě Cybronet."</h4>
           <img
             srcset='../bundles/img/carousel-z-popelka@2x.webp 2x'
             src='../bundles/img/carousel-z-popelka.webp'
@@ -374,10 +376,10 @@
             class='recommendations__slide-photo'
           >
           <p class='recommendations__slide-name'>Zdeněk Popelka</p>
-          <p class='recommendations__slide-position'>CEO of Daros taxi</p>
+          <p class='recommendations__slide-position'>Jednatel Daros taxi</p>
         </div>
         <div class='recommendations__slide recommendations__slide--2'>
-          <h4 class='recommendations__slide-title'>"Cybronet has developed an international educational application for doctors - gynaecological oncologists for us. It was a long and extensive project, which turned into a wonderful and well-arranged product thanks to you. Thank you for your constant support and innovative ideas during the implementation. We are looking forward to the next projects with you that lie ahead."</h4>
+          <h4 class='recommendations__slide-title'>"Společnost Cybronet pro nás vyvinula mezinárodní vzdělávací aplikaci pro lékaře - gynekologické onkology. Byl to dlouhý a velký projekt, ze kterého vznikl díky Vám krásný a přehledný produkt. Děkuji za vaši stálou podporu a inovativní nápady při realizaci. Těšíme se na další projekty s vámi, které nás čekají."</h4>
           <img
             srcset='../bundles/img/carousel-m-cidlinova@2x.webp 2x'
             src='../bundles/img/carousel-m-cidlinova.webp'
@@ -395,7 +397,7 @@
     </section>
     <section id='contact' class='contact__wrapper'>
       <div class='contact'>
-        <h2 class='heading-local-big contact__heading'>Contact us</h2>
+        <h2 class='heading-local-big contact__heading'>Kontaktujte nás</h2>
         <div id='contact-form-wrapper'></div>
       </div>
     </section>
@@ -404,9 +406,9 @@
     <div class='footer__info'>
       <div class='footer__info-left'>
         <svg class='footer__logo' alt='Cybronet logo'>
-          <use xlink:href='./../bundles/img/sprite.svg#cybronet-logo'></use>
+          <use xlink:href='../bundles/img/sprite.svg#cybronet-logo'></use>
         </svg>
-        <div class='footer__info-claim'>Turn your visions into a real projects</div>
+        <div class='footer__info-claim'>Turn your visions into real projects</div>
       </div>
       <div class='footer__info-right'>
         <div>
@@ -421,33 +423,33 @@
     </div>
     <ul class='footer__menu'>
       <!-- <li class='btn btn--link footer__menu-item'>
-        <a href='en/kariera.html'>Otevřené pozice</a>
+        <a href='/kariera.html'>Otevřené pozice</a>
       </li> -->
       <li class='btn btn--link footer__menu-item'>
-        <a href='#contact'>Contact Us</a>
+        <a href='#contact'>Kontaktuj nás</a>
       </li>
       <li class='btn btn--link footer__menu-item'>
-        <a href='#' id="open_preferences_center">Cookie settings</a>
+        <a href='#' id="open_preferences_center">Nastavení cookies</a>
       </li>
     </ul>
     <!-- <div class='footer__social'>
       <a href='#' class='footer__social-logo-wrapper'>
         <svg class='footer__social-logo'>
-          <use xlink:href='./../bundles/img/sprite.svg#facebook-logo'></use>
+          <use xlink:href='../bundles/img/sprite.svg#facebook-logo'></use>
         </svg>
       </a>
       <a href='#' class='footer__social-logo-wrapper'>
         <svg class='footer__social-logo'>
-          <use xlink:href='./../bundles/img/sprite.svg#linkedin-logo'></use>
+          <use xlink:href='../bundles/img/sprite.svg#linkedin-logo'></use>
         </svg>
       </a>
       <a href='#' class='footer__social-logo-wrapper'>
         <svg class='footer__social-logo'>
-          <use xlink:href='./../bundles/img/sprite.svg#instagram-logo'></use>
+          <use xlink:href='../bundles/img/sprite.svg#instagram-logo'></use>
         </svg>
       </a>
     </div> -->
-    <div class='footer__copyright'><span id='getYear'></span> © Cybronet. All rights reserved.</div>
+    <div class='footer__copyright'><span id='getYear'></span> © Cybronet. Všechna práva vyhrazena.</div>
   </footer>
   <script src='../bundles/bundled.js'></script>
 </body>

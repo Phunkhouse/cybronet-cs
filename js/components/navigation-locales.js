@@ -1,4 +1,4 @@
-const locales = ['cs', 'en']
+const locales = ['en', 'cs', 'de']
 const currentLocale = document.documentElement.lang
 
 export function navigationLocales({ type }) {
@@ -6,7 +6,7 @@ export function navigationLocales({ type }) {
 
   locales.map(locale => {
     if (locale !== currentLocale) {
-      if (locale !== 'cs') {
+      if (locale !== 'en') {
         wrapper.insertAdjacentHTML('beforeend', `
           <li>
             <a class='${type === 'desktop' ? 'header__navigation-locale-item' : 'header-mobile__navigation-locale-item'}' href='/${locale}/'>${locale}</a>

@@ -57,7 +57,7 @@ export function heroMarquee() {
     const marqueeInner = document.querySelector('.hero__marquee-inner')
     const marqueeLogoContainer = 'hero__marquee-logo-container'
 
-    const isAltLocale = document.documentElement.lang !== 'cs'
+    const isAltLocale = document.documentElement.lang !== 'en'
 
     requiredLogosArray.map(logo => {
       marqueeInner.insertAdjacentHTML('beforeend', `

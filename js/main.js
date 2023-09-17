@@ -5,6 +5,7 @@ import { animations } from './components/animations'
 import { navigation } from './components/navigation'
 import { contactForm } from './components/contact-form'
 import { navigationLocales } from './components/navigation-locales'
+import { localeRedirect } from './components/locale-redirect'
 
 const homePage = document.getElementById('home')
 const careerPage = document.getElementById('career-page')
@@ -20,6 +21,7 @@ window.addEventListener('load', function () {
   document.getElementById('getYear').innerHTML = new Date().getFullYear()
 
   if (homePage) {
+    localeRedirect()
     getHeights()
     animations()
     contactForm({ homePage })

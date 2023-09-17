@@ -50,10 +50,10 @@ export const contactFormContent = {
     budget: {
       title: 'Expected budget:',
       options: [
-        'Less than 50K',
-        '50K - 150K',
-        '150K - 500K',
-        'More than 500K'
+        'Less than 5K $',
+        '5K - 20K $',
+        '20K - 70K $',
+        'More than 70K $'
       ]
     },
     name: 'Name',
@@ -66,5 +66,39 @@ export const contactFormContent = {
     fill: 'Please, fill in:',
     check: 'Please, confirm:',
     thanks: 'Thank you for sending. We will contact you soon!'
+  },
+  de: {
+    interest: {
+      title: 'I Ich bin interessiert an:',
+      options: [
+        'Webanwendungen',
+        'Konsultationen',
+        'Schulungen',
+        'Internet der Dinge',
+        'Mobile Anwendungen',
+        'Webdesign',
+        'UX/UI-Design',
+        'Sonstiges'
+      ]
+    },
+    budget: {
+      title: 'Erwartetes budget:',
+      options: [
+        'Weniger als 5K €',
+        '5K - 20K €',
+        '20K - 70K €',
+        'More than 70K €'
+      ]
+    },
+    name: 'Name',
+    email: 'Deine e-mail',
+    company: 'Firma',
+    more: 'Was führt Sie zu Cybronet?',
+    checkbox: 'Ich stimme den Allgemeinen Geschäftsbedingungen und der Verarbeitung meiner persönlichen Daten zu',
+    send: 'Senden',
+    choose: 'Bitte wählen Sie:',
+    fill: 'Bitte füllen Sie aus:',
+    check: 'Bitte bestätigen Sie:',
+    thanks: 'Danke fürs Senden. Wir werden uns bald melden!'
   }
 }

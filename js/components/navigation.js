@@ -35,7 +35,7 @@ export function navigation() {
   }
 
   function createMobileHeader() {
-    const isAltLocale = document.documentElement.lang !== 'cs'
+    const isAltLocale = document.documentElement.lang !== 'en'
 
     heroContainer.insertAdjacentHTML('afterbegin', `
       <header class='header-mobile js-header'>

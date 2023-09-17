@@ -7,7 +7,7 @@ export function heroAnimations() {
 
   tl.to('.hero__title-text', {
     text: {
-      value: 'Turn your visions into a real projects'
+      value: 'Turn your visions into real projects'
     },
     duration: 2,
     ease: 'none',
