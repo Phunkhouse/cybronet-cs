@@ -39,7 +39,7 @@ module.exports = {
       test: /(img).+\.(png|jpg|jpeg|gif|svg|webp)$/i,
       type: 'asset/resource'
     }, {
-      test: /\.svg$/,
+      test: /(svg-sprite).+\.svg$/i,
       loader: 'svg-sprite-loader',
       options: {
         extract: true,

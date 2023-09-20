@@ -13,11 +13,15 @@ var map = {
 	"./background-shapes-features@2x.webp": 9701,
 	"./background-shapes-top-left.webp": 5049,
 	"./background-shapes-top-left@2x.webp": 5235,
+	"./ca-locale.svg": 2753,
+	"./carousel-g-penazova.webp": 3730,
+	"./carousel-g-penazova@2x.webp": 6326,
 	"./carousel-m-cidlinova.webp": 2516,
 	"./carousel-m-cidlinova@2x.webp": 79,
 	"./carousel-photo.png": 8494,
 	"./carousel-z-popelka.webp": 1698,
 	"./carousel-z-popelka@2x.webp": 540,
+	"./cz-locale.svg": 1157,
 	"./example-background-vizit.webp": 8340,
 	"./example-background-vizit@2x.webp": 2417,
 	"./example-daros.webp": 9937,
@@ -34,7 +38,9 @@ var map = {
 	"./example-vizit@2x.webp": 9888,
 	"./hero-graphic.webp": 3165,
 	"./hero-graphic@2x.webp": 8339,
-	"./hero-other-background.svg": 6385
+	"./hero-other-background.svg": 7144,
+	"./logo-small.svg": 9476,
+	"./us-locale.svg": 3780
 };
 
 
@@ -3789,6 +3795,30 @@ module.exports = __webpack_require__.p + "img/background-shapes-top-left@2x.webp
 
 /***/ }),
 
+/***/ 2753:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/ca-locale.svg";
+
+/***/ }),
+
+/***/ 3730:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/carousel-g-penazova.webp";
+
+/***/ }),
+
+/***/ 6326:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/carousel-g-penazova@2x.webp";
+
+/***/ }),
+
 /***/ 2516:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -3826,6 +3856,14 @@ module.exports = __webpack_require__.p + "img/carousel-z-popelka.webp";
 
 "use strict";
 module.exports = __webpack_require__.p + "img/carousel-z-popelka@2x.webp";
+
+/***/ }),
+
+/***/ 1157:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/cz-locale.svg";
 
 /***/ }),
 
@@ -3957,11 +3995,27 @@ module.exports = __webpack_require__.p + "img/hero-graphic@2x.webp";
 
 /***/ }),
 
-/***/ 6385:
+/***/ 7144:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "img/hero-other-background.svg";
+
+/***/ }),
+
+/***/ 9476:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/logo-small.svg";
+
+/***/ }),
+
+/***/ 3780:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/us-locale.svg";
 
 /***/ })
 
@@ -9621,11 +9675,18 @@ var TextPlugin = __webpack_require__(4384);
 
 
 function heroAnimations() {
+  const locale = document.documentElement.lang;
+  let heroTitleText;
+  if (locale === 'cs') {
+    heroTitleText = 'Proměňte vaše vize ve skutečné projekty';
+  } else {
+    heroTitleText = 'Turn your visions into real projects';
+  }
   gsapWithCSS.registerPlugin(TextPlugin.TextPlugin);
   const tl = gsapWithCSS.timeline();
   tl.to('.hero__title-text', {
     text: {
-      value: 'Turn your visions into real projects'
+      value: heroTitleText
     },
     duration: 2,
     ease: 'none'
@@ -9715,6 +9776,18 @@ function navigation() {
   }
   function createMobileHeader() {
     const isAltLocale = document.documentElement.lang !== 'en';
+    const locale = document.documentElement.lang;
+    let contactUsBtn;
+    switch (locale) {
+      case 'cs':
+        contactUsBtn = 'Napiš nám';
+        break;
+      case 'de':
+        contactUsBtn = 'Kontaktiere uns';
+        break;
+      default:
+        contactUsBtn = 'Contact us';
+    }
     heroContainer.insertAdjacentHTML('afterbegin', `
       <header class='header-mobile js-header'>
         <a href='/'>
@@ -9735,9 +9808,47 @@ function navigation() {
               Otevřené pozice
             </a>
           </li>
+          <ul class='header__call-us-menu header__call-us-menu--mobile-nav'>
+            <li>
+              <a class='header__call-us-menu-item' href='tel:+420776033332'>
+                <div class='header__call-us-menu-item-left'>
+                  <img src='.${isAltLocale ? '.' : ''}/bundles/img/cz-locale.svg' />
+                  <div>Prague</div>
+                </div>
+                <div>+420 776033332</div>
+              </a>
+            </li>
+            <li>
+              <a class='header__call-us-menu-item' href='tel:+1(786)927-2440'>
+                <div class='header__call-us-menu-item-left'>
+                  <img src='.${isAltLocale ? '.' : ''}/bundles/img/us-locale.svg' />
+                  <div>Ft Lauderdale, FL</div>
+                </div>
+                <div>+1 (786) 927-2440</div>
+              </a>
+            </li>
+            <li>
+              <a class='header__call-us-menu-item' href='tel:+1(310)482-1938'>
+                <div class='header__call-us-menu-item-left'>
+                  <img src='.${isAltLocale ? '.' : ''}/bundles/img/us-locale.svg' />
+                  <div>Los Angeles</div>
+                </div>
+                <div>+1 (310) 482-1938</div>
+              </a>
+            </li>
+            <li>
+              <a class='header__call-us-menu-item' href='tel:+1(416)671-6910'>
+                <div class='header__call-us-menu-item-left'>
+                  <img src='.${isAltLocale ? '.' : ''}/bundles/img/ca-locale.svg' />
+                  <div>Toronto</div>
+                </div>
+                <div>+1 (416) 671-6910</div>
+              </a>
+            </li>
+          </ul>
           <li>
             <a href='/#contact' class='btn btn--primary'>
-              Napiš nám
+              ${contactUsBtn}
             </a>
           </li>
         </ul>
@@ -10078,7 +10189,62 @@ function localeRedirect() {
     sessionStorage.setItem('firstVisit', true);
   }
 }
+;// CONCATENATED MODULE: ./js/components/call-us-menu.js
+function callUsMenu() {
+  const trigger = document.getElementById('call-us');
+  const isAltLocale = document.documentElement.lang !== 'en';
+  trigger.addEventListener('click', e => {
+    e.preventDefault();
+    if (trigger.classList.contains('active')) {
+      trigger.classList.remove('active');
+      trigger.parentElement.querySelector('.header__call-us-menu').remove();
+      return;
+    }
+    trigger.classList.toggle('active');
+    trigger.parentElement.insertAdjacentHTML('beforeend', `
+      <ul class='header__call-us-menu'>
+        <li>
+          <a class='header__call-us-menu-item' href='tel:+420776033332'>
+            <div class='header__call-us-menu-item-left'>
+              <img src='.${isAltLocale ? '.' : ''}/bundles/img/cz-locale.svg' />
+              <div>Prague</div>
+            </div>
+            <div>+420 776033332</div>
+          </a>
+        </li>
+        <li>
+          <a class='header__call-us-menu-item' href='tel:+1(786)927-2440'>
+            <div class='header__call-us-menu-item-left'>
+              <img src='.${isAltLocale ? '.' : ''}/bundles/img/us-locale.svg' />
+              <div>Ft Lauderdale, FL</div>
+            </div>
+            <div>+1 (786) 927-2440</div>
+          </a>
+        </li>
+        <li>
+          <a class='header__call-us-menu-item' href='tel:+1(310)482-1938'>
+            <div class='header__call-us-menu-item-left'>
+              <img src='.${isAltLocale ? '.' : ''}/bundles/img/us-locale.svg' />
+              <div>Los Angeles</div>
+            </div>
+            <div>+1 (310) 482-1938</div>
+          </a>
+        </li>
+        <li>
+          <a class='header__call-us-menu-item' href='tel:+1(416)671-6910'>
+            <div class='header__call-us-menu-item-left'>
+              <img src='.${isAltLocale ? '.' : ''}/bundles/img/ca-locale.svg' />
+              <div>Toronto</div>
+            </div>
+            <div>+1 (416) 671-6910</div>
+          </a>
+        </li>
+      </ul>
+    `);
+  });
+}
 ;// CONCATENATED MODULE: ./js/main.js
+
 
 
 
@@ -10105,12 +10271,19 @@ window.addEventListener('load', function () {
     contactForm({
       homePage
     });
+    callUsMenu();
 
     // Scroll to the contact form if the url has #contact
     if (location.hash === '#contact') {
       setTimeout(() => {
         document.getElementById(location.hash.substring(1)).scrollIntoView();
       }, 10);
+    }
+    if (document.querySelector('.hero__title')) {
+      const locale = document.documentElement.lang;
+      if (locale === 'cs') {
+        document.querySelector('.hero__title').classList.add('hero__title--cs');
+      }
     }
   }
   careerPage && contactForm({

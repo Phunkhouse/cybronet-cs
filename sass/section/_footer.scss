@@ -10,6 +10,49 @@
   }
 }
 
+.footer__branches {
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #DBE4ED;
+}
+
+.footer__branches-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer__branches-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 40px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #DBE4ED;
+
+  @include mq-below('1020px') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq-below('tablet-md') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer__branch {
+  display: grid;
+  gap: 16px;
+}
+
+.footer__branch-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .footer__info {
   display: flex;
   justify-content: space-between;

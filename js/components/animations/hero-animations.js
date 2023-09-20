@@ -2,12 +2,21 @@ import gsap from 'gsap'
 import { TextPlugin } from 'gsap/dist/TextPlugin'
 
 export function heroAnimations() {
+  const locale = document.documentElement.lang
+  let heroTitleText
+
+  if (locale === 'cs') {
+    heroTitleText = 'Proměňte vaše vize ve skutečné projekty'
+  } else {
+    heroTitleText = 'Turn your visions into real projects'
+  }
+
   gsap.registerPlugin(TextPlugin)
   const tl = gsap.timeline()
 
   tl.to('.hero__title-text', {
     text: {
-      value: 'Turn your visions into real projects'
+      value: heroTitleText
     },
     duration: 2,
     ease: 'none',

@@ -1,8 +1,11 @@
-export default {
-      id: "hero-other-background-usage",
-      viewBox: "0 0 1152 271",
-      url: __webpack_public_path__ + "/Users/davidkrapka/Documents/my-dev/cybronet-cs/img/hero-other-background.svg",
-      toString: function () {
-        return this.url;
-      }
-    }
+<svg width="1152" height="271" viewBox="0 0 1152 271" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1152 0H0L0.000118017 230.817C224 241.217 224.778 256.542 439 266.636C795 283.41 935.5 247.591 1152 230.817V0Z" fill="url(#paint0_radial_241_334)"/>
+<defs>
+<radialGradient id="paint0_radial_241_334" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(451 194.539) rotate(13.0839) scale(634.471 521.739)">
+<stop offset="0.15625" stop-color="#0F1C61"/>
+<stop offset="0.505208" stop-color="#431E92"/>
+<stop offset="0.697917" stop-color="#3143AE"/>
+<stop offset="1" stop-color="#2794F9"/>
+</radialGradient>
+</defs>
+</svg>

@@ -36,6 +36,19 @@ export function navigation() {
 
   function createMobileHeader() {
     const isAltLocale = document.documentElement.lang !== 'en'
+    const locale = document.documentElement.lang
+    let contactUsBtn
+
+    switch (locale) {
+      case 'cs':
+        contactUsBtn = 'Napiš nám'
+        break
+      case 'de':
+        contactUsBtn = 'Kontaktiere uns'
+        break
+      default:
+        contactUsBtn = 'Contact us'
+    }
 
     heroContainer.insertAdjacentHTML('afterbegin', `
       <header class='header-mobile js-header'>
@@ -57,9 +70,47 @@ export function navigation() {
               Otevřené pozice
             </a>
           </li>
+          <ul class='header__call-us-menu header__call-us-menu--mobile-nav'>
+            <li>
+              <a class='header__call-us-menu-item' href='tel:+420776033332'>
+                <div class='header__call-us-menu-item-left'>
+                  <img src='.${isAltLocale ? '.' : ''}/bundles/img/cz-locale.svg' />
+                  <div>Prague</div>
+                </div>
+                <div>+420 776033332</div>
+              </a>
+            </li>
+            <li>
+              <a class='header__call-us-menu-item' href='tel:+1(786)927-2440'>
+                <div class='header__call-us-menu-item-left'>
+                  <img src='.${isAltLocale ? '.' : ''}/bundles/img/us-locale.svg' />
+                  <div>Ft Lauderdale, FL</div>
+                </div>
+                <div>+1 (786) 927-2440</div>
+              </a>
+            </li>
+            <li>
+              <a class='header__call-us-menu-item' href='tel:+1(310)482-1938'>
+                <div class='header__call-us-menu-item-left'>
+                  <img src='.${isAltLocale ? '.' : ''}/bundles/img/us-locale.svg' />
+                  <div>Los Angeles</div>
+                </div>
+                <div>+1 (310) 482-1938</div>
+              </a>
+            </li>
+            <li>
+              <a class='header__call-us-menu-item' href='tel:+1(416)671-6910'>
+                <div class='header__call-us-menu-item-left'>
+                  <img src='.${isAltLocale ? '.' : ''}/bundles/img/ca-locale.svg' />
+                  <div>Toronto</div>
+                </div>
+                <div>+1 (416) 671-6910</div>
+              </a>
+            </li>
+          </ul>
           <li>
             <a href='/#contact' class='btn btn--primary'>
-              Napiš nám
+              ${contactUsBtn}
             </a>
           </li>
         </ul>
